@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"sourceRoot": "https://context.center",
+	"sources": [
+		"sass/file:///home/runner/work/context-center/context-center/src/_sass/template-topic.sass"
+	],
+	"names": [],
+	"mappings": "AACI,6BACI,UACA,YACA,cACA,iBACJ,4EACI,iBACJ,+BACI,gBACJ,2BACI,gBACJ,oBACI,cACA,iBACA",
+	"file": "template-topic.css",
+	"sourcesContent": [
+		"#template-topic\n    #maincontent\n        width: 80%\n        height: auto\n        display: block\n        margin: 10px auto\n    .contexter-box, iframe, embed\n        margin: 10px auto\n    .twitter-tweet\n        margin: 0px auto\n    blockquote\n        max-width: 600px\n    p > a\n        display: block\n        margin: 10px auto\n        text-align: center\n"
+	]
+}

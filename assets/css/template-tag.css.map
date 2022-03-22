@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"sourceRoot": "https://context.center",
+	"sources": [
+		"sass/file:///home/runner/work/context-center/context-center/src/_sass/template-tag.sass"
+	],
+	"names": [],
+	"mappings": "AACI,qBACI,sBACA,qDACA,8BACA,uBACI,WACJ,wBACI,kBAEJ,yCACI,gBACA,6CACI,gBACJ,gDACI",
+	"file": "template-tag.css",
+	"sourcesContent": [
+		"#template-tag\n    header\n        border: 1px yellow solid\n        clip-path: polygon(10% 0%, 80% 0%, 70% 100%, 0% 100%)\n        background: var(--border-base)\n        & > *\n            color: black\n        h2\n            padding: 10px 10px\n    #maincontent\n        .post-summary\n            margin-top: 20px\n            img\n                margin: 5px auto\n            button\n                margin-top: 18px\n"
+	]
+}

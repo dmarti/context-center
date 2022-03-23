@@ -5,9 +5,9 @@
 		"sass/file:///home/runner/work/context-center/context-center/src/_sass/template-index.sass"
 	],
 	"names": [],
-	"mappings": "AAEA,aACI,eACA,cACA,kBACJ,IACI,eACA,gBACJ,GACI,eACA,iBACJ,gBACI,aACA",
+	"mappings": "AAEA,KACI,eACA,cACA,kBACJ,WACI,UACA,cAEA,YACI,eACA,iBACJ,wEACI,iBACA,cACA,WACJ,4DACI,aACA,wCACA,qCACJ,gBACI,gBACJ,WACI,cACA,kBACA,gBACR,KACI,gBACJ,IACI,eACA,gBACJ,gBACI,aACA",
 	"file": "template-index.css",
 	"sourcesContent": [
-		"@use 'variables'\n\nbody, wrapper\n    max-width: 100%\n    display: block\n    text-align: center\nimg\n    max-width: 100%\n    max-height: 85vh\nh1\n    font-size: 60px\n    line-height: 16px\np:first-of-type\n    margin-top: 0\n    padding-top: 0\n"
+		"@use 'variables'\n\nbody\n    max-width: 100%\n    display: block\n    text-align: center\n.wrapper > *\n    width: 80%\n    margin: 0 auto\n.wrapper\n    h1\n        font-size: 60px\n        line-height: 16px\n    h1,h2,h3,h4,h5,h6\n        margin: 22px 10px\n        display: block\n        width: 100%\n    h2,h3,h4,h5,h6\n        padding: 18px\n        background-color: var(--light-highlight)\n        color: var(--light-highlight-overlap)\n    footer\n        margin-top: 60px\n    p\n        display: block\n        margin-bottom: 1em\n        max-width: 700px\nmain\n    text-align: left\nimg\n    max-width: 100%\n    max-height: 85vh\np:first-of-type\n    margin-top: 0\n    padding-top: 0\n"
 	]
 }

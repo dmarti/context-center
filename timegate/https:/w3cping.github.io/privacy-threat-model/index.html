@@ -1,0 +1,634 @@
+
+
+<!doctype html>
+    <html lang="en-US" id="template-archives" class="base">
+        <head>
+        
+        <script defer data-domain="context.center" src="https://plausible.io/js/plausible.js"></script>
+        <link rel="alternate" type="application/rss+xml" title="Context Center RSS" href="https://context.center/rss/" />
+    	<link rel="alternate" type="application/atom+xml" title="Context Center Feed" href="https://context.center/feed/" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Target Privacy Threat Model</title>
+        <link rel="original" http-equiv href="https://w3cping.github.io/privacy-threat-model/" />
+        
+            
+                <!-- <link rel="stylesheet" href="https://context.center/assets/css/template-archives.css?v=2097943621" /> -->
+                <link rel="stylesheet" href="https://context.center/assets/css/template-archives.css?v=2097943621" id=""></link>
+
+            
+        
+        
+            <link rel="canonical" href="https://w3cping.github.io/privacy-threat-model/" />
+            
+
+            <meta property="og:title"
+                content="Target Privacy Threat Model">
+
+            <meta property="og:description"
+                content="This document is at a very early stage. Many things in it are wrong and/or incomplete. Please take it as a rough shape for how we might document the target...">
+
+
+            <meta property="og:url"
+                content="https://w3cping.github.io/privacy-threat-model/" />
+
+            <meta property="og:site_name" content="Context Center" />
+
+            <meta property="og:locale" content="en_US" />
+
+            <meta name="twitter:site" content="@chronotope" />
+
+            <meta name="twitter:description" content="This document is at a very early stage. Many things in it are wrong and/or incomplete. Please take it as a rough shape for how we might document the target..." />
+
+            <!-- I prefer the summary_large_image Twitter card for posts. -->
+            <meta name="twitter:card" content="summary_large_image" />
+            <!-- You, you're the creator. -->
+            <meta name="twitter:creator" content="@chronotope" />
+            <!-- This property is for the article title, not site title. -->
+            <meta name="twitter:title" content="Target Privacy Threat Model" />
+
+            
+
+            <meta property="og:type" content="website" />
+
+            <script type="application/ld+json">
+                {
+                    "@context": "http://schema.org",
+                    "@type": "WebPage",
+                    "url": "https://w3cping.github.io/privacy-threat-model/",
+                    "headline": "Target Privacy Threat Model",
+                    "about": "This document is at a very early stage. Many things in it are wrong
+and/or incomplete. Please take it as a rough shape for how we might document the
+target threat model, rather than as definite statements about what should be in
+the target threat model.",
+
+                    "image": [
+                        
+                        
+                    ],
+                    "isAccessibleForFree": "True",
+                    "isPartOf": {
+                        "@type": ["CreativeWork", "Product"],
+                        "name": "Fight With Tools",
+                        "productID": "fightwithtools.dev"
+                    },
+                    "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+                    "archivedAt": "https://context.center/timegate/https:/w3cping.github.io/privacy-threat-model/",
+                    "sameAs": "https://w3cping.github.io/privacy-threat-model/",
+                }
+            </script>
+
+
+        
+        
+        </head>
+        <body >
+            <div class="wrapper">
+                <header>
+                    <div class="left">
+                        <h1>Archived: Target Privacy Threat Model</h1>
+                        <p>This is a simplified archive of the page at <a href="https://w3cping.github.io/privacy-threat-model/" target="_blank">https://w3cping.github.io/privacy-threat-model/</a></p>
+                    </div>
+
+                            <div id="share-embed">
+                                <span>Use this page embed on your own site:</span>
+                                <textarea id="html-embed" name="story" rows="8" cols="40">
+                                    <script>window.contexterSetup=window.contexterSetup||function(){window.contexterSetupComplete=!0;class ContexterLink extends HTMLAnchorElement{constructor(){super()}connectedCallback(){this.setAttribute("target","_blank")}}customElements.define("contexter-link",ContexterLink,{extends:"a"}),customElements.define("contexter-inner",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__inner"}}),customElements.define("contexter-thumbnail",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__thumbnail"}}),customElements.define("contexter-byline",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__byline"}}),customElements.define("contexter-keywordset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__keywordset"}}),customElements.define("contexter-linkset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__linkset"}}),customElements.define("contexter-meta",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__meta"}}),customElements.define("contexter-summary",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="p-summary entry-summary"}}),customElements.define("contexter-box-head",class extends HTMLElement{constructor(){super()}connectedCallback(){this.className="contexter-box__head"}}),customElements.define("contexter-box-inner",class extends HTMLElement{constructor(){super()}connectedCallback(){}});class ContexterBox extends HTMLElement{constructor(){super(),this.first=!0,this.shadow=this.attachShadow({mode:"open"})}connectedCallback(){if(this.first){this.first=!1;var style=document.createElement("style"),lightDomStyle=(style.innerHTML=`:host {--background: #f5f6f7;--border: darkblue;--blue: #0000ee;--font-color: black;--inner-border: black;font-family: Franklin,Arial,Helvetica,sans-serif;font-size: 14px;background: var(--background);width: 600px;color: var(--font-color);min-height: 90px;display: block;padding: 8px;border: 1px solid var(--border);cursor: pointer;box-sizing: border-box;margin: 6px;contain: content;margin: 6px auto;}// can only select top-level nodes with slotted::slotted(*) {max-width: 100%;display:block;}::slotted([slot=thumbnail]) {max-width: 100%;display:block;}::slotted([slot=header]) {width: 100%;font-size: 1.25rem;font-weight: bold;display:block;margin-bottom: 6px;}::slotted([slot=author]) {max-width: 50%;font-size: 12px;display:inline-block;float: left;}::slotted([slot=time]) {max-width: 50%;font-size: 12px;display:inline-block;float: right;}::slotted([slot=summary]) {width: 100%;margin-top: 6px;padding: 10px 2px;border-top: 1px solid var(--inner-border);font-size: 15px;display:inline-block;margin-bottom: 6px;}contexter-meta {height: auto;margin-bottom: 4px;width: 100%;display: grid;position: relative;min-height: 16px;grid-template-columns: repeat(2, 1fr);}::slotted([slot=keywords]) {width: 80%;padding: 2px 4px;border-top: 1px solid var(--inner-border);font-size: 11px;display: block;float: right;font-style: italic;text-align: right;grid-column: 2/2;grid-row: 1;align-self: end;justify-self: end;}::slotted([slot=keywords]):empty {border-top: 0px solid var(--inner-border);}::slotted([slot=archive-link]) {font-size: 1em;display: inline;}::slotted([slot=archive-link])::after {content: "|";display: inline;color: var(--font-color);text-decoration: none;margin: 0 .5em;}::slotted([slot=read-link]) {font-size: 1em;display: inline;}contexter-linkset {width: 80%;padding: 2px 4px;font-size: 13px;float: left;font-weight: bold;grid-row: 1;grid-column: 1/2;align-self: end;justify-self: start;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {:host {width: 310px;}}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){:host {--background: #354150;--border: #1f2b37;--blue: #55b0ff;--font-color: #ffffff;--inner-border: #787a7c;background: var(--background);border: 1px solid var(--border)}}`,document.createElement("style"));lightDomStyle.innerHTML=`contexter-box {contain: content;}contexter-box .read-link {font-weight: bold;}contexter-box a {color: #0000ee;}contexter-box img {width: 100%;border: 0;padding: 0;margin: 0;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {...}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){contexter-box a {color: #55b0ff;}}`,this.appendChild(lightDomStyle),this.shadow.appendChild(style);const innerContainer=document.createElement("contexter-box-inner"),innerSlotThumbnail=(this.shadow.appendChild(innerContainer),document.createElement("slot")),innerSlotHeader=(innerSlotThumbnail.name="thumbnail",innerContainer.appendChild(innerSlotThumbnail),document.createElement("slot")),innerSlotAuthor=(innerSlotHeader.name="header",innerContainer.appendChild(innerSlotHeader),document.createElement("slot")),innerSlotTime=(innerSlotAuthor.name="author",innerContainer.appendChild(innerSlotAuthor),document.createElement("slot")),innerSlotSummary=(innerSlotTime.name="time",innerContainer.appendChild(innerSlotTime),document.createElement("slot")),metaContainer=(innerSlotSummary.name="summary",innerContainer.appendChild(innerSlotSummary),document.createElement("contexter-meta")),innerSlotInfo=(innerContainer.appendChild(metaContainer),document.createElement("slot")),linkContainer=(innerSlotInfo.name="keywords",metaContainer.appendChild(innerSlotInfo),document.createElement("contexter-linkset")),innerSlotArchiveLink=(metaContainer.appendChild(linkContainer),document.createElement("slot")),innerSlotReadLink=(innerSlotArchiveLink.name="archive-link",linkContainer.appendChild(innerSlotArchiveLink),document.createElement("slot"));innerSlotReadLink.name="read-link",linkContainer.appendChild(innerSlotReadLink),this.className="contexter-box",this.onclick=e=>{if(!e.target.className.includes("read-link")&&!e.target.className.includes("title-link")){const mainLinks=this.querySelectorAll("a.main-link");mainLinks[0].click()}}}}}customElements.define("contexter-box",ContexterBox)},window.contexterSetupComplete||window.contexterSetup();</script><contexter-box class="link-card h-entry hentry" itemscope="" itemtype="https://schema.org/CreativeWork"><contexter-thumbnail class="thumbnail" slot="thumbnail"></contexter-thumbnail><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><a is="contexter-link" href="https://w3cping.github.io/privacy-threat-model" itemprop="url">Target Privacy Threat Model</a></contexter-box-head></contexter-box-head><time class="dt-published published" slot="time" itemprop="datePublished" datetime="2022-04-05T17:38:44.876Z">3/5/2022</time><contexter-summary class="p-summary entry-summary" itemprop="abstract" slot="summary"><p>This document is at a very early stage. Many things in it are wrongand/or incomplete. Please take it as a rough shape for how we might document thetarget threat model, rather than as definite statements about what should be inthe target threat model.</p></contexter-summary><contexter-keywordset itemprop="keywords" slot="keywords"></contexter-keywordset><a is="contexter-link" href="https://w3cping.github.io/privacy-threat-model" class="read-link main-link" itemprop="sameAs" slot="read-link">Read</a><a href="https://context.center/timegate/https://w3cping.github.io/privacy-threat-model/" is="contexter-link" target="_blank" class="read-link archive-link" itemprop="archivedAt" slot="archive-link">Archived</a></contexter-box>
+                                </textarea><br />
+                                <button onclick="(function(e){ navigator.clipboard.writeText(document.getElementById('html-embed').value); })()">Copy</button>
+                            </div>
+                            
+                            <script>window.contexterSetup=window.contexterSetup||function(){window.contexterSetupComplete=!0;class ContexterLink extends HTMLAnchorElement{constructor(){super()}connectedCallback(){this.setAttribute("target","_blank")}}customElements.define("contexter-link",ContexterLink,{extends:"a"}),customElements.define("contexter-inner",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__inner"}}),customElements.define("contexter-thumbnail",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__thumbnail"}}),customElements.define("contexter-byline",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__byline"}}),customElements.define("contexter-keywordset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__keywordset"}}),customElements.define("contexter-linkset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__linkset"}}),customElements.define("contexter-meta",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__meta"}}),customElements.define("contexter-summary",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="p-summary entry-summary"}}),customElements.define("contexter-box-head",class extends HTMLElement{constructor(){super()}connectedCallback(){this.className="contexter-box__head"}}),customElements.define("contexter-box-inner",class extends HTMLElement{constructor(){super()}connectedCallback(){}});class ContexterBox extends HTMLElement{constructor(){super(),this.first=!0,this.shadow=this.attachShadow({mode:"open"})}connectedCallback(){if(this.first){this.first=!1;var style=document.createElement("style"),lightDomStyle=(style.innerHTML=`:host {--background: #f5f6f7;--border: darkblue;--blue: #0000ee;--font-color: black;--inner-border: black;font-family: Franklin,Arial,Helvetica,sans-serif;font-size: 14px;background: var(--background);width: 600px;color: var(--font-color);min-height: 90px;display: block;padding: 8px;border: 1px solid var(--border);cursor: pointer;box-sizing: border-box;margin: 6px;contain: content;margin: 6px auto;}// can only select top-level nodes with slotted::slotted(*) {max-width: 100%;display:block;}::slotted([slot=thumbnail]) {max-width: 100%;display:block;}::slotted([slot=header]) {width: 100%;font-size: 1.25rem;font-weight: bold;display:block;margin-bottom: 6px;}::slotted([slot=author]) {max-width: 50%;font-size: 12px;display:inline-block;float: left;}::slotted([slot=time]) {max-width: 50%;font-size: 12px;display:inline-block;float: right;}::slotted([slot=summary]) {width: 100%;margin-top: 6px;padding: 10px 2px;border-top: 1px solid var(--inner-border);font-size: 15px;display:inline-block;margin-bottom: 6px;}contexter-meta {height: auto;margin-bottom: 4px;width: 100%;display: grid;position: relative;min-height: 16px;grid-template-columns: repeat(2, 1fr);}::slotted([slot=keywords]) {width: 80%;padding: 2px 4px;border-top: 1px solid var(--inner-border);font-size: 11px;display: block;float: right;font-style: italic;text-align: right;grid-column: 2/2;grid-row: 1;align-self: end;justify-self: end;}::slotted([slot=keywords]):empty {border-top: 0px solid var(--inner-border);}::slotted([slot=archive-link]) {font-size: 1em;display: inline;}::slotted([slot=archive-link])::after {content: "|";display: inline;color: var(--font-color);text-decoration: none;margin: 0 .5em;}::slotted([slot=read-link]) {font-size: 1em;display: inline;}contexter-linkset {width: 80%;padding: 2px 4px;font-size: 13px;float: left;font-weight: bold;grid-row: 1;grid-column: 1/2;align-self: end;justify-self: start;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {:host {width: 310px;}}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){:host {--background: #354150;--border: #1f2b37;--blue: #55b0ff;--font-color: #ffffff;--inner-border: #787a7c;background: var(--background);border: 1px solid var(--border)}}`,document.createElement("style"));lightDomStyle.innerHTML=`contexter-box {contain: content;}contexter-box .read-link {font-weight: bold;}contexter-box a {color: #0000ee;}contexter-box img {width: 100%;border: 0;padding: 0;margin: 0;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {...}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){contexter-box a {color: #55b0ff;}}`,this.appendChild(lightDomStyle),this.shadow.appendChild(style);const innerContainer=document.createElement("contexter-box-inner"),innerSlotThumbnail=(this.shadow.appendChild(innerContainer),document.createElement("slot")),innerSlotHeader=(innerSlotThumbnail.name="thumbnail",innerContainer.appendChild(innerSlotThumbnail),document.createElement("slot")),innerSlotAuthor=(innerSlotHeader.name="header",innerContainer.appendChild(innerSlotHeader),document.createElement("slot")),innerSlotTime=(innerSlotAuthor.name="author",innerContainer.appendChild(innerSlotAuthor),document.createElement("slot")),innerSlotSummary=(innerSlotTime.name="time",innerContainer.appendChild(innerSlotTime),document.createElement("slot")),metaContainer=(innerSlotSummary.name="summary",innerContainer.appendChild(innerSlotSummary),document.createElement("contexter-meta")),innerSlotInfo=(innerContainer.appendChild(metaContainer),document.createElement("slot")),linkContainer=(innerSlotInfo.name="keywords",metaContainer.appendChild(innerSlotInfo),document.createElement("contexter-linkset")),innerSlotArchiveLink=(metaContainer.appendChild(linkContainer),document.createElement("slot")),innerSlotReadLink=(innerSlotArchiveLink.name="archive-link",linkContainer.appendChild(innerSlotArchiveLink),document.createElement("slot"));innerSlotReadLink.name="read-link",linkContainer.appendChild(innerSlotReadLink),this.className="contexter-box",this.onclick=e=>{if(!e.target.className.includes("read-link")&&!e.target.className.includes("title-link")){const mainLinks=this.querySelectorAll("a.main-link");mainLinks[0].click()}}}}}customElements.define("contexter-box",ContexterBox)},window.contexterSetupComplete||window.contexterSetup();</script><contexter-box class="link-card h-entry hentry" itemscope="" itemtype="https://schema.org/CreativeWork"><contexter-thumbnail class="thumbnail" slot="thumbnail"></contexter-thumbnail><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><a is="contexter-link" href="https://w3cping.github.io/privacy-threat-model" itemprop="url">Target Privacy Threat Model</a></contexter-box-head></contexter-box-head><time class="dt-published published" slot="time" itemprop="datePublished" datetime="2022-04-05T17:38:44.876Z">3/5/2022</time><contexter-summary class="p-summary entry-summary" itemprop="abstract" slot="summary"><p>This document is at a very early stage. Many things in it are wrongand/or incomplete. Please take it as a rough shape for how we might document thetarget threat model, rather than as definite statements about what should be inthe target threat model.</p></contexter-summary><contexter-keywordset itemprop="keywords" slot="keywords"></contexter-keywordset><a is="contexter-link" href="https://w3cping.github.io/privacy-threat-model" class="read-link main-link" itemprop="sameAs" slot="read-link">Read</a><a href="https://context.center/timegate/https://w3cping.github.io/privacy-threat-model/" is="contexter-link" target="_blank" class="read-link archive-link" itemprop="archivedAt" slot="archive-link">Archived</a></contexter-box>
+                            
+
+
+                </header>
+                <main>
+                
+                    <div id="readability-page-1" class="page"><div>
+   <p><strong> This document is at a very early stage. Many things in it are wrong
+and/or incomplete. Please take it as a rough shape for how we might document the
+target threat model, rather than as definite statements about what should be in
+the target threat model.</strong></p>
+   <h2 data-level="1" id="intro"><span>1. </span><span>Introduction</span><a href="#intro"></a></h2>
+   <p>As a <strong>threat model</strong>, this specification describes attacker capabilities and
+attacker goals, and says, for each possible set of capabilities an attacker
+might have, which goals we expect the attacker can achieve.</p>
+   <p>As a <strong>privacy</strong> threat model, the attacker goals compromise the privacy of
+users, rather than their security.</p>
+   <p>As a <strong>target</strong> threat model, it describes not the current state of the Web
+including all current maybe-unwise APIs, but rather an end state that we hope to
+migrate to, and that new APIs should be held to. This is meant to be a <em>plausible</em> threat model: it doesn’t expect to remove any APIs or browser
+behavior that is deemed essential to the viability of the Web.</p>
+   <p>Since people are likely to disagree about which APIs are essential to the Web,
+when saying that an attacker can achieve their goal, this document describes how
+the attacker achieves it using particular "essential" APIs, and it provides an
+index of those APIs so readers can point out ones that they don’t consider
+essential.</p>
+   <h2 data-level="2" id="terminology"><span>2. </span><span>Terminology</span><a href="#terminology"></a></h2>
+   <p><a data-link-type="biblio" href="#biblio-html">[HTML]</a> defines an <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/origin.html#concept-origin" id="ref-for-concept-origin">origin</a> as the tuple of a scheme, hostname, and port that
+provides the main security boundary on the web.</p>
+   <p>A <dfn data-dfn-type="dfn" data-noexport="" id="site">site</dfn> is a set of <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/origin.html#concept-origin" id="ref-for-concept-origin①">origins</a> that are all <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/origin.html#same-site" id="ref-for-same-site">same site</a> with each
+other. Note that there are problems (<a data-link-type="biblio" href="#biblio-psl-problems">[PSL-PROBLEMS]</a>) with using <a data-link-type="dfn" href="https://publicsuffix.org/list/#list-format" id="ref-for-list-format">registrable
+domains</a> as a logical boundary.</p>
+   <p>A <dfn data-dfn-type="dfn" data-noexport="" id="party">party</dfn> is defined by <a data-link-type="biblio" href="#biblio-tracking-dnt">[tracking-dnt]</a> as "a natural person, a legal
+entity, or a set of legal entities that share common owner(s), common
+controller(s), and a group identity that is easily discoverable by a user."</p>
+   <p>The <dfn data-dfn-type="dfn" data-noexport="" id="first-party">first party</dfn> for a user action is the <a data-link-type="dfn" href="#party" id="ref-for-party">party</a> that controls the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/origin.html#concept-origin" id="ref-for-concept-origin②">origin</a> of the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context" id="ref-for-top-level-browsing-context">top-level browsing context</a> under which the action
+happened. Intuitively, this is the owner of the domain in the browser’s URL bar.
+This differs from <a href="https://wiki.mozilla.org/Security/Anti_tracking_policy#Tracking_Definition">Mozilla’s
+definition</a> in that Mozilla defines other parties as first parties if the
+user can easily discover which party it is and intends to interact with that
+party, for example to allow sign-in widgets to be first-party.</p>
+   <p>A <dfn data-dfn-type="dfn" data-noexport="" id="third-party">third party</dfn> for a user action is any party that isn’t the <a data-link-type="dfn" href="#first-party" id="ref-for-first-party">first
+party</a> or the user (the second party).</p>
+   <p>A <dfn data-dfn-type="dfn" data-noexport="" id="user">user</dfn> is a human or program that controls a user agent.</p>
+   <p>A <dfn data-dfn-type="dfn" data-noexport="" id="user-id">user ID</dfn> is a pair of a <a data-link-type="dfn" href="#site" id="ref-for-site">site</a> and a (potentially-large) integer
+allocated by that site that is used to identify a <a data-link-type="dfn" href="#user" id="ref-for-user">user</a> on that site. A
+single user will generally have many user IDs that refer to them, and a single
+site may or may not know that multiple user IDs refer to the same user.</p>
+   <p>A <dfn data-dfn-type="dfn" data-noexport="" id="global-identifier">global identifier</dfn> is a string that identifies a particular <a data-link-type="dfn" href="#user" id="ref-for-user①">user</a> independent of which site they’re visiting. Users generally have relatively few
+global identifiers and can usually list and recognize them. A goal of
+anti-tracking policy is to prevent <a data-link-type="dfn" href="#user-id" id="ref-for-user-id">user IDs</a> from becoming <a data-link-type="dfn" href="#global-identifier" id="ref-for-global-identifier">global
+identifiers</a>.</p>
+   <p>An <dfn data-dfn-type="dfn" data-noexport="" id="attacker">attacker</dfn> is any entity trying to get information that a <a data-link-type="dfn" href="#user" id="ref-for-user②">user</a> might not want them to get. Attackers are often entities that a user intends to
+interact with in other ways, as both <a data-link-type="dfn" href="#first-party" id="ref-for-first-party①">first</a> and <a data-link-type="dfn" href="#third-party" id="ref-for-third-party">third parties</a>, and some users may
+not mind their collection of this information.</p>
+   <p>This document uses the terms <dfn data-dfn-type="dfn" data-noexport="" id="publisher">publisher</dfn> and <dfn data-dfn-type="dfn" data-noexport="" id="tracker">tracker</dfn> colloquially to refer to particular kinds of <a data-link-type="dfn" href="#site" id="ref-for-site①">sites</a> and the <a data-link-type="dfn" href="#party" id="ref-for-party①">parties</a> that
+operate them. They are not rigorously defined.</p>
+   <h2 data-level="3" id="high-level-threats"><span>3. </span><span>High-level threats</span><a href="#high-level-threats"></a></h2>
+   <p>User agents should attempt to defend their users from a variety of high-level
+threats or attacker goals, described in this section. <a href="#goals">§ 6 Attacker goals</a> then describes
+the low-level steps an attacker would use to achieve these high-level goals.</p>
+   <p><a data-link-type="biblio" href="#biblio-rfc6973">[RFC6973]</a> describes the following high-level privacy threats, which the TAG
+has adopted into <a href="https://www.w3.org/TR/security-privacy-questionnaire/#threats">Self-Review Questionnaire: Security and Privacy §threats</a>:</p>
+   <dl>
+    <dt data-md=""><dfn data-dfn-type="dfn" data-noexport="" id="surveillance">Surveillance</dfn>
+    </dt><dd data-md="">
+     <p>Surveillance is the observation or monitoring of an individual’s
+communications or activities. See <a href="https://tools.ietf.org/html/rfc6973#section-5.1.1">Privacy Considerations for Internet Protocols §section-5.1.1</a>.</p>
+    </dd><dt data-md=""><dfn data-dfn-type="dfn" data-noexport="" id="stored-data-compromise">Stored Data Compromise<a href="#stored-data-compromise"></a></dfn>
+    </dt><dd data-md="">
+     <p>End systems that do not take adequate measures to secure stored data from
+unauthorized or inappropriate access. See <a href="https://tools.ietf.org/html/rfc6973#section-5.1.2">Privacy Considerations for Internet Protocols §section-5.1.2</a>.</p>
+    </dd><dt data-md=""><dfn data-dfn-type="dfn" data-noexport="" id="intrusion">Intrusion</dfn>
+    </dt><dd data-md="">
+     <p>Intrusion consists of invasive acts that disturb or interrupt one’s life or
+activities. See <a href="https://tools.ietf.org/html/rfc6973#section-5.1.3">Privacy Considerations for Internet Protocols §section-5.1.3</a>.</p>
+    </dd><dt data-md=""><dfn data-dfn-type="dfn" data-noexport="" id="misattribution">Misattribution</dfn>
+    </dt><dd data-md="">
+     <p>Misattribution occurs when data or communications related to one individual
+are attributed to another. See <a href="https://tools.ietf.org/html/rfc6973#section-5.1.4">Privacy Considerations for Internet Protocols §section-5.1.4</a>.</p>
+    </dd><dt data-md=""><dfn data-dfn-type="dfn" data-noexport="" id="correlation">Correlation</dfn>
+    </dt><dd data-md="">
+     <p>Correlation is the combination of various pieces of information related to an
+individual or that obtain that characteristic when combined. See <a href="https://tools.ietf.org/html/rfc6973#section-5.2.1">Privacy Considerations for Internet Protocols §section-5.2.1</a>.</p>
+    </dd><dt data-md=""><dfn data-dfn-type="dfn" data-noexport="" id="identification">Identification</dfn>
+    </dt><dd data-md="">
+     <p>Identification is the linking of information to a particular individual to
+infer an individual’s identity or to allow the inference of an individual’s
+identity. See <a href="https://tools.ietf.org/html/rfc6973#section-5.2.2">Privacy Considerations for Internet Protocols §section-5.2.2</a>.</p>
+    </dd><dt data-md=""><dfn data-dfn-type="dfn" data-noexport="" id="secondary-use">Secondary Use</dfn>
+    </dt><dd data-md="">
+     <p>Secondary use is the use of collected information about an individual without
+the individual’s consent for a purpose different from that for which the
+information was collected. See <a href="https://tools.ietf.org/html/rfc6973#section-5.2.3">Privacy Considerations for Internet Protocols §section-5.2.3</a>.</p>
+    </dd><dt data-md=""><dfn data-dfn-type="dfn" data-noexport="" id="disclosure">Disclosure</dfn>
+    </dt><dd data-md="">
+     <p>Disclosure is the revelation of information about an individual that affects
+the way others judge the individual. See <a href="https://tools.ietf.org/html/rfc6973#section-5.2.4">Privacy Considerations for Internet Protocols §section-5.2.4</a>.</p>
+    </dd><dt data-md=""><dfn data-dfn-type="dfn" data-noexport="" id="exclusion">Exclusion<a href="#exclusion"></a></dfn>
+    </dt><dd data-md="">
+     <p>Exclusion is the failure to allow individuals to know about the data that
+others have about them and to participate in its handling and use. See <a href="https://tools.ietf.org/html/rfc6973#section-5.2.5">Privacy Considerations for Internet Protocols §section-5.2.5</a>.</p>
+   </dd></dl>
+   <p>These threats combine into the particular concrete threats we want web
+specifications to defend against, described in subsections here:</p>
+   <h3 data-level="3.1" id="hl-recognition-same-site"><span>3.1. </span><span>Unwanted same-site recognition</span><a href="#hl-recognition-same-site"></a></h3>
+   <p>Contributes to <a data-link-type="dfn" href="#surveillance" id="ref-for-surveillance">surveillance</a>, <a data-link-type="dfn" href="#correlation" id="ref-for-correlation">correlation</a>, and <a data-link-type="dfn" href="#identification" id="ref-for-identification">identification</a>.</p>
+   <p>Users of most instantiations of the web platform expect that if they visit a
+site on one day, and then visit again the next day, the site will be able to
+recognize that they’re the same user. This allows sites to save the user’s
+preferences, shopping carts, etc. The web platform offers many mechanisms that
+are either intended to accomplish this recognition or that can be trivially used
+for it, including <a data-link-type="biblio" href="#biblio-rfc6265">cookies</a>, <code><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/webstorage.html#dom-localstorage" id="ref-for-dom-localstorage">localStorage</a></code>, <code><a data-link-type="idl" href="https://w3c.github.io/IndexedDB/#dom-windoworworkerglobalscope-indexeddb" id="ref-for-dom-windoworworkerglobalscope-indexeddb">indexedDB</a></code>, <code><a data-link-type="idl" href="https://w3c.github.io/ServiceWorker/#cachestorage" id="ref-for-cachestorage">CacheStorage</a></code>, and other forms of
+storage.</p>
+   <p>A privacy harm only occurs if the user wants to break the association between
+two visits, but the site can still determine with high probability that the two
+visits came from the same user.</p>
+   <p>A user might expect that their two visits won’t be associated if they:</p>
+   <ul>
+    <li data-md="">
+     <p>Use a browser that promises to avoid such correlation.</p>
+    </li><li data-md="">
+     <p>Use their browser’s private browsing mode. (<a data-link-type="biblio" href="#biblio-what-does-private-browsing-do">[WHAT-DOES-PRIVATE-BROWSING-DO]</a>)</p>
+    </li><li data-md="">
+     <p>Use two different browser profiles between the two visits.</p>
+    </li><li data-md="">
+     <p>Explicitly clear the site’s cookies or storage.</p>
+   </li></ul>
+   <p>This recognition is generally accomplished by either "supercookies" or <a data-link-type="dfn" href="https://w3c.github.io/fingerprinting-guidance/#dfn-browser-fingerprinting" id="ref-for-dfn-browser-fingerprinting">browser
+fingerprinting</a>.</p>
+   <p>Supercookies occur when a browser stores data for a site but makes that data
+more difficult to clear than other cookies or storage. <a href="https://w3c.github.io/fingerprinting-guidance/#clearing-all-local-state">Fingerprinting Guidance §5.4 Clearing all local state</a> discusses how
+specifications can help browsers avoid this mistake.</p>
+   <p>Fingerprinting consists of using attributes of the user’s browser and platform
+that are consistent between the two visits and probabilistically unique to the
+user.</p>
+   <p>The attributes can be exposed as information about the user’s device that is
+otherwise benign (as opposed to <a href="#hl-sensitive-information">§ 3.3 Sensitive information disclosure</a>). For example:</p>
+   <ul>
+    <li data-md="">
+     <p>What are the user’s language and time zone?</p>
+    </li><li data-md="">
+     <p>What size is the user’s window?</p>
+    </li><li data-md="">
+     <p>What system preferences has the user set? Dark mode, serif font, etc...</p>
+    </li><li data-md="">
+     <p>...</p>
+   </li></ul>
+   <p>See <a data-link-type="biblio" href="#biblio-fingerprinting-guidance">[fingerprinting-guidance]</a> for how to mitigate this threat.</p>
+   <h3 data-level="3.2" id="hl-recognition-cross-site"><span>3.2. </span><span>Unwanted cross-site recognition</span><a href="#hl-recognition-cross-site"></a></h3>
+   <p>Contributes to <a data-link-type="dfn" href="#surveillance" id="ref-for-surveillance①">surveillance</a>, <a data-link-type="dfn" href="#correlation" id="ref-for-correlation①">correlation</a>, and <a data-link-type="dfn" href="#identification" id="ref-for-identification①">identification</a>,
+usually more significantly than <a href="#hl-recognition-same-site">§ 3.1 Unwanted same-site recognition</a>.</p>
+   <p>This occurs if a site can determine with high probability that a visit to that
+site comes from the same user as another visit to a <em>different</em> site.  This
+threat is discussed in <a href="#model-cross-site-recognition">§ 4.1 Cross-site recognition</a>.</p>
+   <h3 data-level="3.3" id="hl-sensitive-information"><span>3.3. </span><span>Sensitive information disclosure</span><a href="#hl-sensitive-information"></a></h3>
+   <p>Contributes to <a data-link-type="dfn" href="#correlation" id="ref-for-correlation②">correlation</a>, <a data-link-type="dfn" href="#identification" id="ref-for-identification②">identification</a>, <a data-link-type="dfn" href="#secondary-use" id="ref-for-secondary-use">secondary use</a>, and <a data-link-type="dfn" href="#disclosure" id="ref-for-disclosure">disclosure</a>.</p>
+   <p>Many pieces of information about a user could cause privacy harms if disclosed.
+For example:</p>
+   <ul>
+    <li data-md="">
+     <p>The user’s location.</p>
+    </li><li data-md="">
+     <p>Video or audio from the user’s camera or microphone.</p>
+    </li><li data-md="">
+     <p>The content of certain files on the user’s filesystem.</p>
+    </li><li data-md="">
+     <p>Financial data.</p>
+    </li><li data-md="">
+     <p>Contacts.</p>
+    </li><li data-md="">
+     <p>Calendar entries.</p>
+    </li><li data-md="">
+     <p><a href="https://w3ctag.github.io/design-principles/#do-not-expose-use-of-assistive-tech">Whether the user is using assistive technology.</a></p>
+    </li><li data-md="">
+     <p>...</p>
+   </li></ul>
+   <p>A particular piece of information may have different sensitivity for different
+users. Language preferences, for example, might typically seem innocent, but
+also can be an indicator of belonging to an ethnic minority. Precise location
+information can be extremely sensitive (because it’s identifying, because it
+allows for in-person intrusions, because it can reveal detailed information
+about a person’s life) but it might also be public and not sensitive at all, or
+it might be low-enough granularity that it is much less sensitive for many
+users.</p>
+   <p>When considering whether a class of information is likely to be sensitive to
+users, consider at least these factors:</p>
+   <ul>
+    <li data-md="">
+     <p>whether it serves as a persistent identifier (see severity in Mitigating
+browser fingerprinting);</p>
+    </li><li data-md="">
+     <p>whether it discloses substantial (including intimate details or inferences)
+information about the user or other users;</p>
+    </li><li data-md="">
+     <p>whether it can be revoked (as in determining whether a permission is
+necessary);</p>
+    </li><li data-md="">
+     <p>whether it enables other threats, like intrusion.</p>
+   </li></ul>
+   <p id="issue-71c59b1e"><a href="#issue-71c59b1e"></a> This description of what makes information sensitive still needs to
+be refined. <a href="https://github.com/w3cping/privacy-threat-model/issues/16">&lt;https://github.com/w3cping/privacy-threat-model/issues/16&gt;</a></p>
+   <h3 data-level="3.4" id="hl-intrusion"><span>3.4. </span><span>Intrusive behavior</span><a href="#hl-intrusion"></a></h3>
+   <p>See <a data-link-type="dfn" href="#intrusion" id="ref-for-intrusion">intrusion</a>.</p>
+   <p>Privacy harms don’t always come from a site learning things. For example it is
+intrusive for a site to</p>
+   <ul>
+    <li data-md="">
+     <p>Display messages or notifications,</p>
+    </li><li data-md="">
+     <p>Play sounds,</p>
+    </li><li data-md="">
+     <p>Occupy the full screen,</p>
+    </li><li data-md="">
+     <p>etc.</p>
+   </li></ul>
+   <p>if the user doesn’t intend for it to do so.</p>
+   <h3 data-level="3.5" id="hl-capabilities"><span>3.5. </span><span>Powerful capabilities</span><a href="#hl-capabilities"></a></h3>
+   <p>Contributes to <a data-link-type="dfn" href="#misattribution" id="ref-for-misattribution">misattribution</a>.</p>
+   <p>For example, a site that sends SMS without the user’s intent could cause them to
+be blamed for things they didn’t intend.</p>
+   <h2 data-level="4" id="model"><span>4. </span><span>Threat Model</span><a href="#model"></a></h2>
+   <p>For each of the <a href="#high-level-threats">high-level threats</a>, we
+describe a threat model: a description of what goals attackers with various
+capabilities should or should not be able to achieve. For simple threats, a
+model can be expressed in prose, while complex threat models use a grid to
+express the web platform’s target guarantees.</p>
+   <p><span>✘</span> indicates that the goal should be frustrated,
+while <span>✓</span> indicates that the attacker can achieve
+their goal.</p>
+   <p id="issue-eb037c92"><a href="#issue-eb037c92"></a> Should we mark goals attackers can currently achieve, which we want to
+remove, differently from goals attackers already can’t achieve?</p>
+   <h3 data-level="4.1" id="model-cross-site-recognition"><span>4.1. </span><span>Cross-site recognition</span><a href="#model-cross-site-recognition"></a></h3>
+   <table>
+    <tbody>
+     <tr>
+      <td>
+      </td><th>
+       <div><p><a href="#goal-transfer-userid">§ 6.2.1 Transfer user ID from publisher 1 to publisher 2 on navigation.</a></p></div>
+      </th><th>
+       <div><p><a href="#goal-userid-tracker-to-self-in-pub">§ 6.2.2 Transfer user ID from tracker to that tracker running within a publisher, on navigation.</a></p></div>
+      </th><th>
+       <div><p><a href="#goal-userid-tracker-in-pub1-to-self-in-pub2">§ 6.2.3 Transfer user ID from tracker within publisher 1 to that tracker within publisher 2, on navigation.</a></p></div>
+      </th><th>
+       <div><p><a href="#goal-prob-transfer-userid-no-nav">§ 6.2.5 Probabilistically transfer user ID from publisher 1 to publisher 2 without navigation.</a></p></div>
+      </th><th>
+       <div><p><a href="#goal-prob-transfer-userid">§ 6.2.4 Probabilistically transfer user ID from publisher 1 to publisher 2 on navigation.</a></p></div>
+     </th></tr><tr>
+      <th><a href="#cap-iframes">§ 5.1 Load iframes</a>
+      </th><td data-goal="transfer-userid">✘
+      </td><td data-goal="userid-tracker-to-self-in-pub">✘
+      </td><td data-goal="userid-tracker-in-pub1-to-self-in-pub2">✘
+      </td><td data-goal="prob-transfer-userid-no-nav">✘
+      </td><td data-goal="prob-transfer-userid">✘
+     </td></tr><tr>
+      <th><a href="#cap-first-party-js">§ 5.2 Run Javascript in a first-party context</a>
+      </th><td data-goal="transfer-userid">✘
+      </td><td data-goal="userid-tracker-to-self-in-pub">✘
+      </td><td data-goal="userid-tracker-in-pub1-to-self-in-pub2">✘
+      </td><td data-goal="prob-transfer-userid-no-nav">✘
+      </td><td data-goal="prob-transfer-userid">✘
+     </td></tr><tr>
+      <th><a href="#cap-read-logs">§ 5.4 Read server logs</a> on other publishers
+      </th><td data-goal="transfer-userid">✘
+      </td><td data-goal="userid-tracker-to-self-in-pub">✘
+      </td><td data-goal="userid-tracker-in-pub1-to-self-in-pub2">✘
+      </td><td data-goal="prob-transfer-userid-no-nav">✘
+      </td><td data-goal="prob-transfer-userid">
+       <details>
+        <summary>✓</summary>
+         Publisher 2 reads their own logs for the page load and publisher 1’s logs for the click tracking of the navigation click. <a data-link-type="dfn" href="#user-id" id="ref-for-user-id①">User IDs</a> that clicked on publisher 1 approximately the same
+    time as that link’s target loaded on publisher 2 are
+    probabilistically correlated. 
+       </details>
+     </td></tr><tr>
+      <th><a href="#cap-run-on-server">§ 5.3 Modify server processing</a> on the target publisher
+      </th><td data-goal="transfer-userid"> <span>✘</span> 
+      </td><td data-goal="userid-tracker-to-self-in-pub">
+       <details>
+        <summary>✓</summary>
+         The tracker adds a path segment, possibly encrypted, in their links to the
+    publisher, encoding the user’s ID within the tracker. They convince the
+    publisher to <a href="#ess-server-defined-paths">ignore that path segment in
+    their server processing</a>. The tracker running inside that publisher reads
+    the URL, decodes the tracker site’s user ID, and <a href="#ess-js-requests">sends that and the tracker-within-publisher user ID
+    up to the tracker’s server</a>. 
+       </details>
+      </td><td data-goal="userid-tracker-in-pub1-to-self-in-pub2"> <span>✘</span> 
+      </td><td data-goal="prob-transfer-userid-no-nav"> <span>✘</span> 
+      </td><td data-goal="prob-transfer-userid"> <span>✘</span> 
+     </td></tr><tr>
+      <th><a href="#cap-first-party-js">§ 5.2 Run Javascript in a first-party context</a> or <a href="#cap-run-on-server">§ 5.3 Modify server processing</a> on the source site and <a href="#cap-run-on-server">§ 5.3 Modify server processing</a> on the target publisher
+      </th><td data-goal="transfer-userid"> <span>✘</span> 
+      </td><td data-goal="userid-tracker-to-self-in-pub">
+       <details>
+        <summary>✓</summary>
+         The tracker adds a path segment, possibly encrypted, in their links to the
+      publisher, encoding the user’s ID within the tracker. They convince the
+      publisher to <a href="#ess-server-defined-paths">ignore that path segment in
+      their server processing</a>. The tracker running inside that publisher reads
+      the URL, decodes the tracker site’s user ID, and <a href="#ess-js-requests">sends that and the tracker-within-publisher user ID
+      up to the tracker’s server</a>. 
+       </details>
+      </td><td data-goal="userid-tracker-in-pub1-to-self-in-pub2">
+       <details>
+        <summary>✓</summary>
+         The tracker adds a path segment, possibly encrypted, in the publisher 1’s
+      links to publisher 2, encoding the user’s ID within publisher 1. They
+      convince publisher 2 to <a href="#ess-server-defined-paths">ignore that
+      path segment in their server processing</a>. The tracker running inside
+      that publisher reads the URL, decodes publisher 1’s user ID, and <a href="#ess-js-requests">sends that and publisher 2’s user ID up to the
+      tracker’s server</a>. 
+       </details>
+      </td><td data-goal="prob-transfer-userid-no-nav"> <span>✓</span> 
+      </td><td data-goal="prob-transfer-userid"> <span>✓</span> 
+   </td></tr></tbody></table>
+   <p>Further cross-site recognition is available by combining capabilities with the
+ability to <a href="#cap-first-party-js">§ 5.2 Run Javascript in a first-party context</a> (or <a href="#cap-run-on-server">§ 5.3 Modify server processing</a> to add
+attacker-controlled javascript):</p>
+   <table>
+    <tbody>
+     <tr>
+      <td>
+      </td><th>
+       <div><p><a href="#goal-prob-transfer-userid-no-nav">§ 6.2.5 Probabilistically transfer user ID from publisher 1 to publisher 2 without navigation.</a></p></div>
+     </th></tr><tr>
+      <th><a href="#cap-type-identifier">§ 5.5 Convince the user to type an identifier</a>
+      </th><td data-goal="prob-transfer-userid-no-nav">
+       <details>
+        <summary>✓</summary>
+         The tracker gets a report of the identifiers typed in both publisher
+        sites, along with each publisher’s <a data-link-type="dfn" href="#user-id" id="ref-for-user-id②">user id</a>. If they’re equal, the <a data-link-type="dfn" href="#user-id" id="ref-for-user-id③">user ids</a> probably refer to the same user. The probability depends on
+        the type of identifier: email addresses or credit card numbers are very
+        high probability. Names or dates of birth are lower probability unless
+        combined with other information like a zip code. 
+       </details>
+     </td></tr><tr>
+      <th><a href="#cap-same-device-same-time">§ 5.6 Convince the user to open the same device in two cross-site tabs</a>
+      </th><td data-goal="prob-transfer-userid-no-nav">
+       <details>
+        <summary>✓</summary>
+         The tracker reads the two devices, and if they give the same output at
+        approximately the same time, the user is probably the same. For devices
+        like cameras and microphones, detection is likely to be very accurate.
+        Others, like ambient light, might only give a few bits per sample, and
+        so need a long period of overlap in order to provide a good correlation. 
+        <p>For some devices, this transfer can be mitigated by turning off input
+        when the site isn’t visible or isn’t focused, but user expectations
+        limit where that mitigation is applicable.</p>
+       </details>
+     </td></tr><tr>
+      <th><a href="#cap-same-rw-device">§ 5.7 Convince the user to open the same read+write device in two different sites</a>
+      </th><td data-goal="prob-transfer-userid-no-nav">
+       <details>
+        <summary>✓</summary>
+         The tracker writes identifying content to the device and then reads it
+        back when the other site is opened. This is visible to varying degrees
+        depending on the device: an individual native file or a Bluetooth or USB
+        device that isn’t designed to cooperate with this sort of tracking, is
+        likely to break in obvious ways when the tracker tries to write an
+        identifier. A native directory, on the other hand, has many available
+        filenames that could hold identifying information without a user being
+        likely to notice. 
+       </details>
+     </td></tr><tr>
+      <th><a href="#cap-open-for-browser-event">§ 5.8 Have two sites open when a browser-wide event happens</a>
+      </th><td data-goal="prob-transfer-userid-no-nav"> <span>✘</span> 
+     </td></tr><tr>
+      <th><a href="#cap-visible-for-browser-event">§ 5.9 Have two sites visible when a browser-wide event happens</a>
+      </th><td data-goal="prob-transfer-userid-no-nav">
+       <details>
+        <summary>✓</summary>
+         Browser-wide events generally need to be visible immediately when a user
+        is looking at a website, so the tracker just needs to notice that the
+        event’s parameters are the same, and its timestamp across two sites is
+        close together. The probability of identifying a single user goes up as
+        more events are observed. 
+       </details>
+   </td></tr></tbody></table>
+   <h3 data-level="4.2" id="model-sensitive-information"><span>4.2. </span><span>Sensitive-information</span><a href="#model-sensitive-information"></a></h3>
+   <p>Attackers should only be able to get access to sensitive information from a <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent" id="ref-for-user-agent">user agent</a> if the user expresses their intent that the attacker get access
+to this information at the time the attacker gets access to it. User agents vary
+in how they gather this expression of intent.</p>
+   <p>That a user intends an attacker to get a piece of information at one time, for
+example their location or their contact book, may be, but is not necessarily
+evidence that the user intends to give out the same piece of information at
+a later time. There is not consensus about how long it’s reasonable to infer
+continued intent, but there is consensus that intent doesn’t last for years
+without interaction.</p>
+   <p id="issue-db535e06"><a href="#issue-db535e06"></a> Add more information about local attackers and confused users and how
+browsers can mitigate. <a href="https://github.com/w3cping/privacy-threat-model/issues/19">&lt;https://github.com/w3cping/privacy-threat-model/issues/19&gt;</a></p>
+   <p>This threat model defines a kind of information as <dfn data-dfn-type="dfn" data-lt="restricted sensitive information" data-noexport="" id="restricted-sensitive-information">restricted sensitive
+information</dfn> if the web platform currently blocks access to it by default
+or if we plan to evolve the web platform to block access to it by default
+because of the potential privacy harms from disclosure of that kind of
+information.</p>
+   <p>Other information is described as "not <a data-link-type="dfn" href="#restricted-sensitive-information" id="ref-for-restricted-sensitive-information">restricted sensitive information</a>"
+even if some users in some situations would find it sensitive. Information in
+this category may have a lower risk of privacy harm to users or may not
+currently be restricted because of incompatibility with functionality of the
+Web. These categories are not static and it may become feasible to block access
+by default to more kinds of information as the platform develops.</p>
+   <p>There is consensus that some kinds of information are <a data-link-type="dfn" href="#restricted-sensitive-information" id="ref-for-restricted-sensitive-information①">restricted sensitive
+information</a>:</p>
+   <ul>
+    <li data-md="">
+     <p>Location</p>
+    </li><li data-md="">
+     <p>Disability status</p>
+    </li><li data-md="">
+     <p>Microphone input</p>
+    </li><li data-md="">
+     <p>Etc.</p>
+   </li></ul>
+   <p>There is consensus that some other kinds of information are not <a data-link-type="dfn" href="#restricted-sensitive-information" id="ref-for-restricted-sensitive-information②">restricted
+sensitive information</a>:</p>
+   <ul>
+    <li data-md="">
+     <p>User agent</p>
+    </li><li data-md="">
+     <p>Language</p>
+    </li><li data-md="">
+     <p>A user’s <a data-link-type="descriptor" href="https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-motion" id="ref-for-descdef-media-prefers-reduced-motion">preference for
+less motion</a>.</p>
+    </li><li data-md="">
+     <p>Etc.</p>
+   </li></ul>
+   <p>There is not consensus about the sensitivity of all kinds of information:</p>
+   <ul>
+    <li data-md="">
+     <p>TODO: examples?</p>
+   </li></ul>
+   <h2 data-level="5" id="capabilities"><span>5. </span><span>Attacker Capabilities</span><a href="#capabilities"></a></h2>
+   <p>These are things some attackers can do. The attackers can use them to achieve
+their <a href="#goals">goals</a>. All attackers are assumed to be able to buy
+domains and host sites on their domains.</p>
+   <h3 data-level="5.1" id="cap-iframes"><span>5.1. </span><span>Load iframes</span><a href="#cap-iframes"></a></h3>
+   <p>The attacker can convince a publisher to load an iframe from the attacker’s site.</p>
+   <h3 data-level="5.2" id="cap-first-party-js"><span>5.2. </span><span>Run Javascript in a first-party context</span><a href="#cap-first-party-js"></a></h3>
+   <p>When a publisher wants to show ads from an ad network, many/most ad networks
+require that publisher to use a <code>&lt;script src="adnetwork.js"&gt;</code> tag instead of an <code>&lt;iframe src="adnetwork.html"&gt;</code>, which allows the ad network to see any
+publisher data that’s exposed to Javascript. This includes query parameters
+(e.g. <code>fbclid</code>) and any cookies that aren’t <a data-link-type="http-header" href="https://tools.ietf.org/html/rfc6265#section-4.1.2.6" id="ref-for-section-4.1.2.6">HttpOnly</a>.</p>
+   <h3 data-level="5.3" id="cap-run-on-server"><span>5.3. </span><span>Modify server processing</span><a href="#cap-run-on-server"></a></h3>
+   <p>Some attackers can convince some publishers (perhaps by paying them) to modify
+their server software. This could be used, for example, to receive <a data-link-type="dfn" href="#user-id" id="ref-for-user-id④">user IDs</a> passed in a path segment instead of a query parameter, without breaking the
+normal logic mapping a path to content.</p>
+   <h3 data-level="5.4" id="cap-read-logs"><span>5.4. </span><span>Read server logs</span><a href="#cap-read-logs"></a></h3>
+   <p>Servers can keep logs of requests. The attacker may be able to convince some
+server operators to give them these logs or let them run queries over the logs.</p>
+   <h3 data-level="5.5" id="cap-type-identifier"><span>5.5. </span><span>Convince the user to type an identifier</span><a href="#cap-type-identifier"></a></h3>
+   <p>The attacker can convince a user to type their email address, name, zip code,
+etc. into two publishers' sites.</p>
+   <h3 data-level="5.6" id="cap-same-device-same-time"><span>5.6. </span><span>Convince the user to open the same device in two cross-site tabs</span><a href="#cap-same-device-same-time"></a></h3>
+   <p>The attacker can convince a user to open the same device on two publishers'
+sites that are both open at the same time in different tabs or windows.</p>
+   <h3 data-level="5.7" id="cap-same-rw-device"><span>5.7. </span><span>Convince the user to open the same read+write device in two different sites</span><a href="#cap-same-rw-device"></a></h3>
+   <p>A read+write device is something like a native filesystem file or directory, or
+a bluetooth or USB device that can be configured to save data. The two sites
+need to be given access to the same device, but they don’t need to both be open
+at the same time.</p>
+   <h3 data-level="5.8" id="cap-open-for-browser-event"><span>5.8. </span><span>Have two sites open when a browser-wide event happens</span><a href="#cap-open-for-browser-event"></a></h3>
+   <p>A browser-wide event is something that happens to the browser as a whole instead
+of to an individual site or web page. For example, the user going idle, sensor
+data changing, or the device’s time zone changing, would affect all tabs at the
+same time.</p>
+   <h3 data-level="5.9" id="cap-visible-for-browser-event"><span>5.9. </span><span>Have two sites visible when a browser-wide event happens</span><a href="#cap-visible-for-browser-event"></a></h3>
+   <p>Unlike <a href="#cap-open-for-browser-event">§ 5.8 Have two sites open when a browser-wide event happens</a>, this capability requires both sites to be
+visible (probably in two separate browser windows) at the same time during the
+event.</p>
+   <h2 data-level="6" id="goals"><span>6. </span><span>Attacker goals</span><a href="#goals"></a></h2>
+   <p>These are things <a data-link-type="dfn" href="#attacker" id="ref-for-attacker">attackers</a> want to accomplish.</p>
+   <h3 data-level="6.1" id="goals-metrics"><span>6.1. </span><span>User metrics within a single site</span><a href="#goals-metrics"></a></h3>
+   <h4 data-level="6.1.1" id="goal-click-tracking"><span>6.1.1. </span><span>Click tracking</span><a href="#goal-click-tracking"></a></h4>
+   <p>A site wants to know which of its links a user clicks on.</p>
+   <h3 data-level="6.2" id="goals-tracking"><span>6.2. </span><span>Tracking</span><a href="#goals-tracking"></a></h3>
+   <p><a data-link-type="biblio" href="#biblio-tracking-dnt">[tracking-dnt]</a> defines "tracking" as the collection of data regarding a
+particular user’s activity across multiple distinct contexts and the retention,
+use, or sharing of data derived from that activity outside the context in which
+it occurred. A context is a set of resources that are controlled by the same
+party or jointly controlled by a set of parties. The following are building
+blocks that allow a tracker to build such a log of a user’s activity.</p>
+   <h4 data-level="6.2.1" id="goal-transfer-userid"><span>6.2.1. </span><span>Transfer user ID from publisher 1 to publisher 2 on navigation.</span><a href="#goal-transfer-userid"></a></h4>
+   <p>When the user clicks a link from <a data-link-type="dfn" href="#publisher" id="ref-for-publisher">publisher</a> 1 that navigates to <a data-link-type="dfn" href="#publisher" id="ref-for-publisher①">publisher</a> 2, publisher 2’s server learns that a <a data-link-type="dfn" href="#user-id" id="ref-for-user-id⑤">user ID</a> on publisher 2 and a <a data-link-type="dfn" href="#user-id" id="ref-for-user-id⑥">user ID</a> on
+publisher 1 represent the same <a data-link-type="dfn" href="#user" id="ref-for-user③">user</a>.</p>
+   <h4 data-level="6.2.2" id="goal-userid-tracker-to-self-in-pub"><span>6.2.2. </span><span>Transfer user ID from tracker to that tracker running within a publisher, on navigation.</span><a href="#goal-userid-tracker-to-self-in-pub"></a></h4>
+   <p>When the user clicks a link from <code>tracker.example</code> to <code>publisher.example</code>, that <a data-link-type="dfn" href="#tracker" id="ref-for-tracker">tracker’s</a> server learns that a <a data-link-type="dfn" href="#user-id" id="ref-for-user-id⑦">user ID</a> for either <code>publisher.example</code> or
+the tracker running within <code>publisher.example</code> and a <a data-link-type="dfn" href="#user-id" id="ref-for-user-id⑧">user ID</a> for <code>tracker.example</code> represent the same <a data-link-type="dfn" href="#user" id="ref-for-user④">user</a>.</p>
+   <h4 data-level="6.2.3" id="goal-userid-tracker-in-pub1-to-self-in-pub2"><span>6.2.3. </span><span>Transfer user ID from tracker within publisher 1 to that tracker within publisher 2, on navigation.</span><a href="#goal-userid-tracker-in-pub1-to-self-in-pub2"></a></h4>
+   <p>When the user clicks a link from <code>publisher1.example</code> (where a tracker was
+embedded within that site) to <code>publisher2.example</code> (which has the same tracker
+embedded), that <a data-link-type="dfn" href="#tracker" id="ref-for-tracker①">tracker’s</a> server learns that a <a data-link-type="dfn" href="#user-id" id="ref-for-user-id⑨">user ID</a> for either <code>publisher1.example</code> or the tracker running within <code>publisher1.example</code> and a <a data-link-type="dfn" href="#user-id" id="ref-for-user-id①⓪">user ID</a> for either <code>publisher2.example</code> or the tracker running within <code>publisher2.example</code> represent the same <a data-link-type="dfn" href="#user" id="ref-for-user⑤">user</a>.</p>
+   <h4 data-level="6.2.4" id="goal-prob-transfer-userid"><span>6.2.4. </span><span>Probabilistically transfer user ID from publisher 1 to publisher 2 on navigation.</span><a href="#goal-prob-transfer-userid"></a></h4>
+   <p>When the user clicks a link from <a data-link-type="dfn" href="#publisher" id="ref-for-publisher②">publisher</a> 1 that navigates to <a data-link-type="dfn" href="#publisher" id="ref-for-publisher③">publisher</a> 2, publisher 2’s server learns that a <a data-link-type="dfn" href="#user-id" id="ref-for-user-id①①">user ID</a> on publisher 2 and a <a data-link-type="dfn" href="#user-id" id="ref-for-user-id①②">user ID</a> on
+publisher 1 are more likely than chance to represent the same <a data-link-type="dfn" href="#user" id="ref-for-user⑥">user</a>.</p>
+   <h4 data-level="6.2.5" id="goal-prob-transfer-userid-no-nav"><span>6.2.5. </span><span>Probabilistically transfer user ID from publisher 1 to publisher 2 without navigation.</span><a href="#goal-prob-transfer-userid-no-nav"></a></h4>
+   <p>While the user is visiting <a data-link-type="dfn" href="#publisher" id="ref-for-publisher④">publisher</a> 1, that publisher can tell <a data-link-type="dfn" href="#publisher" id="ref-for-publisher⑤">publisher</a> 2 that a <a data-link-type="dfn" href="#user-id" id="ref-for-user-id①③">user ID</a> on publisher 2 and a <a data-link-type="dfn" href="#user-id" id="ref-for-user-id①④">user ID</a> on publisher
+1 are more likely than chance to represent the same <a data-link-type="dfn" href="#user" id="ref-for-user⑦">user</a>, without requiring
+the user to navigate from publisher 1 to publisher 2.</p>
+   <h2 data-level="7" id="essential"><span>7. </span><span>Essential Web APIs</span><a href="#essential"></a></h2>
+   <p>These are Web APIs and features that would destroy the Web as we know it if they
+went away. The placement of some features here will be contentious, and those
+features are marked as I discover the contention.</p>
+   <h3 data-level="7.1" id="ess-js-requests"><span>7.1. </span><span>Javascript can make requests to servers</span><a href="#ess-js-requests"></a></h3>
+   <p>This could perhaps be broken down into same-origin requests and cross-origin
+requests, with cross-origin requests being more contentious.</p>
+   <h3 data-level="7.2" id="ess-server-defined-paths"><span>7.2. </span><span>Servers can define the paths under which they host content</span><a href="#ess-server-defined-paths"></a></h3>
+   <p>These paths can include opaque strings that neither a human nor a user agent can
+interpret without knowing how the server works, like <code>/t/proposal-packaging-for-the-web-signed-and-indexed/1827/10</code> and <code>/Moby-Dick-Herman-Melville/dp/1503280780/</code>.</p>
+   <h2 data-level="8" id="acknowledgements"><span>8. </span><span>Acknowledgements</span><a href="#acknowledgements"></a></h2>
+   <p>Safari did the first work to prove that a more privacy-preserving web was
+possible, by blocking third-party cookies by default and then shipping <a href="https://webkit.org/blog/7675/intelligent-tracking-prevention/">ITP
+1.0</a>, without
+breaking the world. They eventually published their <a href="https://webkit.org/tracking-prevention-policy/">policy for Tracking
+Prevention</a>, which heavily
+influenced this document.</p>
+   <p>Mozilla wrote the first concrete <a href="https://wiki.mozilla.org/Security/Anti_tracking_policy">anti-tracking
+policy</a>, which inspired
+Safari’s policy.</p>
+   <p>Michael Kleber on the Chrome team proposed a <a href="https://github.com/michaelkleber/privacy-model">Privacy Model for the
+Web</a>, which suggests blocking
+the transfer of <a data-link-type="dfn" href="#user-id" id="ref-for-user-id①⑤">user IDs</a> between top-level sites and suggests a few ways
+that information could flow between sites without compromising user privacy.</p>
+  </div></div>
+                
+                </main>
+                <footer>
+
+                </footer>
+            </div>
+            <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+        </body>
+    </html>

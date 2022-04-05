@@ -1,0 +1,785 @@
+
+
+<!doctype html>
+    <html lang="en-US" id="template-archives" class="base">
+        <head>
+        
+        <script defer data-domain="context.center" src="https://plausible.io/js/plausible.js"></script>
+        <link rel="alternate" type="application/rss+xml" title="Context Center RSS" href="https://context.center/rss/" />
+    	<link rel="alternate" type="application/atom+xml" title="Context Center Feed" href="https://context.center/feed/" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>How We Built a Real-time Privacy Inspector – The Markup</title>
+        <link rel="original" http-equiv href="https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector" />
+        
+            
+                <!-- <link rel="stylesheet" href="https://context.center/assets/css/template-archives.css?v=2097943621" /> -->
+                <link rel="stylesheet" href="https://context.center/assets/css/template-archives.css?v=2097943621" id=""></link>
+
+            
+        
+        
+            <link rel="canonical" href="https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector" />
+            
+
+            <meta property="og:title"
+                content="How We Built a Real-time Privacy Inspector – The Markup">
+
+            <meta property="og:description"
+                content="Blacklight catalogs the many ways any website tracks visitors: from cookies to capturing every user keystroke and mouse movement">
+
+
+            <meta property="og:url"
+                content="https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector" />
+
+            <meta property="og:site_name" content="Context Center" />
+
+            <meta property="og:locale" content="en_US" />
+
+            <meta name="twitter:site" content="@chronotope" />
+
+            <meta name="twitter:description" content="Blacklight catalogs the many ways any website tracks visitors: from cookies to capturing every user keystroke and mouse movement" />
+
+            <!-- I prefer the summary_large_image Twitter card for posts. -->
+            <meta name="twitter:card" content="summary_large_image" />
+            <!-- You, you're the creator. -->
+            <meta name="twitter:creator" content="@chronotope" />
+            <!-- This property is for the article title, not site title. -->
+            <meta name="twitter:title" content="How We Built a Real-time Privacy Inspector – The Markup" />
+
+            
+
+            <meta property="og:type" content="website" />
+
+            <script type="application/ld+json">
+                {
+                    "@context": "http://schema.org",
+                    "@type": "WebPage",
+                    "url": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector",
+                    "headline": "How We Built a Real-time Privacy Inspector – The Markup",
+                    "about": "Blacklight catalogs the many ways any website tracks visitors: from cookies to capturing every user keystroke and mouse movement",
+
+                    "image": [
+                        
+                        
+                    ],
+                    "isAccessibleForFree": "True",
+                    "isPartOf": {
+                        "@type": ["CreativeWork", "Product"],
+                        "name": "Fight With Tools",
+                        "productID": "fightwithtools.dev"
+                    },
+                    "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+                    "archivedAt": "https://context.center/timegate/https:/themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector/",
+                    "sameAs": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector",
+                }
+            </script>
+
+
+        
+        
+        </head>
+        <body >
+            <div class="wrapper">
+                <header>
+                    <div class="left">
+                        <h1>Archived: How We Built a Real-time Privacy Inspector – The Markup</h1>
+                        <p>This is a simplified archive of the page at <a href="https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector" target="_blank">https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector</a></p>
+                    </div>
+
+                            <div id="share-embed">
+                                <span>Use this page embed on your own site:</span>
+                                <textarea id="html-embed" name="story" rows="8" cols="40">
+                                    <script>window.contexterSetup=window.contexterSetup||function(){window.contexterSetupComplete=!0;class ContexterLink extends HTMLAnchorElement{constructor(){super()}connectedCallback(){this.setAttribute("target","_blank")}}customElements.define("contexter-link",ContexterLink,{extends:"a"}),customElements.define("contexter-inner",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__inner"}}),customElements.define("contexter-thumbnail",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__thumbnail"}}),customElements.define("contexter-byline",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__byline"}}),customElements.define("contexter-keywordset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__keywordset"}}),customElements.define("contexter-linkset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__linkset"}}),customElements.define("contexter-meta",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__meta"}}),customElements.define("contexter-summary",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="p-summary entry-summary"}}),customElements.define("contexter-box-head",class extends HTMLElement{constructor(){super()}connectedCallback(){this.className="contexter-box__head"}}),customElements.define("contexter-box-inner",class extends HTMLElement{constructor(){super()}connectedCallback(){}});class ContexterBox extends HTMLElement{constructor(){super(),this.first=!0,this.shadow=this.attachShadow({mode:"open"})}connectedCallback(){if(this.first){this.first=!1;var style=document.createElement("style"),lightDomStyle=(style.innerHTML=`:host {--background: #f5f6f7;--border: darkblue;--blue: #0000ee;--font-color: black;--inner-border: black;font-family: Franklin,Arial,Helvetica,sans-serif;font-size: 14px;background: var(--background);width: 600px;color: var(--font-color);min-height: 90px;display: block;padding: 8px;border: 1px solid var(--border);cursor: pointer;box-sizing: border-box;margin: 6px;contain: content;margin: 6px auto;}// can only select top-level nodes with slotted::slotted(*) {max-width: 100%;display:block;}::slotted([slot=thumbnail]) {max-width: 100%;display:block;}::slotted([slot=header]) {width: 100%;font-size: 1.25rem;font-weight: bold;display:block;margin-bottom: 6px;}::slotted([slot=author]) {max-width: 50%;font-size: 12px;display:inline-block;float: left;}::slotted([slot=time]) {max-width: 50%;font-size: 12px;display:inline-block;float: right;}::slotted([slot=summary]) {width: 100%;margin-top: 6px;padding: 10px 2px;border-top: 1px solid var(--inner-border);font-size: 15px;display:inline-block;margin-bottom: 6px;}contexter-meta {height: auto;margin-bottom: 4px;width: 100%;display: grid;position: relative;min-height: 16px;grid-template-columns: repeat(2, 1fr);}::slotted([slot=keywords]) {width: 80%;padding: 2px 4px;border-top: 1px solid var(--inner-border);font-size: 11px;display: block;float: right;font-style: italic;text-align: right;grid-column: 2/2;grid-row: 1;align-self: end;justify-self: end;}::slotted([slot=keywords]):empty {border-top: 0px solid var(--inner-border);}::slotted([slot=archive-link]) {font-size: 1em;display: inline;}::slotted([slot=archive-link])::after {content: "|";display: inline;color: var(--font-color);text-decoration: none;margin: 0 .5em;}::slotted([slot=read-link]) {font-size: 1em;display: inline;}contexter-linkset {width: 80%;padding: 2px 4px;font-size: 13px;float: left;font-weight: bold;grid-row: 1;grid-column: 1/2;align-self: end;justify-self: start;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {:host {width: 310px;}}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){:host {--background: #354150;--border: #1f2b37;--blue: #55b0ff;--font-color: #ffffff;--inner-border: #787a7c;background: var(--background);border: 1px solid var(--border)}}`,document.createElement("style"));lightDomStyle.innerHTML=`contexter-box {contain: content;}contexter-box .read-link {font-weight: bold;}contexter-box a {color: #0000ee;}contexter-box img {width: 100%;border: 0;padding: 0;margin: 0;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {...}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){contexter-box a {color: #55b0ff;}}`,this.appendChild(lightDomStyle),this.shadow.appendChild(style);const innerContainer=document.createElement("contexter-box-inner"),innerSlotThumbnail=(this.shadow.appendChild(innerContainer),document.createElement("slot")),innerSlotHeader=(innerSlotThumbnail.name="thumbnail",innerContainer.appendChild(innerSlotThumbnail),document.createElement("slot")),innerSlotAuthor=(innerSlotHeader.name="header",innerContainer.appendChild(innerSlotHeader),document.createElement("slot")),innerSlotTime=(innerSlotAuthor.name="author",innerContainer.appendChild(innerSlotAuthor),document.createElement("slot")),innerSlotSummary=(innerSlotTime.name="time",innerContainer.appendChild(innerSlotTime),document.createElement("slot")),metaContainer=(innerSlotSummary.name="summary",innerContainer.appendChild(innerSlotSummary),document.createElement("contexter-meta")),innerSlotInfo=(innerContainer.appendChild(metaContainer),document.createElement("slot")),linkContainer=(innerSlotInfo.name="keywords",metaContainer.appendChild(innerSlotInfo),document.createElement("contexter-linkset")),innerSlotArchiveLink=(metaContainer.appendChild(linkContainer),document.createElement("slot")),innerSlotReadLink=(innerSlotArchiveLink.name="archive-link",linkContainer.appendChild(innerSlotArchiveLink),document.createElement("slot"));innerSlotReadLink.name="read-link",linkContainer.appendChild(innerSlotReadLink),this.className="contexter-box",this.onclick=e=>{if(!e.target.className.includes("read-link")&&!e.target.className.includes("title-link")){const mainLinks=this.querySelectorAll("a.main-link");mainLinks[0].click()}}}}}customElements.define("contexter-box",ContexterBox)},window.contexterSetupComplete||window.contexterSetup();</script><contexter-box class="link-card h-entry hentry" itemscope="" itemtype="https://schema.org/CreativeWork"><contexter-thumbnail class="thumbnail" slot="thumbnail"></contexter-thumbnail><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><a is="contexter-link" href="https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector" itemprop="url">How We Built a Real-time Privacy Inspector – The Markup</a></contexter-box-head></contexter-box-head><contexter-byline class="p-author author" slot="author"><span class="p-name byline" rel="author" itemprop="author">@themarkup</span></contexter-byline><time class="dt-published published" slot="time" itemprop="datePublished" datetime="2022-04-05T17:38:43.109Z">3/5/2022</time><contexter-summary class="p-summary entry-summary" itemprop="abstract" slot="summary"><p>Blacklight catalogs the many ways any website tracks visitors: from cookies to capturing every user keystroke and mouse movement</p></contexter-summary><contexter-keywordset itemprop="keywords" slot="keywords"><span rel="category tag" class="p-category" itemprop="keywords">Blacklight</span></contexter-keywordset><a is="contexter-link" href="https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector" class="read-link main-link" itemprop="sameAs" slot="read-link">Read</a><a href="https://context.center/timegate/https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector" is="contexter-link" target="_blank" class="read-link archive-link" itemprop="archivedAt" slot="archive-link">Archived</a></contexter-box>
+                                </textarea><br />
+                                <button onclick="(function(e){ navigator.clipboard.writeText(document.getElementById('html-embed').value); })()">Copy</button>
+                            </div>
+                            
+                            <script>window.contexterSetup=window.contexterSetup||function(){window.contexterSetupComplete=!0;class ContexterLink extends HTMLAnchorElement{constructor(){super()}connectedCallback(){this.setAttribute("target","_blank")}}customElements.define("contexter-link",ContexterLink,{extends:"a"}),customElements.define("contexter-inner",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__inner"}}),customElements.define("contexter-thumbnail",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__thumbnail"}}),customElements.define("contexter-byline",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__byline"}}),customElements.define("contexter-keywordset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__keywordset"}}),customElements.define("contexter-linkset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__linkset"}}),customElements.define("contexter-meta",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__meta"}}),customElements.define("contexter-summary",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="p-summary entry-summary"}}),customElements.define("contexter-box-head",class extends HTMLElement{constructor(){super()}connectedCallback(){this.className="contexter-box__head"}}),customElements.define("contexter-box-inner",class extends HTMLElement{constructor(){super()}connectedCallback(){}});class ContexterBox extends HTMLElement{constructor(){super(),this.first=!0,this.shadow=this.attachShadow({mode:"open"})}connectedCallback(){if(this.first){this.first=!1;var style=document.createElement("style"),lightDomStyle=(style.innerHTML=`:host {--background: #f5f6f7;--border: darkblue;--blue: #0000ee;--font-color: black;--inner-border: black;font-family: Franklin,Arial,Helvetica,sans-serif;font-size: 14px;background: var(--background);width: 600px;color: var(--font-color);min-height: 90px;display: block;padding: 8px;border: 1px solid var(--border);cursor: pointer;box-sizing: border-box;margin: 6px;contain: content;margin: 6px auto;}// can only select top-level nodes with slotted::slotted(*) {max-width: 100%;display:block;}::slotted([slot=thumbnail]) {max-width: 100%;display:block;}::slotted([slot=header]) {width: 100%;font-size: 1.25rem;font-weight: bold;display:block;margin-bottom: 6px;}::slotted([slot=author]) {max-width: 50%;font-size: 12px;display:inline-block;float: left;}::slotted([slot=time]) {max-width: 50%;font-size: 12px;display:inline-block;float: right;}::slotted([slot=summary]) {width: 100%;margin-top: 6px;padding: 10px 2px;border-top: 1px solid var(--inner-border);font-size: 15px;display:inline-block;margin-bottom: 6px;}contexter-meta {height: auto;margin-bottom: 4px;width: 100%;display: grid;position: relative;min-height: 16px;grid-template-columns: repeat(2, 1fr);}::slotted([slot=keywords]) {width: 80%;padding: 2px 4px;border-top: 1px solid var(--inner-border);font-size: 11px;display: block;float: right;font-style: italic;text-align: right;grid-column: 2/2;grid-row: 1;align-self: end;justify-self: end;}::slotted([slot=keywords]):empty {border-top: 0px solid var(--inner-border);}::slotted([slot=archive-link]) {font-size: 1em;display: inline;}::slotted([slot=archive-link])::after {content: "|";display: inline;color: var(--font-color);text-decoration: none;margin: 0 .5em;}::slotted([slot=read-link]) {font-size: 1em;display: inline;}contexter-linkset {width: 80%;padding: 2px 4px;font-size: 13px;float: left;font-weight: bold;grid-row: 1;grid-column: 1/2;align-self: end;justify-self: start;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {:host {width: 310px;}}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){:host {--background: #354150;--border: #1f2b37;--blue: #55b0ff;--font-color: #ffffff;--inner-border: #787a7c;background: var(--background);border: 1px solid var(--border)}}`,document.createElement("style"));lightDomStyle.innerHTML=`contexter-box {contain: content;}contexter-box .read-link {font-weight: bold;}contexter-box a {color: #0000ee;}contexter-box img {width: 100%;border: 0;padding: 0;margin: 0;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {...}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){contexter-box a {color: #55b0ff;}}`,this.appendChild(lightDomStyle),this.shadow.appendChild(style);const innerContainer=document.createElement("contexter-box-inner"),innerSlotThumbnail=(this.shadow.appendChild(innerContainer),document.createElement("slot")),innerSlotHeader=(innerSlotThumbnail.name="thumbnail",innerContainer.appendChild(innerSlotThumbnail),document.createElement("slot")),innerSlotAuthor=(innerSlotHeader.name="header",innerContainer.appendChild(innerSlotHeader),document.createElement("slot")),innerSlotTime=(innerSlotAuthor.name="author",innerContainer.appendChild(innerSlotAuthor),document.createElement("slot")),innerSlotSummary=(innerSlotTime.name="time",innerContainer.appendChild(innerSlotTime),document.createElement("slot")),metaContainer=(innerSlotSummary.name="summary",innerContainer.appendChild(innerSlotSummary),document.createElement("contexter-meta")),innerSlotInfo=(innerContainer.appendChild(metaContainer),document.createElement("slot")),linkContainer=(innerSlotInfo.name="keywords",metaContainer.appendChild(innerSlotInfo),document.createElement("contexter-linkset")),innerSlotArchiveLink=(metaContainer.appendChild(linkContainer),document.createElement("slot")),innerSlotReadLink=(innerSlotArchiveLink.name="archive-link",linkContainer.appendChild(innerSlotArchiveLink),document.createElement("slot"));innerSlotReadLink.name="read-link",linkContainer.appendChild(innerSlotReadLink),this.className="contexter-box",this.onclick=e=>{if(!e.target.className.includes("read-link")&&!e.target.className.includes("title-link")){const mainLinks=this.querySelectorAll("a.main-link");mainLinks[0].click()}}}}}customElements.define("contexter-box",ContexterBox)},window.contexterSetupComplete||window.contexterSetup();</script><contexter-box class="link-card h-entry hentry" itemscope="" itemtype="https://schema.org/CreativeWork"><contexter-thumbnail class="thumbnail" slot="thumbnail"></contexter-thumbnail><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><a is="contexter-link" href="https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector" itemprop="url">How We Built a Real-time Privacy Inspector – The Markup</a></contexter-box-head></contexter-box-head><contexter-byline class="p-author author" slot="author"><span class="p-name byline" rel="author" itemprop="author">@themarkup</span></contexter-byline><time class="dt-published published" slot="time" itemprop="datePublished" datetime="2022-04-05T17:38:43.109Z">3/5/2022</time><contexter-summary class="p-summary entry-summary" itemprop="abstract" slot="summary"><p>Blacklight catalogs the many ways any website tracks visitors: from cookies to capturing every user keystroke and mouse movement</p></contexter-summary><contexter-keywordset itemprop="keywords" slot="keywords"><span rel="category tag" class="p-category" itemprop="keywords">Blacklight</span></contexter-keywordset><a is="contexter-link" href="https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector" class="read-link main-link" itemprop="sameAs" slot="read-link">Read</a><a href="https://context.center/timegate/https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector" is="contexter-link" target="_blank" class="read-link archive-link" itemprop="archivedAt" slot="archive-link">Archived</a></contexter-box>
+                            
+
+
+                </header>
+                <main>
+                
+                    <div id="readability-page-1" class="page"><div>
+        
+        <p>Blacklight is a real-time website privacy inspector.</p>
+
+
+
+<p>The tool emulates how a user might be surveilled while browsing the web. Users type a URL into Blacklight, and it visits the requested website, scans for known types of privacy violations, and returns an instant privacy analysis of the inspected site.</p>
+
+
+
+<p>Blacklight works by visiting each website with a headless browser, running custom software built by The Markup. This software monitors which scripts on that website are potentially surveilling the user by performing seven different tests, each investigating a specific, known method of surveillance.</p>
+
+
+
+<p>The types of surveillance that Blacklight seeks to identify are:</p>
+
+
+
+  <ul>
+
+  <li>Third-party cookies</li>
+  
+  <li>Ad trackers</li>
+  
+  <li>Key logging</li>
+  
+  <li>Session recording</li>
+  
+  <li>Canvas fingerprinting</li>
+  
+  <li>Facebook tracking</li>
+  
+  <li>Google Analytics “Remarketing Audiences”</li>
+  
+</ul>
+  
+
+
+
+<p>These are defined later in this document, as are their limitations.</p>
+
+
+
+<p>Blacklight was built using the NodeJS Javascript environment, the <a href="https://pptr.dev/" target="_blank">Puppeteer</a> Node library, which provides high-level control over a <a href="https://www.chromium.org/" target="_blank">Chromium</a> (open-source Chrome) browser. When a user enters a URL into Blacklight, the tool opens a headless web browser with a fresh profile and visits its homepage as well as an additional randomly selected page deeper inside the same website.</p>
+
+
+
+
+
+<p>While the browser is visiting the website, it runs custom software in the background that monitors scripts and network requests to observe when and how user data is being collected.&nbsp;&nbsp; To monitor scripts, Blacklight modifies <a href="https://github.com/the-markup/blacklight-collector/blob/main/src/plugins/fingerprinting-apis.ts" target="_blank">various fingerprintable properties</a> of the browser’s Window API. This allows Blacklight to log which script made a particular function call, using the <a href="https://www.stacktracejs.com/" target="_blank">Stacktrace-js</a> package. The network requests are collected using a monitoring tool included in <a href="https://pptr.dev/#?product=Puppeteer&amp;version=v5.2.1&amp;show=api-event-request" target="_blank">Puppeteer’s API</a>.</p>
+
+
+
+<p>Blacklight uses the script data and network requests to run the seven tests described above. Afterward, it closes the browser and generates an instant report for the user.</p>
+
+
+
+<p>It records a list of all the URLs that the inspected website requests. In addition, it makes a list of all domains and subdomains that were requested. The tool we provide to the public will not save those lists unless the user chooses to share results with us through an option in the tool.</p>
+
+
+
+<p>We define domain names using the <a href="https://web.archive.org/web/20200615204307/https:/github.com/remusao/tldts/blob/master/packages/tldts-core/src/domain.ts" target="_blank">Public Suffix + 1 method</a>. We define <em>first-party domain</em> as any domain that matches the website visited, including subdomains. We define <em>third-party</em> as any domain that does not match the website visited. The tool compares the list of third-party domains from the website requests with DuckDuckGo’s <a href="https://github.com/duckduckgo/tracker-radar" target="_blank">Tracker Radar</a> dataset.</p>
+
+
+
+<p>This data merge allows Blacklight to add the following information about the third-party domains found on the inspected site:</p>
+
+
+
+  <ol>
+
+  <li>Name of the domain’s owner.</li>
+  
+  <li><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/CATEGORIES.md">Categories assigned by DuckDuckGo</a> to each domain that attempt to describe its observed purpose or intent.</li>
+  
+
+  </ol>
+
+
+
+<p>This additional information about third parties is provided to users as context for Blacklight’s instant test results. Among other things, this information is used to count the number of advertising-related trackers present on a given website.</p>
+
+
+
+<p>Blacklight runs tests based on the root URL of the page entered by a user into the tool. For example, if a user types in <em>https://example.com/sports</em>, Blacklight starts its inspection at <em>https://example.com</em> and disregards the <em>/sports</em> path. If a user types in <em>https://sports.example.com</em>, Blacklight starts its inspection at <em>https://sports.example.com</em>.</p>
+
+
+
+  
+
+
+
+<p>Blacklight results for each requested domain are cached for 24 hours, and these cached reports are delivered in response to subsequent user requests for the same website during those 24 hours. This is designed to prevent the tool from being used maliciously to overwhelm a website with thousands of automated visits.</p>
+
+
+
+<p>Blacklight will also tell users whether their results are high, low, or about average compared with what the tool found on the 100,000 most popular websites as ranked by the <a href="https://tranco-list.eu/" target="_blank">Tranco List</a>. This is described in more detail below.&nbsp;</p>
+
+
+
+<p>The Blacklight code base is open source and available on <a href="https://github.com/the-markup/blacklight-collector" target="_blank">Github</a>; it can also be downloaded as <a href="https://www.npmjs.com/package/@themarkup/blacklight-collector" target="_blank">an NPM module</a>.</p>
+
+
+
+<p>There are limitations to our analysis. Blacklight emulates a user visiting a website, but its automated behavior is different from human behavior, and that behavior may trigger different types of surveillance. For instance, an automated request might trigger more fraud detection but fewer ads.</p>
+
+
+
+<p>Given the dynamic nature of web-based technology, it is also possible that some of these tests will become out-of-date over time. And new legitimate-use cases for the techniques Blacklight flags could emerge that would not be listed in the tool’s caveats.</p>
+
+
+
+<p>For this reason, Blacklight results should not be taken as the final word on potential privacy violations by a given website. Rather, they should be treated as an initial automated inspection that requires further investigation before a definitive claim can be made.</p>
+
+
+
+
+
+<p>Blacklight is built on the foundation of various privacy census tools built over the past decade.</p>
+
+
+
+<p>It runs Javascript instrumentation, which enables it to monitor calls to the browsers’ Javascript API. This is based on <a href="https://senglehardt.com/papers/openwpm_03-2015.pdf" target="_blank">OpenWPM</a>, an open-source tool for web privacy measurement built by Steven Englehardt, Gunes Acar, Dillon Reisman, and Arvind Narayanan at Princeton University. It is now maintained by Mozilla.</p>
+
+
+
+<p>OpenWPM was used to power <a href="https://webtap.princeton.edu/" target="_blank">Princeton’s Web Transparency and Accountability Project</a>, which monitored websites and services to discover companies’ data collection, data use, and deceptive practices.</p>
+
+
+
+<p>Through numerous studies conducted between 2015 and 2019, <a href="https://webtransparency.cs.princeton.edu/webcensus/data-release/" target="_blank">Princeton researchers uncovered</a> the presence of many privacy-infringing technologies. These included <a href="https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf" target="_blank">browser fingerprinting and cookie syncing</a> as well as <a href="https://freedom-to-tinker.com/tag/noboundaries/" target="_blank">how session replay scripts collect passwords and sensitive user data</a>. One notable example is the <a href="https://freedom-to-tinker.com/2017/11/15/no-boundaries-exfiltration-of-personal-data-by-session-replay-scripts/" target="_blank">exfiltration of prescription data and health-conditions data from walgreens.com.</a></p>
+
+
+
+<p>Five of the seven tests Blacklight runs are based on the techniques described in the Princeton research mentioned above. These tests are canvas fingerprinting, key logging, session recording, and third-party cookies.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+
+<p>OpenWPM incorporates code and techniques from other privacy inspection tools, including <a href="http://fourthparty.info/" target="_blank">FourthParty</a>, <a href="https://privacybadger.org/" target="_blank">Privacy Badger</a>, and <a href="https://www.cosic.esat.kuleuven.be/fpdetective/#paper" target="_blank">FP Detective</a>:</p>
+
+
+
+  <ul>
+
+  <li><strong>FourthParty</strong> was an open-source platform for measuring dynamic web content <a href="https://cyberlaw.stanford.edu/blog/2011/08/fourthparty-new-approach-web-measurement">that was released in August 2011</a> and maintained until 2014. It has been used in various studies, including one <a href="https://cyberlaw.stanford.edu/blog/2011/10/tracking-trackers-where-everybody-knows-your-username">that describes</a> how websites like Home Depot were leaking their customers' usernames to third parties. Blacklight uses FourthParty’s method to monitor what user information is being sent over the network to third parties.</li>
+  
+  <li><strong>Privacy Badger</strong> is a browser add-on made by the Electronic Frontier Foundation and released in May 2014. It prevents advertisers and third-party trackers from following people on the internet.</li>
+  
+  <li><strong>FP Detective</strong> was the first comprehensive study to measure the prevalence of device fingerprinting on the internet. The tool was released in 2013 and was used to conduct large-scale web-privacy studies.</li>
+  
+</ul>
+  
+
+
+
+<p>Blacklight’s data analysis was inspired in part by the<a href="https://edps.europa.eu/press-publications/edps-inspection-software_en" target="_blank"> Website Evidence Collector</a> developed by the European Union’s Electronic Data Protection Supervisor (EDPS). The Website Evidence Collector is a NodeJS package that uses the Puppeteer library to discover how a website collects a user’s personal data. Some of the categories of collected data were chosen by the EDPS.</p>
+
+
+
+<p>Other projects that have influenced Blacklight’s development include the <a href="https://www.law.berkeley.edu/research/bclt/research/privacy-at-bclt/web-privacy-census/" target="_blank">Web Privacy Census</a>, conducted at UC Berkeley in 2012, and the <a href="https://www.wsj.com/articles/SB10001424052748703977004575393121635952084?mod=article_inline" target="_blank">Wall Street Journal’s “What They Know” series</a>.&nbsp;&nbsp;&nbsp;</p>
+
+
+<div>
+	
+	<p><a href="#how-we-analyzed-each-type-of-tracking">↩︎ link</a></p><h2 id="how-we-analyzed-each-type-of-tracking">How We Analyzed Each Type of&nbsp;Tracking</h2>
+</div>
+
+
+	
+<div>
+	
+	<p><a href="#third-party-cookies">↩︎ link</a></p><h3 id="third-party-cookies">Third-Party&nbsp;Cookies</h3>
+</div>
+
+
+<p>Third-party cookies are a <a href="https://www.eff.org/wp/behind-the-one-way-mirror#Cookies" target="_blank">small piece of data that tracking companies store in your web browser</a> when you visit a website. This bit of text—usually a unique number or string of characters—identifies you when you visit other websites that contain tracking code from the same company. Third-party cookies are used by hundreds of companies to build dossiers about users and deliver customized ads based on their behavior.</p>
+
+
+
+<p>Popular web browsers Edge, Brave, Firefox, and Safari all <a href="https://www.cookiestatus.com/" target="_blank">block third-party tracking cookies by default</a>, and Chrome has announced that it will <a href="https://www.theverge.com/2020/1/14/21064698/google-third-party-cookies-chrome-two-years-privacy-safari-firefox" target="_blank">phase them out</a>.</p>
+
+
+
+<p><strong>What Blacklight Tests</strong></p>
+
+
+
+<p>Blacklight monitors network requests for the “Set-Cookie” header and observes all domains that set cookies using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie" target="_blank">document.cookie</a> javascript property. Blacklight identifies third-party cookies as those whose domains do not match the domain of the website being visited. We look up these third-party domains in DuckDuckGo’s Tracker Radar data to find out who owns them, how prevalent they are, and what kinds of services they provide.</p>
+
+
+
+	
+
+
+
+<p>Key logging is when a first or third party monitors the text that you type into a webpage before you hit the submit button. This technique has been used for a variety of purposes, including identifying <a href="https://gizmodo.com/how-a-company-you-ve-never-heard-of-sends-you-letters-a-1795643539" target="_blank">anonymous web users by matching them to postal addresses and real names</a>.&nbsp;</p>
+
+
+
+<p>There are other reasons for key logging, such as providing autocomplete functionality. Blacklight cannot determine the intent behind the inspected website’s use of this technique.</p>
+
+
+
+<p><strong>What Blacklight Tests</strong></p>
+
+
+
+<p>In order to test whether this is happening on a given website, Blacklight types predetermined text (see <a href="https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#appendix">Appendix</a>) in all input fields but never clicks on a submit button. It monitors network requests to see if the data that was entered was sent to any servers.</p>
+
+
+
+
+
+<p>Session recording is technology that allows a third party to monitor and record all of a user’s behavior on a webpage—including mouse movements, clicks, scrolling down the page, and anything you type into a form even if you don’t click submit.</p>
+
+
+
+<p><a href="https://freedom-to-tinker.com/2017/11/15/no-boundaries-exfiltration-of-personal-data-by-session-replay-scripts/" target="_blank">In a 2017 study</a>, researchers at Princeton University found that session recorders were collecting sensitive information such as passwords and credit card numbers. When the researchers contacted the companies in question, most responded quickly and fixed the underlying cause of the data leak. However, the research highlights that these aren’t simply bugs but rather insecure practices that the researchers say should be stopped entirely. Most companies that offer session recording say they use the data to provide their customers—the websites installing the technology—meaningful insights on how to improve a user’s experience on the website. One company, Inspectlet, describes its service as watching “individual visitors use your site as if you’re looking over their shoulders.” (Inspectlet did not respond to an email seeking comment.)</p>
+
+
+<figure aria-label="image" role="group">
+  <div><p><span>Credit:</span>Inspectlet</p><picture>
+  <source media="(min-width: 491px)" srcset="https://mrkp-static-production.themarkup.org/uploads/2020/09/Inspectlet-Session-Recording-Website-Heatmaps-Javascript-A-B-Testing-Error-Logging-Form-Analytics-720x405.jpg, https://mrkp-static-production.themarkup.org/uploads/2020/09/Inspectlet-Session-Recording-Website-Heatmaps-Javascript-A-B-Testing-Error-Logging-Form-Analytics-1280x720.jpg 2x">
+  <source media="(max-width: 490px)" srcset="https://mrkp-static-production.themarkup.org/uploads/2020/09/Inspectlet-Session-Recording-Website-Heatmaps-Javascript-A-B-Testing-Error-Logging-Form-Analytics-720x405.jpg, https://mrkp-static-production.themarkup.org/uploads/2020/09/Inspectlet-Session-Recording-Website-Heatmaps-Javascript-A-B-Testing-Error-Logging-Form-Analytics-1280x720.jpg 3x">
+  <img src="https://mrkp-static-production.themarkup.org/uploads/2020/09/Inspectlet-Session-Recording-Website-Heatmaps-Javascript-A-B-Testing-Error-Logging-Form-Analytics-720x405.jpg" alt="Screenshot from Inspectlet, a known session-recording provider.">
+</picture></div><figcaption>
+      <span>Caption:</span>
+      Screenshot from Inspectlet, a known session recording provider.</figcaption></figure>
+
+
+<p><strong>What Blacklight Tests</strong></p>
+
+
+
+<p>We define session recording as the loading of a specific type of script by a company that we know to be providing session recording services.</p>
+
+
+
+<p>Blacklight monitors the network requests for specific URL substrings that appear only when session recording is taking place, <a href="https://web.archive.org/web/20210830151649/https://gist.github.com/gunesacar/0c67b94ad415841cf3be6761714147ca" target="_blank">according to a list</a> created by researchers at Princeton University in 2017.</p>
+
+
+
+  
+
+
+
+<p>Sometimes key logging is used as part of session recording. In those cases, Blacklight would correctly report the session recorder as both key logging and session recording because we observed both, even though both tests are identifying the same script. &nbsp;</p>
+
+
+
+<p>Blacklight accurately detects when a website loads these scripts—but companies typically record only a sample of website visits, so not every user is being recorded on every visit.</p>
+
+
+
+	
+<div>
+	
+	<p><a href="#canvas-fingerprinting">↩︎ link</a></p><h3 id="canvas-fingerprinting">Canvas&nbsp;Fingerprinting</h3>
+</div>
+
+
+<p>Fingerprinting describes a group of techniques that try to identify your browser without setting a cookie. <a href="https://webtransparency.cs.princeton.edu/webcensus/#results" target="_blank">They can identify you</a> even if you block all cookies.</p>
+
+
+
+<p>Canvas fingerprinting is a type of fingerprinting that identifies users by drawing shapes and text on a user’s webpage and noting the minor differences in the way they are rendered.&nbsp;</p>
+
+
+<figure aria-label="image" role="group">
+  <div><picture>
+  <source media="(min-width: 491px)" srcset="https://mrkp-static-production.themarkup.org/uploads/2020/09/fingerprinting-720x405.jpg, https://mrkp-static-production.themarkup.org/uploads/2020/09/fingerprinting-1280x720.jpg 2x">
+  <source media="(max-width: 490px)" srcset="https://mrkp-static-production.themarkup.org/uploads/2020/09/fingerprinting-720x405.jpg, https://mrkp-static-production.themarkup.org/uploads/2020/09/fingerprinting-1280x720.jpg 3x">
+  <img src="https://mrkp-static-production.themarkup.org/uploads/2020/09/fingerprinting-720x405.jpg" alt="Four examples of canvas fingerprinting found with Blacklight">
+</picture></div><figcaption>
+      <span>Caption:</span>
+      Four examples of canvas fingerprinting found with Blacklight.</figcaption></figure>
+
+
+<p>These differences in font rendering, smoothing, and anti-aliasing and other features <a href="https://webtransparency.cs.princeton.edu/webcensus/index.html#canvas-font-fp" target="_blank">are used by marketers</a> and others to identify individual devices. All of the major internet browsers, except Chrome, try to counter canvas fingerprinting—either by not fulfilling data requests for scripts known to have engaged in the practice or by trying to standardize users’ fingerprints.</p>
+
+
+
+<p>The image below is an example of the type of canvas images used by fingerprinting scripts. These canvases are usually invisible to the user.</p>
+
+
+
+<p><strong>What Blacklight Tests</strong></p>
+
+
+
+<p>We follow the methodology described in <a href="http://randomwalker.info/publications/OpenWPM_1_million_site_tracking_measurement.pdf#page=12" target="_blank">this paper</a> by researchers at Princeton University to identify when the HTML canvas element is used for tracking purposes. The parameters we use to identify canvases that are being drawn for fingerprinting purposes are:</p>
+
+
+
+  <ul>
+
+  <li>The canvas element's <em>height</em> and <em>width</em> properties must not be set below 16px.</li>
+  
+  <li>Text must be written to the canvas within at least 10 distinct characters.</li>
+  
+  <li>The script should not call the <em>save</em>, <em>restore</em>, or <em>addEventListener</em> methods of the rendering context.</li>
+  
+  <li>The script extracts and image with a <em>toDataURL</em> or with a single call to <em>getImageData</em> that specifies an area with&nbsp;a minimum size of 16px × 16px.</li>
+  
+</ul>
+  
+
+
+
+<p>We have not seen this in practice, but it is possible that Blacklight could falsely label a legitimate use of the canvas that matches these heuristics. In order to account for this, the tool captures the image drawn by the script and renders this in the tool. Users should be able to determine the use of canvas simply by viewing this image. A typical fingerprinting script is shown above.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+
+	
+
+
+
+<p>Ad trackers are technologies that identify and collect information about users. These technologies usually (but not always) appear with some level of consent from the website owners. They are used to collect website user analytics, for ad-targeting, and by data brokers and other information collectors to build user profiles. They usually take the form of Javascript scripts or web beacons.</p>
+
+
+
+<p>Web beacons are small 1px by 1px images that are placed on a website for tracking purposes by third parties. Using this technique, a third party can determine behaviors including when a particular user went to a site, the kind of browser, and what IP address it used.</p>
+
+
+
+<p><strong>What Blacklight Tests</strong></p>
+
+
+
+<p>Blacklight checks all network requests against the <a href="https://easylist.to/" target="_blank">EasyPrivacy</a> list, which contains URLs and URL substrings that are known to be used for tracking. Blacklight monitors the network activity for requests being made to these URLs and substrings.</p>
+
+
+
+<p>Blacklight only records requests being made to third-party domains. It ignores any URL patterns in the EasyPrivacy list that match a first-party domain. For example, the EFF hosts its own analytics, and that results in requests to “<a href="https://anon-stats.eff.org/" target="_blank">https://anon-stats.eff.org</a>,” their analytics subdomain. If a user types in <em>https://eff.org</em>, Blacklight does not consider calls to <em>https://anon-stats.eff.org</em> to be a third-party request.</p>
+
+
+
+<p>We look up these third-party domains in DuckDuckGo’s Tracker Radar data set to find out who owns them, how prevalent they are, and what kinds of services they provide. We only include third-party domains that belong to the “Ad Motivated Tracking” categories defined in the <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/CATEGORIES.md" target="_blank">Tracker Radar data set</a>.</p>
+
+
+
+	
+
+
+
+<p>The Facebook pixel is a piece of code Facebook created that allows other websites to target their visitors later with ads on Facebook. Common actions that can be tracked by pixel include viewing a page or specific content, adding payment information, or making a purchase.</p>
+
+
+
+<p><strong>What Blacklight Tests</strong></p>
+
+
+
+<p>Blacklight looks for network requests from the site going to Facebook and looks in the URL query parameters for data that matches the schema of what is described in the documentation for Facebook’s pixel. We look for three different types of data: “<a href="https://web.archive.org/web/20200625095908/https:/developers.facebook.com/docs/facebook-pixel/reference/" target="_blank">standard</a> events,” “custom events” and <a href="https://web.archive.org/web/20200413102542/https:/developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching" target="_blank">“advanced matching</a>.”</p>
+
+
+
+	
+
+
+
+<p>Google Analytics is the most popular website analytics platform in use today. <a href="https://whotracks.me/trackers/google_analytics.html" target="_blank">According to whotracks.me 41.7 percent of web traffic is analyzed by Google Analytics</a>. While most of the functionality of this service is to provide developers and website owners with information on how their audience is engaging with their website, the tool also allows the website to make custom audience lists based on user behavior and then target ads to those visitors across the internet using Google Ads and Display &amp; Video 360. Blacklight examines inspected sites for the presence of the tool, not how it is used.</p>
+
+
+
+<p><strong>What Blacklight Tests</strong></p>
+
+
+
+<p>Blacklight looks for network requests from the inspected site going to a URL beginning with “stats.g.doubleclick” that also contains the “UA-” Google account identifier prefix. This is described in more detail in <a href="https://web.archive.org/web/20200615214845/https:/developers.google.com/analytics/resources/concepts/gaConceptsTrackingOverview" target="_blank">Google Analytics developer documentation</a>.</p>
+
+
+
+
+
+<p>To determine the prevalence of tracking technologies on the internet both for context in Blacklight and for accompanying news stories, we ran the 100,000 most popular websites as defined by the <a href="https://tranco-list.eu/list/V3KN/full" target="_blank">Tranco List</a> through Blacklight. The data and analysis code can be found on <a href="https://github.com/the-markup/investigation-blacklight-the-high-cost-of-free" target="_blank">Github</a>&nbsp;. Blacklight successfully captured data for 81,617 of those URLs. The rest either failed to resolve, timed out on multiple attempts, or didn’t load a webpage. The percentages listed below are for the 81,617 successful captures.</p>
+
+
+
+<p>Some of the analysis goes beyond what appears on the tool. The key findings from our survey are as follows:</p>
+
+
+
+  <ul>
+
+  <li>6 percent of websites used canvas fingerprinting.</li>
+  
+  <li>15 percent of websites loaded scripts from known session recorders.</li>
+  
+  <li>4 percent of websites logged keystrokes.</li>
+  
+  <li>13 percent of sites did not load any third-party cookies or tracking network requests.</li>
+  
+  <li>The median number of third-party cookie loads was three.</li>
+  
+  <li>The median number of ad trackers loaded was seven.</li>
+  
+  <li>74 percent of sites loaded Google tracking technology.</li>
+  
+  <li>33 percent of websites loaded Facebook tracking technology.</li>
+  
+  <li>50 percent of sites used Google Analytics’ remarketing feature.</li>
+  
+  <li>30 percent of sites used the Facebook pixel.</li>
+  
+</ul>
+  
+
+
+
+<p>We classified as Google tracking technology any network requests being made to any of the following domains:</p>
+
+
+
+  <ul>
+
+  <li>google-analytics.com</li>
+  
+  <li>Doubleclick.net</li>
+  
+  <li>Googletagmanager.com</li>
+  
+  <li>Googletagservices</li>
+  
+  <li>Googlesyndication.com</li>
+  
+  <li>Googleadservices</li>
+  
+  <li>2mdn.net</li>
+  
+</ul>
+  
+
+
+
+<p>We classified as Facebook tracking technology any network requests being made to any of the following Facebook domains:</p>
+
+
+
+  <ul>
+
+  <li>facebook.com</li>
+  
+  <li>Facebook.net</li>
+  
+  <li>atdmt.com</li>
+  
+</ul>
+  
+
+
+
+
+
+<p>Blacklight’s analysis is limited by four main factors: </p>
+
+
+
+  <ol>
+
+  <li>It is a simulation of a user behavior, not actual user behavior, and could thus trigger different surveillance responses. </li>
+  
+  <li>The inspected website could be surveilling user activities for benign purposes. </li>
+  
+  <li>False positives (possible with canvas fingerprinting): Very occasionally, legitimate uses of the HTML canvas match the heuristics Blacklight uses to identify canvas fingerprinting. </li>
+  
+  <li>False negatives: The stack tracing technique used by Blacklight’s Javascript instrumentation might incorrectly attribute a call to a window API method we are monitoring to a library included by a script. For example, if a fingerprinting script uses jQuery to do some calls, jQuery might end up on the top of the stack and Blacklight will attribute the call to that instead of the script that's actually responsible. This possibility was brought to our attention by researchers who reviewed our methodology; we have not seen it occur in our tests or our survey of the 100,000 most popular sites.</li>
+  
+
+  </ol>
+
+
+
+  
+
+
+
+<p>Regarding false positives, when Blacklight visits a site, that site can see the request is coming from computers hosted by Amazon’s AWS cloud infrastructure. Because botnets are often run on cloud infrastructure, our tool could trigger bot-detection software on the website, including canvas fingerprinting. This could result in false positives for the canvas fingerprinting test where the purpose of the test is not to track users but rather to detect botnets.</p>
+
+
+
+<p>In order to test this, we took a random sample of 1,000 sites from the top websites from the Tranco List that we had already run through Blacklight on AWS. We ran this sample through Blacklight software on our computer locally at a residential IP address in New York City. We concluded that the results of a Blacklight inspection locally are very similar, but not exactly the same, as running it on cloud infrastructure.</p>
+
+
+
+<div id="results-for-sample-local-computer-and-aws">
+  
+    <p><a href="#results-for-sample-local-computer-and-aws">↩︎ link</a></p><h3>Results for Sample: Local Computer and AWS</h3>
+  
+  <div>
+    <table>
+        
+          <tbody><tr><th>
+              <span>
+                
+              </span>
+            </th><th>
+              <span>Local
+                
+              </span>
+            </th><th>
+              <span>AWS
+                
+              </span>
+            </th></tr>
+        
+      
+        
+          <tr data-row="1"><td>Canvas fingerprinting</td><td>8%</td><td>10%</td></tr>
+        
+      
+        
+          <tr data-row="2"><td>Session recording</td><td>18%</td><td>19%</td></tr>
+        
+      
+        
+          <tr data-row="3"><td>Key logging</td><td>4%</td><td>6%</td></tr>
+        
+      
+        
+          <tr data-row="4"><td>Median number of third-party cookies</td><td>4</td><td>5</td></tr>
+        
+      
+        
+          <tr data-row="5"><td>Median number of third-party trackers recorded</td><td>7</td><td>8</td></tr>
+        
+      </tbody></table></div></div>
+
+
+<p>Not all surveillance activity that is imperceptible to the user is necessarily malicious. For instance, canvas fingerprinting is used for fraud prevention because <a href="https://docs.fingerprintjs.com/pro/user-identification" target="_blank">it can identify a device</a>. And key logging can be used to provide autocomplete functionality.</p>
+
+
+
+<p>Blacklight does not attempt to identify the intent of any particular tracking technology it finds.</p>
+
+
+
+<p>Nor can Blacklight determine exactly how a website uses the data it collects on a user when loading session recording scripts and monitoring user behavior, such as mouse movements and keystrokes.</p>
+
+
+
+<p>Blacklight does not check the terms of use or privacy policies of the websites it visits to see whether they disclose their surveillance activities.</p>
+
+
+
+<hr><p><strong>Input field values</strong></p>
+
+
+
+<p>The table below lists the values we programmed Blacklight to type into input fields on websites. We used the Mozilla <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete" target="_blank">autocomplete attribute write-up as our reference</a>. Blacklight also checks for the base64, md5, sha256 and sha512 versions of these values.</p>
+
+
+
+<div>
+    <table>
+        
+          <tbody><tr><th>
+              <span>Autocomplete Attribute
+                
+              </span>
+            </th><th>
+              <span>Blacklight Value
+                
+              </span>
+            </th></tr>
+        
+      
+        
+          <tr data-row="1"><td>Date</td><td>01/01/2026</td></tr>
+        
+      
+        
+          <tr data-row="2"><td>Email</td><td>blacklight-headless@themarkup.org</td></tr>
+        
+      
+        
+          <tr data-row="3"><td>Password</td><td>SUPERS3CR3T_PASSWORD</td></tr>
+        
+      
+        
+          <tr data-row="4"><td>Search</td><td>TheMarkup</td></tr>
+        
+      
+        
+          <tr data-row="5"><td>Text</td><td>IdaaaaTarbell</td></tr>
+        
+      
+        
+          <tr data-row="6"><td>URL</td><td>https://themarkup.org</td></tr>
+        
+      
+        
+          <tr data-row="7"><td>Organization</td><td>The Markup</td></tr>
+        
+      
+        
+          <tr data-row="8"><td>Organization Title</td><td>Non-profit newsroom</td></tr>
+        
+      
+        
+          <tr data-row="9"><td>Current Password</td><td>S3CR3T_CURRENT_PASSWORD</td></tr>
+        
+      
+        
+          <tr data-row="10"><td>New Password</td><td>S3CR3T_NEW_PASSWORD</td></tr>
+        
+      
+        
+          <tr data-row="11"><td>Username</td><td>idaaaa_tarbell</td></tr>
+        
+      
+        
+          <tr data-row="12"><td>Family Name</td><td>Tarbell</td></tr>
+        
+      
+        
+          <tr data-row="13"><td>Given Name</td><td>Idaaaa</td></tr>
+        
+      
+        
+          <tr data-row="14"><td>Name</td><td>IdaaaaTarbell</td></tr>
+        
+      
+        
+          <tr data-row="15"><td>Street Address</td><td>PO Box #1103</td></tr>
+        
+      
+        
+          <tr data-row="16"><td>Address Line 1</td><td>PO Box #1103</td></tr>
+        
+      
+        
+          <tr data-row="17"><td>Postal Code</td><td>10159</td></tr>
+        
+      
+        
+          <tr data-row="18"><td>CC-Name</td><td>IDAAAATARBELL</td></tr>
+        
+      
+        
+          <tr data-row="19"><td>CC-Given-Name</td><td>IDAAAA</td></tr>
+        
+      
+        
+          <tr data-row="20"><td>CC-Family-Name</td><td>TARBELL</td></tr>
+        
+      
+        
+          <tr data-row="21"><td>CC-Number</td><td>4479846060020724</td></tr>
+        
+      
+        
+          <tr data-row="22"><td>CC-Exp</td><td>01/2026</td></tr>
+        
+      
+        
+          <tr data-row="23"><td>CC-Type</td><td>Visa</td></tr>
+        
+      
+        
+          <tr data-row="24"><td>Transaction Amount</td><td>13371337</td></tr>
+        
+      </tbody></table></div>
+
+
+
+
+<p>We thank Gunes Acar (KU Leven), Steven Englehardt (Mozilla), and Arvind Narayanan and Jonathan Mayer (Princeton, CITP) for comments and suggestions on an earlier draft.</p>
+
+
+
+<hr></div></div>
+                
+                </main>
+                <footer>
+
+                </footer>
+            </div>
+            <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+        </body>
+    </html>

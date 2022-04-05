@@ -1,0 +1,505 @@
+
+
+<!doctype html>
+    <html lang="en-US" id="template-archives" class="base">
+        <head>
+        
+        <script defer data-domain="context.center" src="https://plausible.io/js/plausible.js"></script>
+        <link rel="alternate" type="application/rss+xml" title="Context Center RSS" href="https://context.center/rss/" />
+    	<link rel="alternate" type="application/atom+xml" title="Context Center Feed" href="https://context.center/feed/" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Patterns for Privacy by Design in Javascript APIs</title>
+        <link rel="original" http-equiv href="http://darobin.github.io/api-design-privacy/api-design-privacy.html" />
+        
+            
+                <!-- <link rel="stylesheet" href="https://context.center/assets/css/template-archives.css?v=2097943621" /> -->
+                <link rel="stylesheet" href="https://context.center/assets/css/template-archives.css?v=2097943621" id=""></link>
+
+            
+        
+        
+            <link rel="canonical" href="http://darobin.github.io/api-design-privacy/api-design-privacy.html" />
+            
+
+            <meta property="og:title"
+                content="Patterns for Privacy by Design in Javascript APIs">
+
+            <meta property="og:description"
+                content="This document provides some background on the threats to users' privacy that Javascript APIs help create on the Web, and provides some patterns to mitigate such...">
+
+
+            <meta property="og:url"
+                content="http://darobin.github.io/api-design-privacy/api-design-privacy.html" />
+
+            <meta property="og:site_name" content="Context Center" />
+
+            <meta property="og:locale" content="en_US" />
+
+            <meta name="twitter:site" content="@chronotope" />
+
+            <meta name="twitter:description" content="This document provides some background on the threats to users' privacy that Javascript APIs help create on the Web, and provides some patterns to mitigate such..." />
+
+            <!-- I prefer the summary_large_image Twitter card for posts. -->
+            <meta name="twitter:card" content="summary_large_image" />
+            <!-- You, you're the creator. -->
+            <meta name="twitter:creator" content="@chronotope" />
+            <!-- This property is for the article title, not site title. -->
+            <meta name="twitter:title" content="Patterns for Privacy by Design in Javascript APIs" />
+
+            
+
+            <meta property="og:type" content="website" />
+
+            <script type="application/ld+json">
+                {
+                    "@context": "http://schema.org",
+                    "@type": "WebPage",
+                    "url": "http://darobin.github.io/api-design-privacy/api-design-privacy.html",
+                    "headline": "Patterns for Privacy by Design in Javascript APIs",
+                    "about": "This document provides some background on the threats to users' privacy that Javascript APIs help create
+        on the Web, and provides some patterns to mitigate such threats at the API design level. Its primary
+        audience is therefore people involved in the definition and implementation inside user agents of such APIs.",
+
+                    "image": [
+                        
+                        
+                    ],
+                    "isAccessibleForFree": "True",
+                    "isPartOf": {
+                        "@type": ["CreativeWork", "Product"],
+                        "name": "Fight With Tools",
+                        "productID": "fightwithtools.dev"
+                    },
+                    "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+                    "archivedAt": "https://context.center/timegate/http:/darobin.github.io/api-design-privacy/api-design-privacy.html/",
+                    "sameAs": "http://darobin.github.io/api-design-privacy/api-design-privacy.html",
+                }
+            </script>
+
+
+        
+        
+        </head>
+        <body >
+            <div class="wrapper">
+                <header>
+                    <div class="left">
+                        <h1>Archived: Patterns for Privacy by Design in Javascript APIs</h1>
+                        <p>This is a simplified archive of the page at <a href="http://darobin.github.io/api-design-privacy/api-design-privacy.html" target="_blank">http://darobin.github.io/api-design-privacy/api-design-privacy.html</a></p>
+                    </div>
+
+                            <div id="share-embed">
+                                <span>Use this page embed on your own site:</span>
+                                <textarea id="html-embed" name="story" rows="8" cols="40">
+                                    <script>window.contexterSetup=window.contexterSetup||function(){window.contexterSetupComplete=!0;class ContexterLink extends HTMLAnchorElement{constructor(){super()}connectedCallback(){this.setAttribute("target","_blank")}}customElements.define("contexter-link",ContexterLink,{extends:"a"}),customElements.define("contexter-inner",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__inner"}}),customElements.define("contexter-thumbnail",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__thumbnail"}}),customElements.define("contexter-byline",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__byline"}}),customElements.define("contexter-keywordset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__keywordset"}}),customElements.define("contexter-linkset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__linkset"}}),customElements.define("contexter-meta",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__meta"}}),customElements.define("contexter-summary",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="p-summary entry-summary"}}),customElements.define("contexter-box-head",class extends HTMLElement{constructor(){super()}connectedCallback(){this.className="contexter-box__head"}}),customElements.define("contexter-box-inner",class extends HTMLElement{constructor(){super()}connectedCallback(){}});class ContexterBox extends HTMLElement{constructor(){super(),this.first=!0,this.shadow=this.attachShadow({mode:"open"})}connectedCallback(){if(this.first){this.first=!1;var style=document.createElement("style"),lightDomStyle=(style.innerHTML=`:host {--background: #f5f6f7;--border: darkblue;--blue: #0000ee;--font-color: black;--inner-border: black;font-family: Franklin,Arial,Helvetica,sans-serif;font-size: 14px;background: var(--background);width: 600px;color: var(--font-color);min-height: 90px;display: block;padding: 8px;border: 1px solid var(--border);cursor: pointer;box-sizing: border-box;margin: 6px;contain: content;margin: 6px auto;}// can only select top-level nodes with slotted::slotted(*) {max-width: 100%;display:block;}::slotted([slot=thumbnail]) {max-width: 100%;display:block;}::slotted([slot=header]) {width: 100%;font-size: 1.25rem;font-weight: bold;display:block;margin-bottom: 6px;}::slotted([slot=author]) {max-width: 50%;font-size: 12px;display:inline-block;float: left;}::slotted([slot=time]) {max-width: 50%;font-size: 12px;display:inline-block;float: right;}::slotted([slot=summary]) {width: 100%;margin-top: 6px;padding: 10px 2px;border-top: 1px solid var(--inner-border);font-size: 15px;display:inline-block;margin-bottom: 6px;}contexter-meta {height: auto;margin-bottom: 4px;width: 100%;display: grid;position: relative;min-height: 16px;grid-template-columns: repeat(2, 1fr);}::slotted([slot=keywords]) {width: 80%;padding: 2px 4px;border-top: 1px solid var(--inner-border);font-size: 11px;display: block;float: right;font-style: italic;text-align: right;grid-column: 2/2;grid-row: 1;align-self: end;justify-self: end;}::slotted([slot=keywords]):empty {border-top: 0px solid var(--inner-border);}::slotted([slot=archive-link]) {font-size: 1em;display: inline;}::slotted([slot=archive-link])::after {content: "|";display: inline;color: var(--font-color);text-decoration: none;margin: 0 .5em;}::slotted([slot=read-link]) {font-size: 1em;display: inline;}contexter-linkset {width: 80%;padding: 2px 4px;font-size: 13px;float: left;font-weight: bold;grid-row: 1;grid-column: 1/2;align-self: end;justify-self: start;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {:host {width: 310px;}}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){:host {--background: #354150;--border: #1f2b37;--blue: #55b0ff;--font-color: #ffffff;--inner-border: #787a7c;background: var(--background);border: 1px solid var(--border)}}`,document.createElement("style"));lightDomStyle.innerHTML=`contexter-box {contain: content;}contexter-box .read-link {font-weight: bold;}contexter-box a {color: #0000ee;}contexter-box img {width: 100%;border: 0;padding: 0;margin: 0;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {...}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){contexter-box a {color: #55b0ff;}}`,this.appendChild(lightDomStyle),this.shadow.appendChild(style);const innerContainer=document.createElement("contexter-box-inner"),innerSlotThumbnail=(this.shadow.appendChild(innerContainer),document.createElement("slot")),innerSlotHeader=(innerSlotThumbnail.name="thumbnail",innerContainer.appendChild(innerSlotThumbnail),document.createElement("slot")),innerSlotAuthor=(innerSlotHeader.name="header",innerContainer.appendChild(innerSlotHeader),document.createElement("slot")),innerSlotTime=(innerSlotAuthor.name="author",innerContainer.appendChild(innerSlotAuthor),document.createElement("slot")),innerSlotSummary=(innerSlotTime.name="time",innerContainer.appendChild(innerSlotTime),document.createElement("slot")),metaContainer=(innerSlotSummary.name="summary",innerContainer.appendChild(innerSlotSummary),document.createElement("contexter-meta")),innerSlotInfo=(innerContainer.appendChild(metaContainer),document.createElement("slot")),linkContainer=(innerSlotInfo.name="keywords",metaContainer.appendChild(innerSlotInfo),document.createElement("contexter-linkset")),innerSlotArchiveLink=(metaContainer.appendChild(linkContainer),document.createElement("slot")),innerSlotReadLink=(innerSlotArchiveLink.name="archive-link",linkContainer.appendChild(innerSlotArchiveLink),document.createElement("slot"));innerSlotReadLink.name="read-link",linkContainer.appendChild(innerSlotReadLink),this.className="contexter-box",this.onclick=e=>{if(!e.target.className.includes("read-link")&&!e.target.className.includes("title-link")){const mainLinks=this.querySelectorAll("a.main-link");mainLinks[0].click()}}}}}customElements.define("contexter-box",ContexterBox)},window.contexterSetupComplete||window.contexterSetup();</script><contexter-box class="link-card h-entry hentry" itemscope="" itemtype="https://schema.org/CreativeWork"><contexter-thumbnail class="thumbnail" slot="thumbnail"></contexter-thumbnail><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><a is="contexter-link" href="http://darobin.github.io/api-design-privacy/api-design-privacy.html" itemprop="url">Patterns for Privacy by Design in Javascript APIs</a></contexter-box-head></contexter-box-head><time class="dt-published published" slot="time" itemprop="datePublished" datetime="2022-04-05T17:38:36.764Z">3/5/2022</time><contexter-summary class="p-summary entry-summary" itemprop="abstract" slot="summary"><p>This document provides some background on the threats to users' privacy that Javascript APIs help createon the Web, and provides some patterns to mitigate such threats at the API design level. Its primaryaudience is therefore people involved in the definition and implementation inside user agents of such APIs.</p></contexter-summary><contexter-keywordset itemprop="keywords" slot="keywords"></contexter-keywordset><a is="contexter-link" href="http://darobin.github.io/api-design-privacy/api-design-privacy.html" class="read-link main-link" itemprop="sameAs" slot="read-link">Read</a><a href="https://context.center/timegate/http://darobin.github.io/api-design-privacy/api-design-privacy.html" is="contexter-link" target="_blank" class="read-link archive-link" itemprop="archivedAt" slot="archive-link">Archived</a></contexter-box>
+                                </textarea><br />
+                                <button onclick="(function(e){ navigator.clipboard.writeText(document.getElementById('html-embed').value); })()">Copy</button>
+                            </div>
+                            
+                            <script>window.contexterSetup=window.contexterSetup||function(){window.contexterSetupComplete=!0;class ContexterLink extends HTMLAnchorElement{constructor(){super()}connectedCallback(){this.setAttribute("target","_blank")}}customElements.define("contexter-link",ContexterLink,{extends:"a"}),customElements.define("contexter-inner",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__inner"}}),customElements.define("contexter-thumbnail",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__thumbnail"}}),customElements.define("contexter-byline",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__byline"}}),customElements.define("contexter-keywordset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__keywordset"}}),customElements.define("contexter-linkset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__linkset"}}),customElements.define("contexter-meta",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__meta"}}),customElements.define("contexter-summary",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="p-summary entry-summary"}}),customElements.define("contexter-box-head",class extends HTMLElement{constructor(){super()}connectedCallback(){this.className="contexter-box__head"}}),customElements.define("contexter-box-inner",class extends HTMLElement{constructor(){super()}connectedCallback(){}});class ContexterBox extends HTMLElement{constructor(){super(),this.first=!0,this.shadow=this.attachShadow({mode:"open"})}connectedCallback(){if(this.first){this.first=!1;var style=document.createElement("style"),lightDomStyle=(style.innerHTML=`:host {--background: #f5f6f7;--border: darkblue;--blue: #0000ee;--font-color: black;--inner-border: black;font-family: Franklin,Arial,Helvetica,sans-serif;font-size: 14px;background: var(--background);width: 600px;color: var(--font-color);min-height: 90px;display: block;padding: 8px;border: 1px solid var(--border);cursor: pointer;box-sizing: border-box;margin: 6px;contain: content;margin: 6px auto;}// can only select top-level nodes with slotted::slotted(*) {max-width: 100%;display:block;}::slotted([slot=thumbnail]) {max-width: 100%;display:block;}::slotted([slot=header]) {width: 100%;font-size: 1.25rem;font-weight: bold;display:block;margin-bottom: 6px;}::slotted([slot=author]) {max-width: 50%;font-size: 12px;display:inline-block;float: left;}::slotted([slot=time]) {max-width: 50%;font-size: 12px;display:inline-block;float: right;}::slotted([slot=summary]) {width: 100%;margin-top: 6px;padding: 10px 2px;border-top: 1px solid var(--inner-border);font-size: 15px;display:inline-block;margin-bottom: 6px;}contexter-meta {height: auto;margin-bottom: 4px;width: 100%;display: grid;position: relative;min-height: 16px;grid-template-columns: repeat(2, 1fr);}::slotted([slot=keywords]) {width: 80%;padding: 2px 4px;border-top: 1px solid var(--inner-border);font-size: 11px;display: block;float: right;font-style: italic;text-align: right;grid-column: 2/2;grid-row: 1;align-self: end;justify-self: end;}::slotted([slot=keywords]):empty {border-top: 0px solid var(--inner-border);}::slotted([slot=archive-link]) {font-size: 1em;display: inline;}::slotted([slot=archive-link])::after {content: "|";display: inline;color: var(--font-color);text-decoration: none;margin: 0 .5em;}::slotted([slot=read-link]) {font-size: 1em;display: inline;}contexter-linkset {width: 80%;padding: 2px 4px;font-size: 13px;float: left;font-weight: bold;grid-row: 1;grid-column: 1/2;align-self: end;justify-self: start;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {:host {width: 310px;}}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){:host {--background: #354150;--border: #1f2b37;--blue: #55b0ff;--font-color: #ffffff;--inner-border: #787a7c;background: var(--background);border: 1px solid var(--border)}}`,document.createElement("style"));lightDomStyle.innerHTML=`contexter-box {contain: content;}contexter-box .read-link {font-weight: bold;}contexter-box a {color: #0000ee;}contexter-box img {width: 100%;border: 0;padding: 0;margin: 0;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {...}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){contexter-box a {color: #55b0ff;}}`,this.appendChild(lightDomStyle),this.shadow.appendChild(style);const innerContainer=document.createElement("contexter-box-inner"),innerSlotThumbnail=(this.shadow.appendChild(innerContainer),document.createElement("slot")),innerSlotHeader=(innerSlotThumbnail.name="thumbnail",innerContainer.appendChild(innerSlotThumbnail),document.createElement("slot")),innerSlotAuthor=(innerSlotHeader.name="header",innerContainer.appendChild(innerSlotHeader),document.createElement("slot")),innerSlotTime=(innerSlotAuthor.name="author",innerContainer.appendChild(innerSlotAuthor),document.createElement("slot")),innerSlotSummary=(innerSlotTime.name="time",innerContainer.appendChild(innerSlotTime),document.createElement("slot")),metaContainer=(innerSlotSummary.name="summary",innerContainer.appendChild(innerSlotSummary),document.createElement("contexter-meta")),innerSlotInfo=(innerContainer.appendChild(metaContainer),document.createElement("slot")),linkContainer=(innerSlotInfo.name="keywords",metaContainer.appendChild(innerSlotInfo),document.createElement("contexter-linkset")),innerSlotArchiveLink=(metaContainer.appendChild(linkContainer),document.createElement("slot")),innerSlotReadLink=(innerSlotArchiveLink.name="archive-link",linkContainer.appendChild(innerSlotArchiveLink),document.createElement("slot"));innerSlotReadLink.name="read-link",linkContainer.appendChild(innerSlotReadLink),this.className="contexter-box",this.onclick=e=>{if(!e.target.className.includes("read-link")&&!e.target.className.includes("title-link")){const mainLinks=this.querySelectorAll("a.main-link");mainLinks[0].click()}}}}}customElements.define("contexter-box",ContexterBox)},window.contexterSetupComplete||window.contexterSetup();</script><contexter-box class="link-card h-entry hentry" itemscope="" itemtype="https://schema.org/CreativeWork"><contexter-thumbnail class="thumbnail" slot="thumbnail"></contexter-thumbnail><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><a is="contexter-link" href="http://darobin.github.io/api-design-privacy/api-design-privacy.html" itemprop="url">Patterns for Privacy by Design in Javascript APIs</a></contexter-box-head></contexter-box-head><time class="dt-published published" slot="time" itemprop="datePublished" datetime="2022-04-05T17:38:36.764Z">3/5/2022</time><contexter-summary class="p-summary entry-summary" itemprop="abstract" slot="summary"><p>This document provides some background on the threats to users' privacy that Javascript APIs help createon the Web, and provides some patterns to mitigate such threats at the API design level. Its primaryaudience is therefore people involved in the definition and implementation inside user agents of such APIs.</p></contexter-summary><contexter-keywordset itemprop="keywords" slot="keywords"></contexter-keywordset><a is="contexter-link" href="http://darobin.github.io/api-design-privacy/api-design-privacy.html" class="read-link main-link" itemprop="sameAs" slot="read-link">Read</a><a href="https://context.center/timegate/http://darobin.github.io/api-design-privacy/api-design-privacy.html" is="contexter-link" target="_blank" class="read-link archive-link" itemprop="archivedAt" slot="archive-link">Archived</a></contexter-box>
+                            
+
+
+                </header>
+                <main>
+                
+                    <div id="readability-page-1" class="page">
+    <section id="abstract">
+      <p>
+        This document provides some background on the threats to users' privacy that Javascript APIs help create
+        on the Web, and provides some patterns to mitigate such threats at the API design level. Its primary
+        audience is therefore people involved in the definition and implementation inside user agents of such APIs.
+      </p>
+    </section>
+    <section id="sotd">
+      <p>
+        This document is a draft TAG finding, and as such has no official standing whatsoever.
+      </p>
+      <p>
+        This document is a work in progress from the
+        <a href="http://www.w3.org/2001/tag/"><acronym title="World Wide Web Consortium">W3C</acronym> 
+        Technical Architecture Group (TAG)</a>. <a href="/2001/tag/findings">Additional TAG findings</a>, both
+        accepted and in draft state, may also be available. The TAG may incorporate this and other findings 
+        into future versions of the [[WEBARCH]].  Please send comments on this finding to the publicly archived 
+        TAG mailing list <a href="mailto:www-tag@w3.org">www-tag@w3.org</a> 
+        (<a href="http://lists.w3.org/Archives/Public/www-tag/">archive</a>).
+      </p>
+    </section>
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        User privacy is a core feature of the Web. As the Web continues its evolution into a powerful application
+        platform, an increasing number of its additional abilities risk compromising user privacy unless they
+        are specifically created to promote it. While potentially present in all aspects of the Web platform,
+        this issue is particularly salient when it comes to Javascript APIs since they comprise one of the
+        most frequent and natural extensibility point for powerful features that can be misused, and that are
+        hard to mitigate against.
+      </p>
+      <p>
+        This leads to a strong requirement on these APIs to take user privacy into account from the earliest steps
+        in their conception. This, in turn, imposes design constraints that are different from those found in more
+        traditional applications programming which entails that experience with APIs designed for the latter 
+        seldom applies in full and needs to be revisited.
+      </p>
+    </section>
+    <section>
+      <h2>Scope</h2>
+      <p>
+        User privacy on the Web is a multifaceted topic which defies easy answers often causes great disagreement 
+        and debate. This document does not seek to analyse all facets of Web privacy. However, it does recognise 
+        the fact that awareness of Web privacy issues is on the rise, both on the part of Web users and Web developers. 
+        Over the past three years, the W3C has run several workshops and launched two new groups on topics related to 
+        user privacy. The IETF has also strongly expanded its activities in the privacy space. Strong privacy laws 
+        are in force in many parts of the world and being discussed in others.
+      </p>
+      <p>
+        Privacy on the Web is a topic that overlaps technical, social, regulatory and emotional barriers and is 
+        therefore difficult to pin down when creating a technical specification. This paper therefore chooses to 
+        focus on a deliberately limited subset of the problem space.
+      </p>
+      <p>
+        In this document we consider only those aspects of privacy and APIs that can be mitigated by API designers,
+        such as providing more information than is necessary for a given operation, not making it possible for the
+        user to control what information is being shared, and device fingerprinting. Conversely we do not cover other
+        privacy attacks such as tricking the user into providing information or maliciously using collected information
+        in ways that were not agreed to by the user. We have chosen this focus because well-designed APIs from the 
+        privacy standpoint should provide a solid foundation for better user privacy in general, because they can help
+        address the problem at the root, and because we feel that they form a coherent whole.
+      </p>
+      <p>
+        It is important in reading this document that its ambition is simply to capture known best current practices
+        in API design in order to help spread them amongst groups, and so as to provide a common starting point on top
+        of which further privacy-enhancing API design patterns can be built. Its content is therefore not expected to
+        remain static for all of eternity, but rather to evolve so as to capture the community's knowledge
+        of this domain.
+      </p>
+      <p>
+        Privacy is a very broad topic that covers most parts of the technological stack as well as its relationship
+        to society. Rather than attempt to “boil the privacy ocean” and address the entirety of the issue at once,
+        it is the firm opinion of this document's authors that the users' privacy will be best served by addressing
+        the problem separately at each layer that it touches so as to avoid the architectural infelicities involved
+        in crossing layer boundaries with a single solution. Such well-scoped changes can furthermore be deployed
+        quickly and provide the greater leverage of being accepted in their respective communities. There are
+        therefore <em>many</em> privacy issues that this document does not address; we can only encourage others
+        to attempt similar exercises across the board. Note that while the TAG's remit reaches well beyond API
+        design and thus leaves the door open for further TAG work on privacy, this specific domain was selected
+        as an area of high priority due to the great number of APIs being designed concurrently at this time.
+      </p>
+    </section>
+    <section>
+      <h2>Background</h2>
+      <p>
+        This section introduces some of the background thinking and history behind the development of this
+        document.
+      </p>
+      <section>
+        <h2>Data Minimisation</h2>
+        <p>
+          In their 1975 paper <a href="http://www.cs.virginia.edu/~evans/cs551/saltzer/">The Protection of Information 
+          in Computer Systems</a>, computer scientists Jerome Saltzer and Michael Schroeder articulated a principle of 
+          “least privilege:”
+        </p>
+        <blockquote>
+          Every program and every user of the system should operate using the least set of privileges 
+          necessary to complete the job. Primarily, this principle limits the damage that can result 
+          from an accident or error. It also reduces the number of potential interactions among privileged 
+          programs to the minimum for correct operation, so that unintentional, unwanted, or improper uses 
+          of privilege are less likely to occur.
+        </blockquote>
+        <p>
+          Although written long before the Web came into use and firmly form a security standpoint, Saltzer 
+          and Schroeder's definition could apply as easily to the distributed world of Web applications as 
+          they did to time-sharing mainframe programming of the 1970s.
+        </p>
+        <p>
+          Today, client-side Web applications are increasingly playing a role as intermediates for our personal,
+          privileged information between the devices we carry and applications residing somewhere on the Internet.
+        </p>
+        <p>
+          In the “<a href="http://tools.ietf.org/id/draft-hansen-privacy-terminology-00.html">Terminology for 
+          Talking about Privacy by Data Minimization: Anonymity, Unlinkability, Undetectability, Unobservability,
+          Pseudonymity, and Identity Management</a>”, Andreas Pfitzmann, Marit Hansen, and Hannes Tschofenig 
+          succinctly define minimisation as a strategy towards implementing enhanced privacy in (personal) data
+          collection and usage:
+        </p>
+        <blockquote>
+          <p>
+            Data minimization means that first of all, the possibility to collect personal data about others 
+            should be minimized. Next within the remaining possibilities, collecting personal data should be
+            minimized. Finally, the time how long collected personal data is stored should be minimized.
+          </p>
+          <p>
+            Data minimization is the only generic strategy to enable anonymity, since all correct personal data 
+            help to identify if we exclude providing misinformation (inaccurate or erroneous information, provided 
+            usually without conscious effort at misleading, deceiving, or persuading one way or another) 
+            or disinformation (deliberately false or distorted information given out in order to mislead or deceive).
+          </p>
+          <p>
+            Furthermore, data minimization is the only generic strategy to enable unlinkability, since all correct 
+            personal data provides some linkability if we exclude providing misinformation or disinformation.
+          </p>
+        </blockquote>
+        <p>
+          In attempting to apply these principles to the area of client-side Web APIs, the W3C Device APIs Working 
+          Group has refined this definition within their <a href="http://www.w3.org/TR/dap-privacy-reqs/">Device 
+          API Privacy Requirements</a>.
+        </p>
+        <blockquote>
+          <ul>
+            <li>
+              APIs MUST make it easy to request as little information as required for the intended usage. For 
+              instance, an API call should require specific parameters to be set to obtain more information, 
+              and should default to little or no information.
+            </li>
+            <li>
+              APIs SHOULD make it possible for user agents to convey the breadth of information that the requester 
+              is asking for. For instance, if a developer only needs to access a specific field of a user address 
+              book, it should be possible to explicitly mark that field in the API call so that the user agent can 
+              inform the user that this single field of data will be shared.
+            </li>
+            <li>
+              APIs SHOULD make it possible for user agents to let the user select, filter, and transform information
+              before it is shared with the requester. The user agent can then act as a broker for trusted data, and will
+              only transmit data to the requester that the user has explicitly allowed.
+            </li>
+          </ul>
+        </blockquote>
+      </section>
+      <section>
+        
+        <p>
+          “Privacy by design” is a relatively loaded term which has taken on multiple different definitions depending
+          on context. However, since it is the term of trade that has been in use in groups tasked with defining
+          Javascript APIs over the past few years, we have chosen to keep it, while ensuring that a specific definition
+          is provided here.
+        </p>
+        <p>
+          Within the scope of this document, <dfn>privacy by design</dfn> is a design approach that takes malicious 
+          practices for granted and endeavours to prevent and mitigate them from the ground up by applying specific 
+          patterns to the creation of Javascript APIs.
+        </p>
+        <p>
+          It is particularly important in privacy by design that users be exposed to as few direct privacy decisions as
+          possible. Notably, it should never be assumed that users can be “educated” into making correct privacy decisions.
+          The reason for this is that user typically interact with their user agent in order to accomplish a specific task.
+          Anything that interrupts the flow of that task's realisation is likely to only be given as cursory a thought
+          as possible. Therefore, requiring users to make privacy decisions whilst in the middle of accomplishing a task
+          is a recipe for poor decisions.
+        </p>
+        <p>
+          There are two primary issues that privacy by design seeks to address within the scope of Javascript APIs.
+        </p>
+        <section>
+          <h2>Poor Information Scoping</h2>
+          <p>
+            In order to accomplish a given operation, a Web application may legitimately require access to some of 
+            the user's private information. The issue here is that in providing access to the required information
+            can sometimes entail exposing a lot more information. For instance, when the user wishes to share one
+            event in their calendar, the entire calendar becomes available; or where the user needs to share the
+            name and email addresses of some of their contacts, the phone numbers, pictures, home addresses, etc.
+            of these contacts are also returned.
+          </p>
+        </section>
+        <section>
+          <h2>Device Fingerprinting</h2>
+          <p>
+            Users are routinely tracked across the Web through the use of cookies and other such identification
+            mechanisms. In many cases, these tracking methods can be successfully mitigated by the user agent, for instance
+            by only returning cookies for the top level window in the browsing context (as opposed to providing them
+            for <code>iframe</code>s for instance).
+          </p>
+          <p>
+            Fingerprinting circumvents this by looking at as many of the unique features of a user agent in order to
+            ascertain its uniqueness. For instance, it may look at screen resolution, the availability of specific
+            plugins, at the list of fonts that are installed on the system, the user agent string, the timezone, and
+            a wealth of information that user agents tend to provide by default. Taken one by one, none of these
+            data are sufficient to identify a single user, but put together they collect enough bits to narrow
+            the identification down to just the one person — especially if you take into account the population 
+            that visits a given site or set of sites.
+          </p>
+          <p>
+            A very good demonstration of fingerprinting, alongside with a paper detailing the approach, are
+            available from <a href="http://panopticlick.eff.org/">Panopticlick — How Unique and Traceable is Your Browser?</a>
+          </p>
+        </section>
+      </section>
+    </section>
+    <section>
+      <h2>Privacy-Enhancing API Patterns</h2>
+      <p>
+        The Web application platform requires the availability of a vast array of functionality that can greatly 
+        vary in nature. As a result, not all APIs can look the same, and no single approach can be applied automatically
+        across the board in order to take privacy into account during API design. This section therefore lists
+        patterns that API designers are expected to adapt to the specific requirements of their work.
+      </p>
+      <section>
+        <h2>Action-Based Availability</h2>
+        <p>
+          We seldom pause to think about it, but the manner in which mouse events are provided to Web applications
+          is a good example of privacy by design. When a page is loaded, the application has no way of knowing
+          whether a mouse is attached, what type of mouse it is (let alone which make and model), what kind of
+          capabilities it exposes, how many are attached, and so on. Only when the user decides to use the 
+          mouse — presumably because it is required for interaction — does some of this information become 
+          available. And even then, only the strict minimal is exposed: you could not know whether it is a 
+          trackpad for instance, and the fact that it may have a right button is only exposed if it is used.
+        </p>
+        <p>
+          This is an efficient way to prevent fingerprinting: only the minimal amount of information is provided, and
+          even that only when it is required. Contrast it with a design approach that is more typical of the first
+          proposals one sees to expose new interaction modalities:
+        </p>
+        <pre>          var mice = navigator.getAllMice();
+          for (var i = 0, n = mice.length; i &lt; n; i++) {
+              var mouse = mice[i];
+              // discover all sorts of unnecessary information about each mouse
+              // presumably do something to register event handlers on them
+          }
+        </pre>
+        <p>
+          The “Action-Based Availability” design pattern is applicable beyond mouse events. For instance, 
+          the <a href="https://dvcs.w3.org/hg/gamepad/raw-file/default/gamepad.html">Gamepad API</a> makes 
+          use of it. It is impossible for a Web game to know if the user
+          agent has access to gamepads, how many there are, what their capabilities are, etc. It is simply
+          assumed that if the user wishes to interact with the game through the gamepad then she will know
+          when to action it — and actioning it will provide the application with all the information that
+          it needs to operate (but no more than that).
+        </p>
+        <p>
+          The way in which this pattern is supported for the mouse is simply by only providing information
+          on the mouse's behaviour when certain events take place. The approach is therefore to expose
+          event handling (e.g. triggering on click, move, button press) as the sole interface to the device.
+        </p>
+        <p>
+          The Gamepad API supports this in a different, but equally good, fashion. The <code>navigator.gamepads</code>
+          array is initially empty, and only becomes populated when a gamepad has been interacted with (and then,
+          only with those of the connected gamepads that have been manipulated). Once they have been interacted with,
+          for the lifetime of the document these gamepads become available in the array and can be queried for a limited
+          (but essential) set of information.
+        </p>
+      </section>
+      <section>
+        <h2>Graceful Degradation</h2>
+        <p>
+          Graceful degradation is the principle according to which a system will continue to operate at the
+          best of its capabilities despite the fact that a given piece of functionality may be missing.
+          While commonly relied upon in Web technology, notably for document styling, it also has value
+          as a tool that can minimise device fingerprinting.
+        </p>
+        <p>
+          A good example of this pattern in action is the <a href="http://www.w3.org/TR/vibration/">Vibration API</a>.
+          Traditional APIs for vibration would make it possible for the developer to detect whether the device
+          on which her application is being run features a vibrator. Additionally, attempting to trigger
+          vibration would likely cause an exception or other such code-detectable failure. This would produce
+          at least one bit of additional fingerprinting information, possibly more if the device's vibrators could be
+          further investigated.
+        </p>
+        <p>
+          The Vibration API approaches this problem differently: when a device does not support actual vibration,
+          it does not surface this information. Calling <code>navigator.vibrate(1000)</code> will work just as
+          well as if a vibrator had been present, and indistinguishably from that set up. In addition to making
+          the code more robust, this approach therefore also contributes to fingerprinting reduction.
+        </p>
+      </section>
+      <section>
+        <h2>User Mediation</h2>
+        <p>
+          By default, the user agent should provide Web applications with an environment that is privacy-safe
+          for the user in that it does not expose any of the user's information without her consent. But in
+          order to be most useful, and properly constitute a <em>user</em> agent, it should be allowed to 
+          occasionally punch limited holes through this protection and access relevant data. This should 
+          never happen without the user's express consent and such access therefore needs to be mediated
+          by the user.
+        </p>
+        <p>
+          At first sight this appears to conflict with the requirement that users be asked to make direct privacy
+          decisions as little as possible, but there is a subtle distinction at play. Direct privacy decisions
+          will prompt the user to provide access to information at the application's behest, usually through
+          some form of permissions dialog. User-mediated access will afford a control for the user to provide
+          the requisite information, and do so in a manner that contextualises the request and places it in
+          the flow of the user's intended action.
+        </p>
+        <p>
+          A good and well-established example of user-mediated access to private data is the file upload form control.
+          If we imagine a Web application that wishes to obtain a picture of the user to use on her profile, 
+          the direct privacy decision approach would, as soon as the page is loaded, prompt the user with a
+          permissions dialog asking if the user wishes to share her picture, without any context as to why
+          or for what purpose. Conversely, using a file upload form control the user will naturally go through
+          the form, reach the picture field, activate the file picker dialog, and offer a picture of her choosing.
+          The operative difference is that in the latter case the user need not specifically <em>think</em> about whether
+          providing this picture is a good idea or not. All the context in which the picture is asked for is
+          clearly available, and the decision to share is an inherent part of the action of sharing it. Naturally, the
+          application could still be malicious but at least the user is in the driving seat and in a far better position
+          to make the right call.
+        </p>
+        <p>
+          A counter-example to this pattern can be seen at work in the Geolocation API [[GEOLOCATION-API]]. If a
+          user visits a mapping application in order to obtain the route between two addresses that she enters, she
+          should not be prompted to provide her location since it is useless to the operation at hand. Nevertheless,
+          with the Geolocation API as currently designed she will typically be asked right at load to provide it.
+          A better design would be to require a user-mediated action to expose the user's location.
+        </p>
+        <p>
+          This approach is applicable well beyond file access and geolocation. 
+          <a href="http://dvcs.w3.org/hg/web-intents/raw-file/tip/spec/Overview-respec.html">Web Intents</a> are
+          currently being designed as a generic mechanism for user-mediated access to user-specific data and
+          services and they are expected to apply to a broad range of features such as address book, calendar,
+          messaging, sensors, and more.
+        </p>
+      </section>
+      <section>
+        <h2>Minimisation</h2>
+        <p>
+          Minimisation is a strategy that involves exposing as little information as is required for a given
+          operation to complete. More specifically, it requires not providing access to more information than
+          was apparent in the user-mediated access or allowing the user some control over which information 
+          exactly is provided.
+        </p>
+        <p>
+          For instance, if the user has provided access to a given file, the object representing that should not
+          make it possible to obtain information about that file's parent directory and its contents as that is
+          clearly not what is expected.
+        </p>
+        <p>
+          During user-mediated access, the user should also be in control of what is shared. For example, if the
+          user is sharing a list of contacts from her address book it should be clear which fields of these
+          contacts are being requested (e.g. name and email), and she should be able to choose whether those
+          fields are actually going to be returned or not. An example dialog for this may look as follows:
+        </p>
+        <p>
+          <img src="contacts-picker.png" width="752" height="511" alt="Example contact picker">
+        </p>
+        <p>
+          In this case the application has clearly requested that the First Name, Salutations, and Email Addresses
+          fields be returned. If it seems unnecessary to the user, she could unselect for instance First Name before
+          providing the list of selected contacts and the application would not be made aware of this choice. Such
+          a decision is made in the flow of user action.
+        </p>
+        <p>
+          The above requires the API to be designed not only in such a manner that the user can initiate the mediation
+          process of access to her data, but also so that it can specify which fields it claims to need.
+        </p>
+      </section>
+    </section>
+    <section>
+      <h2>Acknowledgments</h2>
+      <p>
+        In addition to the members of the TAG, the editors would like to thank the following individuals 
+        for their contributions to this document:
+      </p>
+      <p>
+        Ernesto Jiménez, Dominique Hazaël-Massieux, Frederick Hirsch, and Hannes Tschofenig.
+      </p>
+    </section>
+  
+
+</div>
+                
+                </main>
+                <footer>
+
+                </footer>
+            </div>
+            <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+        </body>
+    </html>

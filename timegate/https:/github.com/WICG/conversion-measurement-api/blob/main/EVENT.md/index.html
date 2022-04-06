@@ -1,0 +1,935 @@
+
+
+<!doctype html>
+    <html lang="en-US" id="template-archives" class="base">
+        <head>
+        
+        <script defer data-domain="context.center" src="https://plausible.io/js/plausible.js"></script>
+        <link rel="alternate" type="application/rss+xml" title="Context Center RSS" href="https://context.center/rss/" />
+    	<link rel="alternate" type="application/atom+xml" title="Context Center Feed" href="https://context.center/feed/" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>conversion-measurement-api/EVENT.md at main · WICG/conversion-measurement-api</title>
+        <link rel="original" http-equiv href="https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md" />
+        
+            
+                <!-- <link rel="stylesheet" href="https://context.center/assets/css/template-archives.css?v=2105117968" /> -->
+                <link rel="stylesheet" href="https://context.center/assets/css/template-archives.css?v=2105117968" id=""></link>
+
+            
+        
+        
+            <link rel="canonical" href="https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md" />
+            
+
+            <meta property="og:title"
+                content="conversion-measurement-api/EVENT.md at main · WICG/conversion-measurement-api">
+
+            <meta property="og:description"
+                content="Conversion Measurement API. Contribute to WICG/conversion-measurement-api development by creating an account on GitHub.">
+
+
+            <meta property="og:url"
+                content="https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md" />
+
+            <meta property="og:site_name" content="Context Center" />
+
+            <meta property="og:locale" content="en_US" />
+
+            <meta name="twitter:site" content="@chronotope" />
+
+            <meta name="twitter:description" content="Conversion Measurement API. Contribute to WICG/conversion-measurement-api development by creating an account on GitHub." />
+
+            <!-- I prefer the summary_large_image Twitter card for posts. -->
+            <meta name="twitter:card" content="summary_large_image" />
+            <!-- You, you're the creator. -->
+            <meta name="twitter:creator" content="@chronotope" />
+            <!-- This property is for the article title, not site title. -->
+            <meta name="twitter:title" content="conversion-measurement-api/EVENT.md at main · WICG/conversion-measurement-api" />
+
+            
+
+            <meta property="og:type" content="website" />
+
+            <script type="application/ld+json">
+                {
+                    "@context": "http://schema.org",
+                    "@type": "WebPage",
+                    "url": "https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md",
+                    "headline": "conversion-measurement-api/EVENT.md at main · WICG/conversion-measurement-api",
+                    "about": "Conversion Measurement API. Contribute to WICG/conversion-measurement-api development by creating an account on GitHub.",
+
+                    "image": [
+                        
+                        
+                    ],
+                    "isAccessibleForFree": "True",
+                    "isPartOf": {
+                        "@type": ["CreativeWork", "Product"],
+                        "name": "Fight With Tools",
+                        "productID": "fightwithtools.dev"
+                    },
+                    "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+                    "archivedAt": "https://context.center/timegate/https:/github.com/WICG/conversion-measurement-api/blob/main/EVENT.md/",
+                    "sameAs": "https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md",
+                }
+            </script>
+
+
+        
+        
+        </head>
+        <body >
+            <div class="wrapper">
+                <header>
+                    <div class="left">
+                        <h1>Archived: conversion-measurement-api/EVENT.md at main · WICG/conversion-measurement-api</h1>
+                        <p>This is a simplified archive of the page at <a href="https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md" target="_blank">https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md</a></p>
+                    </div>
+
+                            <div id="share-embed">
+                                <span>Use this page embed on your own site:</span>
+                                <textarea id="html-embed" name="story" rows="8" cols="40">
+                                    <script>window.contexterSetup=window.contexterSetup||function(){window.contexterSetupComplete=!0;class ContexterLink extends HTMLAnchorElement{constructor(){super()}connectedCallback(){this.setAttribute("target","_blank")}}customElements.define("contexter-link",ContexterLink,{extends:"a"}),customElements.define("contexter-inner",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__inner"}}),customElements.define("contexter-thumbnail",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__thumbnail"}}),customElements.define("contexter-byline",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__byline"}}),customElements.define("contexter-keywordset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__keywordset"}}),customElements.define("contexter-linkset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__linkset"}}),customElements.define("contexter-meta",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__meta"}}),customElements.define("contexter-summary",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="p-summary entry-summary"}}),customElements.define("contexter-box-head",class extends HTMLElement{constructor(){super()}connectedCallback(){this.className="contexter-box__head"}}),customElements.define("contexter-box-inner",class extends HTMLElement{constructor(){super()}connectedCallback(){}});class ContexterBox extends HTMLElement{constructor(){super(),this.first=!0,this.shadow=this.attachShadow({mode:"open"})}connectedCallback(){if(this.first){this.first=!1;var style=document.createElement("style"),lightDomStyle=(style.innerHTML=`:host {--background: #f5f6f7;--border: darkblue;--blue: #0000ee;--font-color: black;--inner-border: black;font-family: Franklin,Arial,Helvetica,sans-serif;font-size: 14px;background: var(--background);width: 600px;color: var(--font-color);min-height: 90px;display: block;padding: 8px;border: 1px solid var(--border);cursor: pointer;box-sizing: border-box;margin: 6px;contain: content;margin: 6px auto;}// can only select top-level nodes with slotted::slotted(*) {max-width: 100%;display:block;}::slotted([slot=thumbnail]) {max-width: 100%;display:block;}::slotted([slot=header]) {width: 100%;font-size: 1.25rem;font-weight: bold;display:block;margin-bottom: 6px;}::slotted([slot=author]) {max-width: 50%;font-size: 12px;display:inline-block;float: left;}::slotted([slot=time]) {max-width: 50%;font-size: 12px;display:inline-block;float: right;}::slotted([slot=summary]) {width: 100%;margin-top: 6px;padding: 10px 2px;border-top: 1px solid var(--inner-border);font-size: 15px;display:inline-block;margin-bottom: 6px;}contexter-meta {height: auto;margin-bottom: 4px;width: 100%;display: grid;position: relative;min-height: 16px;grid-template-columns: repeat(2, 1fr);}::slotted([slot=keywords]) {width: 80%;padding: 2px 4px;border-top: 1px solid var(--inner-border);font-size: 11px;display: block;float: right;font-style: italic;text-align: right;grid-column: 2/2;grid-row: 1;align-self: end;justify-self: end;}::slotted([slot=keywords]):empty {border-top: 0px solid var(--inner-border);}::slotted([slot=archive-link]) {font-size: 1em;display: inline;}::slotted([slot=archive-link])::after {content: "|";display: inline;color: var(--font-color);text-decoration: none;margin: 0 .5em;}::slotted([slot=read-link]) {font-size: 1em;display: inline;}contexter-linkset {width: 80%;padding: 2px 4px;font-size: 13px;float: left;font-weight: bold;grid-row: 1;grid-column: 1/2;align-self: end;justify-self: start;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {:host {width: 310px;}}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){:host {--background: #354150;--border: #1f2b37;--blue: #55b0ff;--font-color: #ffffff;--inner-border: #787a7c;background: var(--background);border: 1px solid var(--border)}}`,document.createElement("style"));lightDomStyle.innerHTML=`contexter-box {contain: content;}contexter-box .read-link {font-weight: bold;}contexter-box a {color: #0000ee;}contexter-box img {width: 100%;border: 0;padding: 0;margin: 0;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {...}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){contexter-box a {color: #55b0ff;}}`,this.appendChild(lightDomStyle),this.shadow.appendChild(style);const innerContainer=document.createElement("contexter-box-inner"),innerSlotThumbnail=(this.shadow.appendChild(innerContainer),document.createElement("slot")),innerSlotHeader=(innerSlotThumbnail.name="thumbnail",innerContainer.appendChild(innerSlotThumbnail),document.createElement("slot")),innerSlotAuthor=(innerSlotHeader.name="header",innerContainer.appendChild(innerSlotHeader),document.createElement("slot")),innerSlotTime=(innerSlotAuthor.name="author",innerContainer.appendChild(innerSlotAuthor),document.createElement("slot")),innerSlotSummary=(innerSlotTime.name="time",innerContainer.appendChild(innerSlotTime),document.createElement("slot")),metaContainer=(innerSlotSummary.name="summary",innerContainer.appendChild(innerSlotSummary),document.createElement("contexter-meta")),innerSlotInfo=(innerContainer.appendChild(metaContainer),document.createElement("slot")),linkContainer=(innerSlotInfo.name="keywords",metaContainer.appendChild(innerSlotInfo),document.createElement("contexter-linkset")),innerSlotArchiveLink=(metaContainer.appendChild(linkContainer),document.createElement("slot")),innerSlotReadLink=(innerSlotArchiveLink.name="archive-link",linkContainer.appendChild(innerSlotArchiveLink),document.createElement("slot"));innerSlotReadLink.name="read-link",linkContainer.appendChild(innerSlotReadLink),this.className="contexter-box",this.onclick=e=>{if(!e.target.className.includes("read-link")&&!e.target.className.includes("title-link")){const mainLinks=this.querySelectorAll("a.main-link");mainLinks[0].click()}}}}}customElements.define("contexter-box",ContexterBox)},window.contexterSetupComplete||window.contexterSetup();</script><contexter-box class="link-card h-entry hentry" itemscope="" itemtype="https://schema.org/CreativeWork"><contexter-thumbnail class="thumbnail" slot="thumbnail"></contexter-thumbnail><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><a is="contexter-link" href="https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md" itemprop="url">conversion-measurement-api/EVENT.md at main · WICG/conversion-measurement-api</a></contexter-box-head></contexter-box-head><time class="dt-published published" slot="time" itemprop="datePublished" datetime="2022-04-06T20:01:02.610Z">3/6/2022</time><contexter-summary class="p-summary entry-summary" itemprop="abstract" slot="summary"><p>Conversion Measurement API. Contribute to WICG/conversion-measurement-api development by creating an account on GitHub.</p></contexter-summary><contexter-keywordset itemprop="keywords" slot="keywords"></contexter-keywordset><a href="https://web.archive.org/web/20220406200105/https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md" is="contexter-link" target="_blank" rel="timemap" class="read-link archive-link" itemprop="archivedAt" slot="archive-link">Archived</a><a is="contexter-link" href="https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md" class="read-link main-link" itemprop="sameAs" slot="read-link">Read</a></contexter-box>
+                                </textarea><br />
+                                <button onclick="(function(e){ navigator.clipboard.writeText(document.getElementById('html-embed').value); })()">Copy</button>
+                            </div>
+                            
+                            <script>window.contexterSetup=window.contexterSetup||function(){window.contexterSetupComplete=!0;class ContexterLink extends HTMLAnchorElement{constructor(){super()}connectedCallback(){this.setAttribute("target","_blank")}}customElements.define("contexter-link",ContexterLink,{extends:"a"}),customElements.define("contexter-inner",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__inner"}}),customElements.define("contexter-thumbnail",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__thumbnail"}}),customElements.define("contexter-byline",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__byline"}}),customElements.define("contexter-keywordset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__keywordset"}}),customElements.define("contexter-linkset",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__linkset"}}),customElements.define("contexter-meta",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="contexter-box__meta"}}),customElements.define("contexter-summary",class extends HTMLElement{constructor(){super()}attributeChangedCallback(name,oldValue,newValue){}connectedCallback(){this.className="p-summary entry-summary"}}),customElements.define("contexter-box-head",class extends HTMLElement{constructor(){super()}connectedCallback(){this.className="contexter-box__head"}}),customElements.define("contexter-box-inner",class extends HTMLElement{constructor(){super()}connectedCallback(){}});class ContexterBox extends HTMLElement{constructor(){super(),this.first=!0,this.shadow=this.attachShadow({mode:"open"})}connectedCallback(){if(this.first){this.first=!1;var style=document.createElement("style"),lightDomStyle=(style.innerHTML=`:host {--background: #f5f6f7;--border: darkblue;--blue: #0000ee;--font-color: black;--inner-border: black;font-family: Franklin,Arial,Helvetica,sans-serif;font-size: 14px;background: var(--background);width: 600px;color: var(--font-color);min-height: 90px;display: block;padding: 8px;border: 1px solid var(--border);cursor: pointer;box-sizing: border-box;margin: 6px;contain: content;margin: 6px auto;}// can only select top-level nodes with slotted::slotted(*) {max-width: 100%;display:block;}::slotted([slot=thumbnail]) {max-width: 100%;display:block;}::slotted([slot=header]) {width: 100%;font-size: 1.25rem;font-weight: bold;display:block;margin-bottom: 6px;}::slotted([slot=author]) {max-width: 50%;font-size: 12px;display:inline-block;float: left;}::slotted([slot=time]) {max-width: 50%;font-size: 12px;display:inline-block;float: right;}::slotted([slot=summary]) {width: 100%;margin-top: 6px;padding: 10px 2px;border-top: 1px solid var(--inner-border);font-size: 15px;display:inline-block;margin-bottom: 6px;}contexter-meta {height: auto;margin-bottom: 4px;width: 100%;display: grid;position: relative;min-height: 16px;grid-template-columns: repeat(2, 1fr);}::slotted([slot=keywords]) {width: 80%;padding: 2px 4px;border-top: 1px solid var(--inner-border);font-size: 11px;display: block;float: right;font-style: italic;text-align: right;grid-column: 2/2;grid-row: 1;align-self: end;justify-self: end;}::slotted([slot=keywords]):empty {border-top: 0px solid var(--inner-border);}::slotted([slot=archive-link]) {font-size: 1em;display: inline;}::slotted([slot=archive-link])::after {content: "|";display: inline;color: var(--font-color);text-decoration: none;margin: 0 .5em;}::slotted([slot=read-link]) {font-size: 1em;display: inline;}contexter-linkset {width: 80%;padding: 2px 4px;font-size: 13px;float: left;font-weight: bold;grid-row: 1;grid-column: 1/2;align-self: end;justify-self: start;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {:host {width: 310px;}}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){:host {--background: #354150;--border: #1f2b37;--blue: #55b0ff;--font-color: #ffffff;--inner-border: #787a7c;background: var(--background);border: 1px solid var(--border)}}`,document.createElement("style"));lightDomStyle.innerHTML=`contexter-box {contain: content;}contexter-box .read-link {font-weight: bold;}contexter-box a {color: #0000ee;}contexter-box img {width: 100%;border: 0;padding: 0;margin: 0;}/* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) {...}/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) {...}/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) {...}/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) {...}/* Extra large devices (large laptops and desktops, 1200px and up) */@media only screen and (min-width: 1200px) {...}@media (prefers-color-scheme: dark){contexter-box a {color: #55b0ff;}}`,this.appendChild(lightDomStyle),this.shadow.appendChild(style);const innerContainer=document.createElement("contexter-box-inner"),innerSlotThumbnail=(this.shadow.appendChild(innerContainer),document.createElement("slot")),innerSlotHeader=(innerSlotThumbnail.name="thumbnail",innerContainer.appendChild(innerSlotThumbnail),document.createElement("slot")),innerSlotAuthor=(innerSlotHeader.name="header",innerContainer.appendChild(innerSlotHeader),document.createElement("slot")),innerSlotTime=(innerSlotAuthor.name="author",innerContainer.appendChild(innerSlotAuthor),document.createElement("slot")),innerSlotSummary=(innerSlotTime.name="time",innerContainer.appendChild(innerSlotTime),document.createElement("slot")),metaContainer=(innerSlotSummary.name="summary",innerContainer.appendChild(innerSlotSummary),document.createElement("contexter-meta")),innerSlotInfo=(innerContainer.appendChild(metaContainer),document.createElement("slot")),linkContainer=(innerSlotInfo.name="keywords",metaContainer.appendChild(innerSlotInfo),document.createElement("contexter-linkset")),innerSlotArchiveLink=(metaContainer.appendChild(linkContainer),document.createElement("slot")),innerSlotReadLink=(innerSlotArchiveLink.name="archive-link",linkContainer.appendChild(innerSlotArchiveLink),document.createElement("slot"));innerSlotReadLink.name="read-link",linkContainer.appendChild(innerSlotReadLink),this.className="contexter-box",this.onclick=e=>{if(!e.target.className.includes("read-link")&&!e.target.className.includes("title-link")){const mainLinks=this.querySelectorAll("a.main-link");mainLinks[0].click()}}}}}customElements.define("contexter-box",ContexterBox)},window.contexterSetupComplete||window.contexterSetup();</script><contexter-box class="link-card h-entry hentry" itemscope="" itemtype="https://schema.org/CreativeWork"><contexter-thumbnail class="thumbnail" slot="thumbnail"></contexter-thumbnail><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><contexter-box-head slot="header" class="p-name entry-title" itemprop="headline"><a is="contexter-link" href="https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md" itemprop="url">conversion-measurement-api/EVENT.md at main · WICG/conversion-measurement-api</a></contexter-box-head></contexter-box-head><time class="dt-published published" slot="time" itemprop="datePublished" datetime="2022-04-06T20:01:02.610Z">3/6/2022</time><contexter-summary class="p-summary entry-summary" itemprop="abstract" slot="summary"><p>Conversion Measurement API. Contribute to WICG/conversion-measurement-api development by creating an account on GitHub.</p></contexter-summary><contexter-keywordset itemprop="keywords" slot="keywords"></contexter-keywordset><a href="https://web.archive.org/web/20220406200105/https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md" is="contexter-link" target="_blank" rel="timemap" class="read-link archive-link" itemprop="archivedAt" slot="archive-link">Archived</a><a is="contexter-link" href="https://github.com/WICG/conversion-measurement-api/blob/main/EVENT.md" class="read-link main-link" itemprop="sameAs" slot="read-link">Read</a></contexter-box>
+                            
+
+
+                </header>
+                <main>
+                
+                    <div id="readability-page-1" class="page"><div id="readme" data-target="readme-toc.content">
+    <article itemprop="text"><p dir="auto"><em>This is an in-depth technical explainer. If you're looking for a high-level
+introduction to Attribution Reporting with event-level reports, head over to
+<a href="https://developer.chrome.com/docs/privacy-sandbox/attribution-reporting-event-introduction/" rel="nofollow">Event-level reports in the Attribution Reporting API</a>.</em></p>
+<p dir="auto"><em>A list of all API guides and blog posts for this API is also available
+<a href="https://developer.chrome.com/docs/privacy-sandbox/attribution-reporting/" rel="nofollow">here</a>.</em></p>
+<h2 dir="auto">Attribution Reporting with event-level reports</h2>
+<p dir="auto">This document is an explainer for a potential new web platform feature which
+allows for measuring and reporting ad click and view conversions.</p>
+<p dir="auto">See the explainer on <a href="/WICG/conversion-measurement-api/blob/main/AGGREGATE.md">aggregate measurement</a> for a potential
+extension on top of this.</p>
+
+
+<p dir="auto"><strong>Table of Contents</strong></p>
+<ul dir="auto">
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#related-work">Related work</a></li>
+<li><a href="#api-overview">API Overview</a>
+<ul dir="auto">
+<li><a href="#registering-attribution-sources">Registering attribution sources</a></li>
+<li><a href="#handling-an-attribution-source-event">Handling an attribution source
+event</a></li>
+<li><a href="#publisher-side-controls-for-attribution-source-declaration">Publisher-side Controls for Attribution Source
+Declaration</a></li>
+<li><a href="#triggering-attribution">Triggering Attribution</a></li>
+<li><a href="#data-limits-and-noise">Data limits and noise</a></li>
+<li><a href="#trigger-attribution-algorithm">Trigger attribution algorithm</a></li>
+<li><a href="#multiple-sources-for-the-same-trigger-multi-touch">Multiple sources for the same trigger
+(Multi-touch)</a></li>
+<li><a href="#sending-scheduled-reports">Sending Scheduled Reports</a></li>
+<li><a href="#attribution-reports">Attribution Reports</a></li>
+<li><a href="#data-encoding">Data Encoding</a></li>
+<li><a href="#optional-attribution-filters">Optional attribution filters</a></li>
+<li><a href="#optional-extended-debugging-reports">Optional: extended debugging reports</a></li>
+<li><a href="#noisy-fake-conversion-example">Noisy fake conversion example</a></li>
+<li><a href="#storage-limits">Storage limits</a></li>
+</ul>
+</li>
+<li><a href="#privacy-considerations">Privacy Considerations</a>
+<ul dir="auto">
+<li><a href="#trigger-data">Trigger Data</a></li>
+<li><a href="#reporting-delay">Reporting Delay</a></li>
+<li><a href="#reporting-origin-limits">Reporting origin limits</a></li>
+<li><a href="#clearing-site-data">Clearing Site Data</a></li>
+<li><a href="#reporting-cooldown--rate-limits">Reporting cooldown / rate limits</a></li>
+<li><a href="#less-trigger-side-data">Less trigger-side data</a></li>
+<li><a href="#browsing-history-reconstruction">Browsing history reconstruction</a>
+<ul dir="auto">
+<li><a href="#adding-noise-to-whether-a-trigger-is-genuine">Adding noise to whether a trigger is
+genuine</a></li>
+<li><a href="#limiting-the-number-of-unique-destinations-covered-by-pending-sources">Limiting the number of unique destinations covered by pending
+sources</a></li>
+</ul>
+</li>
+<li><a href="#differential-privacy">Differential privacy</a></li>
+<li><a href="#speculative-limits-based-on-first-party-storage">Speculative: Limits based on first party
+storage</a></li>
+</ul>
+</li>
+<li><a href="#security-considerations">Security considerations</a>
+<ul dir="auto">
+<li><a href="#reporting-origin-control">Reporting origin control</a></li>
+<li><a href="#denial-of-service">Denial of service</a></li>
+<li><a href="#top-site-permission-model">Top site permission model</a></li>
+</ul>
+</li>
+</ul>
+
+<h2 dir="auto">Motivation</h2>
+<p dir="auto">Currently, the web ad industry measures conversions via identifiers they can
+associate across sites. These identifiers tie information about which ads were
+clicked to information about activity on the advertiser's site (the conversion).
+This allows advertisers to measure ROI, and for the entire ads ecosystem to
+understand how well ads perform.</p>
+<p dir="auto">Since the ads industry today uses common identifiers across advertiser and
+publisher sites to track conversions, these common identifiers can be used to
+enable other forms of cross-site tracking.</p>
+<p dir="auto">This doesn’t have to be the case, though, especially in cases where identifiers
+such as third-party cookies are either unavailable or undesirable. A new API
+surface can be added to the web platform to satisfy this use case without them,
+in a way that provides better privacy to users.</p>
+<p dir="auto">This API alone will not be able to support all conversion measurement use cases.
+We envision this API as one of potentially many new APIs that will seek to
+reproduce valid advertising use cases in the web platform in a privacy
+preserving way. In particular, we think this API could be extended by using
+server side aggregation to provide richer data, which we are continuing to
+explore.</p>
+<h2 dir="auto">Related work</h2>
+<p dir="auto">There is an alternative <a href="https://github.com/privacycg/private-click-measurement">Private Click
+Measurement</a> draft spec
+in the PrivacyCG. See this <a href="https://webkit.org/blog/8943/privacy-preserving-ad-click-attribution-for-the-web/" rel="nofollow">WebKit blog
+post</a>
+for more details.</p>
+<p dir="auto">There are multiple aggregate designs in
+<a href="https://github.com/WICG/privacy-preserving-ads">wicg/privacy-preserving-ads</a>,
+including Bucketization and MaskedLARK.</p>
+<p dir="auto">Folks from Meta and Mozilla have published the <a href="https://docs.google.com/document/d/1KpdSKD8-Rn0bWPTu4UtK54ks0yv2j22pA5SrAD9av4s/edit#heading=h.f4x9f0nqv28x" rel="nofollow">Interoperable Private
+Attribution(IPA)</a>
+proposal for doing aggregate attribution measurement.</p>
+<p dir="auto">Brave has published and implemented an <a href="https://github.com/brave/brave-browser/wiki/Security-and-privacy-model-for-ad-confirmations">Ads Confirmation
+Protocol</a>.</p>
+<h2 dir="auto">API Overview</h2>
+<h3 dir="auto">Registering attribution sources</h3>
+<p dir="auto">Attribution sources are events which future triggers can be attributed to. There
+are two types of attribution sources, <code>navigation</code> sources and <code>event</code> sources.</p>
+<p dir="auto"><code>navigation</code> sources are registered via clicks on anchor tags:</p>
+<div data-snippet-clipboard-copy-content="<a href=&quot;https://advertiser.example/landing&quot;
+   attributionsrc=&quot;https://adtech.example/attribution_source?my_ad_id=123&quot;>
+   click me
+</a>"><pre><span>&lt;</span><span>a</span> <span>href</span>="<span>https://advertiser.example/landing</span>"
+   <span>attributionsrc</span>="<span>https://adtech.example/attribution_source?my_ad_id=123</span>"<span>&gt;</span>
+   click me
+<span>&lt;/</span><span>a</span><span>&gt;</span></pre></div>
+<p dir="auto">or via calls to <code>window.open</code> that occur with <a href="https://html.spec.whatwg.org/multipage/interaction.html#transient-activation" rel="nofollow">transient
+activation</a>:</p>
+<div data-snippet-clipboard-copy-content="window.open(
+  &quot;https://advertiser.example/landing&quot;,
+  &quot;_blank&quot;,
+  &quot;attributionsrc=https://adtech.example/attribution_source?my_ad_id=123&quot;);"><pre><span>window</span><span>.</span><span>open</span><span>(</span>
+  <span>"https://advertiser.example/landing"</span><span>,</span>
+  <span>"_blank"</span><span>,</span>
+  <span>"attributionsrc=https://adtech.example/attribution_source?my_ad_id=123"</span><span>)</span><span>;</span></pre></div>
+<p dir="auto"><code>event</code> sources do not require any user interaction and are registered via
+<code>&lt;img&gt;</code> tags with the new <code>attributionsrc</code> attribute too:</p>
+<div data-snippet-clipboard-copy-content="<!-- TODO: is view registration via an `<a>` tag necessary?
+    It may require a new attribute and a way to differentiate the requests. -->
+
+<img src=&quot;https://advertiser.example/pixel&quot; 
+     attributionsrc=&quot;https://adtech.example/attribution_source?my_ad_id=123&quot; />"><pre><span>&lt;!-- TODO: is view registration via an `&lt;a&gt;` tag necessary?</span>
+<span>    It may require a new attribute and a way to differentiate the requests. --&gt;</span>
+
+<span>&lt;</span><span>img</span> <span>src</span>="<span>https://advertiser.example/pixel</span>" 
+     <span>attributionsrc</span>="<span>https://adtech.example/attribution_source?my_ad_id=123</span>" /&gt;</pre></div>
+<p dir="auto">or via a JavaScript API:</p>
+<div data-snippet-clipboard-copy-content="window.attributionReporting.registerSource(
+  &quot;https://adtech.example/attribution_source?my_ad_id=123&quot;);"><pre><span>window</span><span>.</span><span>attributionReporting</span><span>.</span><span>registerSource</span><span>(</span>
+  <span>"https://adtech.example/attribution_source?my_ad_id=123"</span><span>)</span><span>;</span></pre></div>
+<p dir="auto">Each of these mechanisms will cause the browser to initiate a <code>keepalive</code> fetch
+request to the URL indicated by <code>attributionsrc</code>.</p>
+<p dir="auto">The response to this request will configure the API. The browser will expect
+data in a new JSON HTTP header <code>Attribution-Reporting-Register-Source</code> which
+configures the API:</p>
+<div data-snippet-clipboard-copy-content="{
+  &quot;source_event_id&quot;: &quot;12340873456&quot;,
+  &quot;destination&quot;: &quot;[eTLD+1]&quot;,
+  &quot;expiry&quot;: &quot;[64-bit signed integer]&quot;,
+  &quot;priority&quot;: &quot;[64-bit signed integer]&quot;
+}"><pre><span>{</span>
+  <span>"source_event_id"</span>: <span>"12340873456"</span><span>,</span>
+  <span>"destination"</span>: <span>"[eTLD+1]"</span><span>,</span>
+  <span>"expiry"</span>: <span>"[64-bit signed integer]"</span><span>,</span>
+  <span>"priority"</span>: <span>"[64-bit signed integer]"</span>
+<span>}</span></pre></div>
+<ul dir="auto">
+<li>
+<p dir="auto"><code>destination</code>: an origin whose eTLD+1 is where attribution will be triggered
+for this source.</p>
+</li>
+<li>
+<p dir="auto"><code>source_event_id</code>: A DOMString encoding a 64-bit unsigned integer which
+represents the event-level data associated with this source. This will be
+limited to 64 bits of information but the value can vary.</p>
+</li>
+<li>
+<p dir="auto"><code>expiry</code>: (optional) expiry in seconds for when the source should be
+deleted. Default is 30 days, with a maximum value of 30 days. The maximum expiry
+can also vary between browsers. This will be rounded to the nearest day.</p>
+</li>
+<li>
+<p dir="auto"><code>priority</code>: (optional) a signed 64-bit integer used to prioritize
+this source with respect to other matching sources. When a trigger redirect is
+received, the browser will find the matching source with highest
+<code>priority</code> value and generate a report. The other sources will not
+generate reports.</p>
+</li>
+</ul>
+<p dir="auto">Once this header is received, the browser will proceed with <a href="#handling-an-attribution-source-event">handling an
+attribution source event</a>. Note that it
+is possible to register multiple sources for the same request using HTTP
+redirects (though these multiple sources may not set distinct destinations).</p>
+<p dir="auto">Note that we sometimes call the <code>attributionsrc</code>'s origin the "reporting origin"
+since it is the origin that will end up receiving attribution reports.</p>
+<h3 dir="auto">Handling an attribution source event</h3>
+<p dir="auto">A <code>navigation</code> attribution source event will be logged to storage if the
+resulting document being navigated to ends up sharing an eTLD+1 with the
+<code>destination</code> origin. Additionally, the navigation needs occur with <a href="https://html.spec.whatwg.org/multipage/interaction.html#transient-activation" rel="nofollow">transient
+user
+activation</a>.</p>
+<p dir="auto"><code>event</code> sources don’t require any of the above constraints to be logged.</p>
+<p dir="auto">When a source is logged for &lt;<code>attributionsrc</code> origin, <code>destination</code>&gt; pair,
+existing sources matching this pair will be looked up in storage. If the
+matching sources have been triggered at least once (i.e. have scheduled a
+report), they will be removed from browser storage and will not be eligible for
+further reporting. Any pending reports for these sources will still be sent.</p>
+<p dir="auto">An attribution source will be eligible for reporting if any page on the
+<code>destination</code> eTLD+1 (advertiser site) triggers attribution for the associated
+reporting origin.</p>
+<h3 dir="auto">Publisher-side Controls for Attribution Source Declaration</h3>
+<p dir="auto">In order to prevent arbitrary third parties from registering sources without the
+publisher’s knowledge, the Attribution Reporting API will need to be enabled in
+child contexts by a new <a href="https://w3c.github.io/webappsec-permissions-policy/" rel="nofollow">Permissions
+Policy</a>:</p>
+<div data-snippet-clipboard-copy-content="<iframe src=&quot;https://advertiser.example&quot; allow=&quot;attribution-reporting 'src'&quot;>
+
+<a … id=&quot;...&quot; attributionsrc=&quot;https://ad-tech.example?...&quot;></a>
+
+</iframe>"><pre><span>&lt;</span><span>iframe</span> <span>src</span>="<span>https://advertiser.example</span>" <span>allow</span>="<span>attribution-reporting 'src'</span>"<span>&gt;</span>
+
+<span>&lt;</span><span>a</span> <span>…</span> <span>id</span>="<span>...</span>" <span>attributionsrc</span>="<span>https://ad-tech.example?...</span>"<span>&gt;</span><span>&lt;/</span><span>a</span><span>&gt;</span>
+
+<span>&lt;/</span><span>iframe</span><span>&gt;</span></pre></div>
+<p dir="auto">The API will be enabled by default in the top-level context and in same-origin
+children. Any script running in these contexts can declare a source with any
+reporting origin. Publishers who wish to explicitly disable the API for all
+parties can do so via an <a href="https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-http-header-field" rel="nofollow">HTTP
+header</a>.</p>
+<p dir="auto">Without a Permissions Policy, a top-level document and cooperating iframe could
+recreate this functionality. This is possible by using
+<a href="https://html.spec.whatwg.org/multipage/web-messaging.html#dom-window-postmessage" rel="nofollow">postMessage</a>
+to send the <code>source_event_id</code>, <code>attributionsrc</code> origin, <code>destination</code> values to
+the top level document who can then wrap the iframe in an anchor tag (with some
+additional complexities behind handling clicks on the iframe). Using Permissions
+Policy prevents the need for these hacks. This is inline with the classification
+of powerful features as discussed on <a href="https://github.com/w3c/webappsec-permissions-policy/issues/252" data-hovercard-type="issue" data-hovercard-url="/w3c/webappsec-permissions-policy/issues/252/hovercard">this
+issue</a>.</p>
+<h3 dir="auto">Triggering Attribution</h3>
+<p dir="auto">Attribution can only be triggered for a source on a page whose eTLD+1 matches
+the eTLD+1 of the site provided in <code>destination</code>. To trigger attribution, a
+similar mechanism is used as source event registration, via HTML:</p>
+<div data-snippet-clipboard-copy-content="<img src=&quot;https://ad-tech.example/conversionpixel&quot; 
+     attributionsrc=”https://adtech.example/attribution_trigger?purchase=13” />"><pre><span>&lt;</span><span>img</span> <span>src</span>="<span>https://ad-tech.example/conversionpixel</span>" 
+     <span>attributionsrc</span>=<span>”https://adtech.example/attribution_trigger?purchase</span>=13” /&gt;</pre></div>
+<p dir="auto">or JavaScript:</p>
+<div data-snippet-clipboard-copy-content="window.attributionReporting.registerTrigger(
+    &quot;https://adtech.example/attribution_trigger?purchase=13&quot;)"><pre><span>window</span><span>.</span><span>attributionReporting</span><span>.</span><span>registerTrigger</span><span>(</span>
+    <span>"https://adtech.example/attribution_trigger?purchase=13"</span><span>)</span></pre></div>
+<p dir="auto">As a stop-gap to support pre-existing conversion tags which do not include the
+<code>attributionsrc</code> attribute, or use a different Fetch API, the browser will also
+process trigger registration headers for all subresource requests on the page
+where the <code>attribution-reporting</code> Permissions Policy is enabled.</p>
+<p dir="auto">Like source event registrations, these requests should respond with a new HTTP
+header <code>Attribution-Reporting-Register-Event-Trigger</code> which contains information
+about how to treat the trigger event:</p>
+<div data-snippet-clipboard-copy-content="[{
+    &quot;trigger_data&quot;: &quot;[unsigned 64-bit integer, but the browser will sanitize it down to 3 bits]&quot;,
+    &quot;priority&quot;: &quot;[signed 64-bit integer]&quot;,
+    &quot;deduplication_key&quot;: &quot;[unsigned 64-bit integer]&quot;
+}]"><pre><span>[</span><span>{</span>
+    <span>"trigger_data"</span>: <span>"[unsigned 64-bit integer, but the browser will sanitize it down to 3 bits]"</span><span>,</span>
+    <span>"priority"</span>: <span>"[signed 64-bit integer]"</span><span>,</span>
+    <span>"deduplication_key"</span>: <span>"[unsigned 64-bit integer]"</span>
+<span>}</span><span>]</span></pre></div>
+<p dir="auto">TODO: Consider moving this over to a structured header. See <a href="https://github.com/WICG/conversion-measurement-api/issues/194" data-hovercard-type="issue" data-hovercard-url="/WICG/conversion-measurement-api/issues/194/hovercard">issue
+194</a>.</p>
+<ul dir="auto">
+<li><code>trigger_data</code>: optional coarse-grained data to identify the triggering event.</li>
+<li><code>priority</code>: optional signed 64-bit integer representing the priority
+of this trigger compared to other triggers for the same source.</li>
+<li><code>deduplication_key</code>: optional unsigned 64-bit integer which will be used to
+deduplicate multiple triggers which contain the same deduplication_key for a
+single source.</li>
+</ul>
+<p dir="auto">When this header is received, the browser will schedule an attribution report as
+detailed in <a href="#trigger-attribution-algorithm">Trigger attribution algorithm</a>.
+Note that the header can be present on redirect requests.</p>
+<p dir="auto">Triggering attribution requires the <code>attribution-reporting</code> Permissions Policy
+to be enabled in the context the request is made. As described in <a href="#publisher-side-controls-for-attribution-source-declaration">Publisher
+Controls for Attribution Source
+Declaration</a>, this
+Permissions Policy will be enabled by default in the top-level context and in
+same-origin children, but disabled in cross-origin children.</p>
+<p dir="auto">Navigation sources may be attributed up to 3 times. Event sources may be
+attributed up to 1 time.</p>
+<h3 dir="auto">Data limits and noise</h3>
+<p dir="auto">The <code>source_event_id</code> will be limited to 64 bits of information to enable
+uniquely identifying an ad click.</p>
+<p dir="auto">The advertiser-side data must therefore be limited quite strictly, by limiting
+the amount of data and by applying noise to the data. <code>navigation</code> sources will
+be limited to only 3 bits of <code>trigger_data</code>, while <code>event</code> sources will be
+limited to only 1 bit.</p>
+<p dir="auto">Noise will be applied to whether a source event will be reported truthfully.
+When an attribution source is registered, the browser will perform one of the
+following steps given a probability <code>p</code>:</p>
+<ul dir="auto">
+<li>With probability <code>1 - p</code>, the browser logs the source as normal</li>
+<li>With probability <code>p</code>, the browser chooses randomly among all the possible
+output states of the API. This includes the choice of not reporting anything at
+all, or potentially reporting multiple fake reports for the event.</li>
+</ul>
+<p dir="auto">Note that this scheme is an instantiation of k-randomized response, see
+<a href="#differential-privacy">Differential privacy</a>.</p>
+<p dir="auto">Strawman: we can set <code>p</code> such that each source is protected with randomized
+response that satisfies an epsilon value of 14. This would entail:</p>
+<ul dir="auto">
+<li><code>p = .24%</code> for <code>navigation</code> sources</li>
+<li><code>p = .00025%</code> for <code>event</code> sources</li>
+</ul>
+<p dir="auto">Note that correcting for this noise addition is straightforward in most cases,
+please see &lt;TODO link to de-biasing advice/code snippet here&gt;. Reports will be
+updated to include <code>p</code> so that noise correction can work correctly in the event
+that <code>p</code> changes over time, or if different browsers apply different
+probabilities:</p>
+<div data-snippet-clipboard-copy-content="{
+  &quot;randomized_trigger_rate&quot;: 0.0024,
+  ...
+}"><pre><span>{</span>
+  <span>"randomized_trigger_rate"</span>: <span>0.0024</span><span>,</span>
+  ...
+<span>}</span></pre></div>
+<p dir="auto">Note that these initial strawman parameters were chosen as a way to ease
+adoption of the API without negatively impacting utility substantially. They are
+subject to change in the future with additional feedback and do not necessarily
+reflect a final set of parameters.</p>
+<h3 dir="auto">Trigger attribution algorithm</h3>
+<p dir="auto">When the browser receives an attribution trigger redirect on a URL matching the
+<code>destination</code> eTLD+1, it looks up all sources in storage that match
+&lt;<code>attributionsrc</code> origin, <code>destination</code>&gt; and picks the one with the greatest
+<code>priority</code>. If multiple sources have the greatest <code>priority</code>, the
+browser picks the one that was stored most recently.</p>
+<p dir="auto">The browser then schedules a report for the source that was picked by storing
+{<code>attributionsrc</code> origin, <code>destination</code> eTLD+1, <code>source_event_id</code>,
+<a href="#data-encoding">decoded</a> <code>trigger_data</code>, <code>priority</code>, <code>deduplication_key</code>} for
+the source. Scheduled reports will be sent as detailed in <a href="#sending-scheduled-reports">Sending scheduled
+reports</a>.</p>
+<p dir="auto">The browser will create reports for a source only if the trigger's
+<code>deduplication_key</code> has not already been associated with a report for that source.</p>
+<p dir="auto">Each <code>navigation</code> source is allowed to schedule only a maximum of three reports,
+while each <code>event</code> source is only allowed to schedule a maximum of one.</p>
+<p dir="auto">If a source has already scheduled the maximum number of reports when a new
+report is being scheduled, the browser will compare the priority of the new
+report with the priorities of the scheduled reports for that source. If the new
+report has the lowest priority, it will be ignored. Otherwise, the browser will
+delete the scheduled report with the lowest priority and schedule the new
+report.</p>
+<h3 dir="auto">Multiple sources for the same trigger (Multi-touch)</h3>
+<p dir="auto">If multiple sources were registered and associated with a single attribution
+trigger, send reports for the one with the highest priority. If no priority is
+specified, the browser performs last-touch.</p>
+<p dir="auto">There are many possible alternatives to this, like providing a choice of
+rules-based attribution models. However, it isn’t clear the benefits outweigh
+the additional complexity. Additionally, models other than last-click
+potentially leak more cross-site information if sources are clicked across
+different sites.</p>
+<h3 dir="auto">Sending Scheduled Reports</h3>
+<p dir="auto">Reports for <code>event</code> sources will be sent 1 hour after the source expires at its
+<code>expiry</code>.</p>
+<p dir="auto">Reports for <code>navigation</code> sources may be reported earlier than the source's
+<code>expiry</code>, at specified points in time relative to when the source event was
+registered. See
+<a href="https://wicg.github.io/conversion-measurement-api/#delivery-time" rel="nofollow">here</a> for the
+precise algorithm.</p>
+<p dir="auto">Note that the report may be sent at a later date if the browser was not running
+when the window finished. In this case, reports will be sent on startup. The
+browser may also decide to delay some of these reports for a short random time
+on startup, so that they cannot be joined together easily by a given reporting
+origin.</p>
+<h3 dir="auto">Attribution Reports</h3>
+<p dir="auto">To send a report, the browser will make a non-credentialed (i.e. without session
+cookies) secure HTTP POST request to:</p>
+<div data-snippet-clipboard-copy-content="https://<reporting origin>/.well-known/attribution-reporting/report-event-attribution"><pre><code>https://&lt;reporting origin&gt;/.well-known/attribution-reporting/report-event-attribution
+</code></pre></div>
+<p dir="auto">The report data is included in the request body as a JSON object with the
+following keys:</p>
+<ul dir="auto">
+<li>
+<p dir="auto"><code>attribution_destination</code>: the attribution destination set on the source</p>
+</li>
+<li>
+<p dir="auto"><code>source_event_id</code>: 64-bit event id set on the attribution source</p>
+</li>
+<li>
+<p dir="auto"><code>trigger_data</code>: Coarse data set in the attribution trigger registration</p>
+</li>
+<li>
+<p dir="auto"><code>report_id</code>: A UUID string for this report which can be used to prevent
+double counting</p>
+</li>
+<li>
+<p dir="auto"><code>source_type</code>: Either "navigation" or "event", indicates whether this source
+was associated with a navigation.</p>
+</li>
+<li>
+<p dir="auto"><code>randomized_trigger_rate</code>: Decimal number between 0 and 1 indicating how
+often noise is applied.</p>
+</li>
+</ul>
+<h3 dir="auto">Data Encoding</h3>
+<p dir="auto">The source event id and trigger data should be specified in a way that is
+amenable to the privacy assurances a browser wants to provide (i.e. the number
+of distinct data states supported).</p>
+<p dir="auto">The input values will be 64-bit integers which the browser will interpret modulo
+its maximum data value chosen by the browser. The browser will take the input
+and performs the equivalent of:</p>
+<div data-snippet-clipboard-copy-content="function getData(input, max_value) {
+  return input % max_value;
+}"><pre><span>function</span> <span>getData</span><span>(</span><span>input</span><span>,</span> <span>max_value</span><span>)</span> <span>{</span>
+  <span>return</span> <span>input</span> <span>%</span> <span>max_value</span><span>;</span>
+<span>}</span></pre></div>
+<p dir="auto">The benefit of this method over using a fixed bit mask is that it allows
+browsers to implement max_values that aren’t multiples of 2. That is, browers
+can choose a "fractional" bit limit if they want to.</p>
+<h3 dir="auto">Optional attribution filters</h3>
+<p dir="auto">Source and trigger registration has additional optional functionality to both:</p>
+<ol dir="auto">
+<li>Selectively filter some triggers (effectively ignoring them)</li>
+<li>Choose trigger data based on source event data</li>
+</ol>
+<p dir="auto">This can be done via simple extensions to the registration configuration.</p>
+<p dir="auto">Source registration:</p>
+<div data-snippet-clipboard-copy-content="{
+  &quot;source_event_id&quot;: &quot;12345678&quot;,
+  &quot;destination&quot;: &quot;https://toasters.example&quot;,
+  &quot;expiry&quot;: &quot;604800000&quot;,
+  &quot;filter_data&quot;: {
+    &quot;conversion_subdomain&quot;: [&quot;electronics.megastore&quot;
+                             &quot;electronics2.megastore&quot;],
+    &quot;product&quot;: [&quot;1234&quot;],
+    // Note that &quot;source_type&quot; will be automatically generated as
+    // one of {&quot;navigation&quot;, &quot;event&quot;}
+  }
+}"><pre><span>{</span>
+  <span>"source_event_id"</span>: <span>"12345678"</span><span>,</span>
+  <span>"destination"</span>: <span>"https://toasters.example"</span><span>,</span>
+  <span>"expiry"</span>: <span>"604800000"</span><span>,</span>
+  <span>"filter_data"</span>: <span>{</span>
+    <span>"conversion_subdomain"</span>: <span>[</span><span>"electronics.megastore"</span>
+                             <span>"electronics2.megastore"</span><span>]</span><span>,</span>
+    <span>"product"</span>: <span>[</span><span>"1234"</span><span>]</span><span>,</span>
+    <span>// Note that "source_type" will be automatically generated as</span>
+    <span>// one of {"navigation", "event"}</span>
+  <span>}</span>
+<span>}</span></pre></div>
+<p dir="auto">Trigger registration will now accept an option header
+<code>Attribution-Reporting-Filters</code>:</p>
+<div data-snippet-clipboard-copy-content="{
+  &quot;conversion_subdomain&quot;: [&quot;electronics.megastore&quot;],
+  // Not set on the source side, so this key is ignored
+  &quot;directory&quot;: [&quot;/store/electronics]&quot;
+}"><pre><span>{</span>
+  <span>"conversion_subdomain"</span>: <span>[</span><span>"electronics.megastore"</span><span>]</span><span>,</span>
+  <span>// Not set on the source side, so this key is ignored</span>
+  <span>"directory"</span>: <span>[</span><span>"/store/electronics]"</span><span></span>
+<span>}</span></pre></div>
+<p dir="auto">If keys in the filters JSON match keys in <code>filter_data</code>, the trigger is
+completely ignored if the intersection is empty.</p>
+<p dir="auto">Note: A key which is present in one JSON and not the other will not be included
+in the matching logic.</p>
+<p dir="auto">Note: The filter JSON does not support nested dictionaries or lists.
+<code>filter_data</code> and <code>filters</code> are only allowed to have a list of values with
+string type.</p>
+<p dir="auto">The <code>Attribution-Reporting-Register-Event-Trigger</code> header can also be extended
+to do selective filtering to set <code>trigger_data</code> based on <code>filter_data</code>:</p>
+<div data-snippet-clipboard-copy-content="// Filter by the source type to handle different bit limits.
+[{
+  &quot;trigger_data&quot;: &quot;2&quot;,
+  // Note that “not_filters” which filters with a negation is also supported.
+  &quot;filters&quot;: {&quot;source_type&quot;: [&quot;navigation&quot;]}
+},
+{
+  &quot;trigger_data&quot;: &quot;1&quot;,
+  &quot;filters&quot;: {&quot;source_type&quot;: [&quot;event&quot;]}
+}]"><pre><span>// Filter by the source type to handle different bit limits.</span>
+<span>[</span><span>{</span>
+  <span>"trigger_data"</span>: <span>"2"</span><span>,</span>
+  <span>// Note that “not_filters” which filters with a negation is also supported.</span>
+  <span>"filters"</span>: <span>{</span><span>"source_type"</span>: <span>[</span><span>"navigation"</span><span>]</span><span>}</span>
+<span>}</span><span>,</span>
+<span>{</span>
+  <span>"trigger_data"</span>: <span>"1"</span><span>,</span>
+  <span>"filters"</span>: <span>{</span><span>"source_type"</span>: <span>[</span><span>"event"</span><span>]</span><span>}</span>
+<span>}</span><span>]</span></pre></div>
+<p dir="auto">If the filters do not match for any of the event triggers, the trigger data and
+priority both default to 0 and the dedup key defaults to not being set, and
+attribution proceeds normally.</p>
+<p dir="auto">If the filters match for multiple event triggers, the first matching event
+trigger is used.</p>
+<h3 dir="auto">Optional: extended debugging reports</h3>
+<p dir="auto">The Attribution Reporting API is a new and fairly complex way to do attribution
+measurement without third-party cookies. As such, we are open to introducing a
+transitional mechanism to learn more information about attribution reports
+<em>while third-party cookies are available</em>. This ensures that the API can be
+fully understood during roll-out and help flush out any bugs (either in browser
+or caller code), and more easily compare the performance to cookie-based
+alternatives.</p>
+<p dir="auto">Source registration will accept a new parameter <code>debug_key</code>:</p>
+<div data-snippet-clipboard-copy-content="{
+    ...
+    &quot;debug_key&quot;: &quot;[64-bit unsigned integer]&quot;
+}"><pre><span>{</span>
+    ...
+    <span>"debug_key"</span>: <span>"[64-bit unsigned integer]"</span>
+<span>}</span></pre></div>
+<p dir="auto">Trigger debug keys are created using a separate header:</p>
+<div data-snippet-clipboard-copy-content="Attribution-Reporting-Trigger-Debug-Key: [64-bit unsigned integer]"><pre><span><span>Attribution-Reporting-Trigger-Debug-Key:</span> [64-bit unsigned integer]</span></pre></div>
+<p dir="auto">If a report is created with source and trigger debug keys, a duplicate debug report
+will be sent immediately to a
+<code>.well-known/attribution-reporting/debug/report-event-attribution</code>
+endpoint. The debug reports will be identical to normal reports, but
+additionally contain both debug keys:</p>
+<div data-snippet-clipboard-copy-content="{
+    // normal report fields...
+    &quot;source_debug_key&quot;: &quot;[64-bit unsigned integer]&quot;,
+    &quot;trigger_debug_key&quot;: &quot;[64-bit unsigned integer]&quot;
+}"><pre><span>{</span>
+    <span>// normal report fields...</span>
+    <span>"source_debug_key"</span>: <span>"[64-bit unsigned integer]"</span><span>,</span>
+    <span>"trigger_debug_key"</span>: <span>"[64-bit unsigned integer]"</span>
+<span>}</span></pre></div>
+<p dir="auto">Normal reports will also include two new parameters which pass the debug keys
+from source and trigger events unaltered. This allows tying normal reports to the
+separate stream of debug reports.</p>
+<div data-snippet-clipboard-copy-content="{
+    ...
+    &quot;source_debug_key&quot;: &quot;[64-bit unsigned integer]&quot;,
+    &quot;trigger_debug_key&quot;: &quot;[64-bit unsigned integer]&quot;
+}"><pre><span>{</span>
+    ...
+    <span>"source_debug_key"</span>: <span>"[64-bit unsigned integer]"</span><span>,</span>
+    <span>"trigger_debug_key"</span>: <span>"[64-bit unsigned integer]"</span>
+<span>}</span></pre></div>
+<p dir="auto">Note that event-level reports associated with false trigger events
+will not have <code>trigger_debug_key</code>s. This allows developers to more
+closely understand how noise is applied in the API.</p>
+<p dir="auto">To ensure that this data (which could enable cross-site tracking) is only
+available in a transitional phase while third-party cookies are available and
+are already capable of user tracking, the browser will check (at both source
+and trigger registration) for the presence of a special <code>SameSite=None</code> cookie
+set by the reporting origin:</p>
+<div data-snippet-clipboard-copy-content="Set-Cookie: ar_debug=1; SameSite=None; Secure; HttpOnly"><pre><span><span>Set-Cookie:</span> ar_debug=1; SameSite=None; Secure; HttpOnly</span></pre></div>
+<p dir="auto">If a cookie of this form is not present, debugging information will be ignored.</p>
+<h2 dir="auto">Sample Usage</h2>
+<p dir="auto"><code>publisher.example</code> wants to show ads on their site, so they contract out to
+<code>ad-tech.example</code>. <code>ad-tech.example</code>'s script in the main document creates a
+cross-origin iframe to host the third party advertisement for
+<code>toasters.example</code>.</p>
+<p dir="auto">Within the iframe, <code>toasters.example</code> code annotates their anchor tags to use
+the <code>ad-tech.example</code> reporting origin.</p>
+<div data-snippet-clipboard-copy-content="<iframe src=&quot;https://ad-tech-3p.example/show-some-ad&quot; 
+        allow=&quot;attribution-reporting&quot;>
+...
+<a 
+  href=&quot;https://toasters.example/purchase&quot;
+  attributionsrc=&quot;https://ad-tech.example?adid=123456&quot;>
+  click me!
+</a>
+...
+</iframe>"><pre><span>&lt;</span><span>iframe</span> <span>src</span>="<span>https://ad-tech-3p.example/show-some-ad</span>" 
+        <span>allow</span>="<span>attribution-reporting</span>"<span>&gt;</span>
+...
+<span>&lt;</span><span>a</span> 
+  <span>href</span>="<span>https://toasters.example/purchase</span>"
+  <span>attributionsrc</span>="<span>https://ad-tech.example?adid=123456</span>"<span>&gt;</span>
+  click me!
+<span>&lt;/</span><span>a</span><span>&gt;</span>
+...
+<span>&lt;/</span><span>iframe</span><span>&gt;</span></pre></div>
+<p dir="auto">A user clicks on the ad and this opens a window that lands on a URL to
+<code>toasters.example/purchase</code>. In the background, the browser issues an HTTP
+request to <code>https://ad-tech.example?adid=123456</code>. The ad-tech responds with a
+<code>Attribution-Reporting-Register-Source</code> JSON header:</p>
+<div data-snippet-clipboard-copy-content="{
+  &quot;source_event_id&quot;: &quot;12345678&quot;,
+  &quot;destination&quot;: &quot;https://toasters.example&quot;,
+  &quot;expiry&quot;: &quot;604800000&quot;
+}"><pre><span>{</span>
+  <span>"source_event_id"</span>: <span>"12345678"</span><span>,</span>
+  <span>"destination"</span>: <span>"https://toasters.example"</span><span>,</span>
+  <span>"expiry"</span>: <span>"604800000"</span>
+<span>}</span></pre></div>
+<p dir="auto">2 days later, the user buys something on <code>toasters.example</code>. <code>toasters.example</code>
+triggers attribution on the few different ad-tech companies it buys ads on,
+including <code>ad-tech.example</code>, by adding conversion pixels:</p>
+<div data-snippet-clipboard-copy-content="<img src=&quot;...” attributionsrc=”https://ad-tech.example/trigger-attribution?model=toastmaster3000&amp;price=$49.99&amp;...&quot; />"><pre><span>&lt;</span><span>img</span> <span>src</span>="<span>...” attributionsrc=”https://ad-tech.example/trigger-attribution?model=toastmaster3000&amp;price=$49.99&amp;...</span>" /&gt;</pre></div>
+<p dir="auto"><code>ad-tech.example</code> receives this request, and decides to trigger attribution on
+<code>toasters.example</code>. They must compress all of the data into 3 bits, so
+<code>ad-tech.example</code> chooses to encode the value as “2" (e.g. some bucketed version
+of the purchase value). They respond to the request with a
+<code>Attribution-Reporting-Register-Event-Trigger</code> header:</p>
+<div data-snippet-clipboard-copy-content="[{
+    &quot;trigger_data&quot;: &quot;2&quot;
+}]"><pre><span>[</span><span>{</span>
+    <span>"trigger_data"</span>: <span>"2"</span>
+<span>}</span><span>]</span></pre></div>
+<p dir="auto">The browser sees this response, and schedules a report to be sent. The report is
+associated with the 7-day deadline as the 2-day deadline has passed. Roughly 5
+days later, <code>ad-tech.example</code> receives the following HTTP POST to
+<code>https://ad-tech.example/.well-known/attribution-reporting/report-event-attribution</code>
+with the following body:</p>
+<div data-snippet-clipboard-copy-content="{
+  &quot;attribution_destination&quot;: &quot;https://toasters.example&quot;,
+  &quot;source_event_id&quot;: &quot;12345678&quot;,
+  &quot;trigger_data&quot;: &quot;2&quot;,
+}"><pre><span>{</span>
+  <span>"attribution_destination"</span>: <span>"https://toasters.example"</span><span>,</span>
+  <span>"source_event_id"</span>: <span>"12345678"</span><span>,</span>
+  <span>"trigger_data"</span>: <span>"2"</span><span>,</span>
+<span>}</span></pre></div>
+<h3 dir="auto">Noisy fake conversion example</h3>
+<p dir="auto">Assume the caller uses the same inputs as in the above example, however, the
+<a href="#data-limits-and-noise">noise mechanism</a> in the browser chooses to generate
+completely fake data for the source event. This occurs with some probability
+<code>p</code>.</p>
+<p dir="auto">To generate fake events, the browser considers all possible outputs for a given
+source event:</p>
+<ul dir="auto">
+<li>No reports at all</li>
+<li>One report with metadata “0” at the first reporting window</li>
+<li>One report with metadata “1” at the first reporting window and one report with
+metadata “3” at the second reporting window</li>
+<li>etc. etc. etc.</li>
+</ul>
+<p dir="auto">After enumerating all possible outputs of the API for a given source event, the
+browser simply selects one of them at random uniformly. Any subsequent true
+trigger events that would be attributed to the source event are completely
+ignored.</p>
+<p dir="auto">In the above example, the browser could have chosen to generate three reports:</p>
+<ul dir="auto">
+<li>One report with metadata “7”, sent 2 days after the click</li>
+<li>One report with metadata “3”, sent 7 days after the click</li>
+<li>One report with metadata “0”, also sent 7 days after the click</li>
+</ul>
+<h3 dir="auto">Storage limits</h3>
+<p dir="auto">The browser may apply storage limits in order to prevent excessive resource
+usage.</p>
+<p dir="auto">Strawman: There should be a limit of 1024 pending sources per source origin.</p>
+<p dir="auto">Strawman: There should be a limit of 1024 pending reports per destination site.</p>
+<h2 dir="auto">Privacy Considerations</h2>
+<p dir="auto">A primary privacy goal of the API is to make <em>linking identity</em> between two
+different top-level sites difficult. This happens when either a request or a
+JavaScript environment has two user IDs from two different sites simultaneously.</p>
+<p dir="auto">Secondary goals of the API are to:</p>
+<ul dir="auto">
+<li>give some level of <em>plausible deniability</em> to cross-site data leakage
+associated with source events.</li>
+<li>limit the raw amount of cross-site information a site can learn relative to a
+source event</li>
+</ul>
+<p dir="auto">In this API, the 64-bit source ID can encode a user ID from the publisher’s top-
+level site, but the low-entropy, noisy trigger data could only encode a small
+part of a user ID from the advertiser’s top-level site. The source ID and the
+trigger data are never exposed to a JavaScript environment together, and the
+request that includes both of them is sent without credentials and at a
+different time from either event, so the request adds little new information
+linkable to these events. This allows us to limit the information gained by the
+ad-tech relative to a source event.</p>
+<p dir="auto">Additionally, there is a small chance that all the output for a given source
+event is completely fabricated by the browser, giving the user plausible
+deniability whether subsequent trigger events actually occurred the way they
+were reported.</p>
+<h3 dir="auto">Trigger Data</h3>
+<p dir="auto">Trigger data, e.g. advertiser-side data, is extremely important for critical use
+cases like reporting the <em>purchase value</em> of a conversion. However, too much
+advertiser-side data could be used to link advertiser identity with publisher
+identity.</p>
+<p dir="auto">Mitigations against this are to provide only coarse information (only a few bits
+at a time), and introduce some noise to the API output. Even sophisticated
+attackers will therefore need to invoke the API multiple times (through multiple
+clicks/views) to join identity between sites with high confidence.</p>
+<p dir="auto">Note that this noise still allows for aggregate measurement of bucket sizes with
+an unbiased estimator (assuming rate-limits are not hit) See generic approaches
+of dealing with <a href="https://en.wikipedia.org/wiki/Randomized_response" rel="nofollow">Randomized
+response</a> for a starting
+point.</p>
+<p dir="auto">TODO: Update this script to account for the more complicated randomized response
+approach.</p>
+<h3 dir="auto">Reporting Delay</h3>
+<p dir="auto">By bucketing reports within a small number reporting deadlines, it becomes
+harder to associate a report with the identity of the user on the advertiser’s
+site via timing side channels.</p>
+<p dir="auto">Reports within the same reporting window occur within an anonymity set with all
+others during that time period. For example, if we didn’t bucket reports with a
+delay (and instead sent them immediately after a trigger event), the reports
+(which contain publisher IDs) could be easily joined up with the advertiser’s
+first-party information via correlating timestamps.</p>
+<p dir="auto">Note that the delay windows / deadlines chosen represent a trade-off with
+utility, since it becomes harder to properly assign credit to a click if the
+time from click to conversion is not known. That is, time-to-conversion is an
+important signal for proper attribution. Browsers should make sure that this
+trade-off is concretely evaluated for both privacy and utility before deciding
+on a delay.</p>
+<h3 dir="auto">Reporting origin limits</h3>
+<p dir="auto">If the advertiser is allowed to cycle through many possible reporting origins,
+then the publisher and advertiser don’t necessarily have to agree apriori on
+what origin to use, and which origin actually ends up getting used reveals some
+extra information.</p>
+<p dir="auto">To prevent this kind of abuse, the browser should limit the number of reporting
+origins per &lt;source site, destination site&gt; pair, counted per source
+registration. This should be limited to 100 origins per 30 days.</p>
+<p dir="auto">Additionally, there should be a limit of 10 reporting origins per &lt;source site,
+destination site, 30 days&gt;, counted for every attribution that is generated.</p>
+<h3 dir="auto">Clearing Site Data</h3>
+<p dir="auto">Attribution source data and attribution reports in browser storage should be
+clearable using existing “clear browsing data" functionality offered by
+browsers.</p>
+<h3 dir="auto">Reporting cooldown / rate limits</h3>
+<p dir="auto">To limit the amount of user identity leakage between a &lt;source site,
+destination&gt; pair, the browser should throttle the amount of total information
+sent through this API in a given time period for a user. The browser should set
+a maximum number of attributions per</p>
+ tuple per time period. If this
+threshold is hit, the browser will stop scheduling reports the API for the
+rest of the time period for attributions matching that tuple.
+<p dir="auto">The longer the cooldown windows are, the harder it is to abuse the API and join
+identity. Ideally attribution thresholds should be low enough to avoid leaking too
+much information, with cooldown windows as long as practically possible.</p>
+<p dir="auto">Note that splitting these limits by the reporting origin introduces a possible
+leak when multiple origins collude with each other. However, the alternative
+makes it very difficult to adopt the API if all reporting origins had to share a
+budget.</p>
+<p dir="auto">Strawman rate limit: 100 attributions per {source site, destination, reporting
+origin, 30 days}</p>
+<h3 dir="auto">Less trigger-side data</h3>
+<p dir="auto">Registering event attribution sources is not gated on a user interaction or top-
+level navigation, allowing them to be registered more frequently and with
+greater ease. For example, by restricting to 1 bit of data and 1 report per
+event source, a <code>reportingorigin</code> would need to register many more sources in
+order to link cross-site identity relative to the Click Through API.</p>
+<p dir="auto">This is further restricted by rate-limiting the usage of the API between two
+sites, using <a href="/WICG/conversion-measurement-api/blob/main/event_attribution_reporting_clicks.md#reporting-cooldown--rate-limits">reporting
+cooldowns</a>.
+Due to the different characteristics between classes of sources, these cooldowns
+should have independent limits on the number of reports of each type.</p>
+<p dir="auto">The number of reporting windows is another vector which can contain trigger-side
+information. By restricting to a <a href="#single-reporting-window">single window</a>, a
+<code>reportingorigin</code> does not receive any additional information on when in the
+attribution window a source was triggered.</p>
+<h3 dir="auto">Browsing history reconstruction</h3>
+<p dir="auto">Reporting attribution without a pre-existing navigation allows the
+<code>reportingorigin</code> to learn whether a given user on the source site visited the
+<code>destination</code> site at all. For click-through reports, this is not an issue
+because the <code>reportingorigin</code> knows a priori the user was navigating to
+<code>destination</code>.</p>
+<p dir="auto">This new threat is be mitigated in a number of ways:</p>
+<h4 dir="auto">Adding noise to whether a trigger is genuine</h4>
+<p dir="auto">By adding noise to whether an attribute source gets
+<a href="#data-limits-and-noise">triggered</a>, a reporting origin will not know with
+absolute certainty whether a particular ad view led to a site visit. See
+<a href="#differential-privacy">Differential privacy</a>.</p>
+<h4 dir="auto">Limiting the number of unique destinations covered by pending sources</h4>
+<p dir="auto">To limit the breadth of <code>destination</code> sites that a reporting origin may be
+trying to measure user visits on, the browser can limit the number <code>destination</code>
+eTLD+1s represented by pending sources for a source-site.</p>
+<p dir="auto">The browser can place a limit on the number of a source site's pending source's
+unique <code>destination</code>s. When an attribution source is registered for an eTLD+1
+that is not already in the pending sources and a source site is at its limit,
+the browser will drop the new source.</p>
+<p dir="auto">The lower this value, the harder it is for a reporting origin to use the API to
+try and measure user browsing activity not associated with ads being shown.
+Browsers may choose parameters on the number of <code>destination</code>s to make their own
+tradeoffs for privacy and utility.</p>
+<p dir="auto">Because this limit is per source site, it is possible for different reporting
+origin on a site to push the other attribution sources out of the browser. See
+the <a href="#denial-of-service">denial of service</a> for more details. To prevent this
+attack, the browser should maintain these limits per reporting origin. This
+effectively limits the number of unique sites covered by pending sources from
+any one reporting origin.</p>
+<p dir="auto">Strawman: 100 distinct destination sites per-{source site, reporting origin},
+applied to all pending sources regardless of type.</p>
+<p dir="auto">TODO: should this be applied over a time period?</p>
+<h3 dir="auto">Differential privacy</h3>
+<p dir="auto">A goal of this work is to create a framework that would support making
+event-level measurement that satisfies local differential privacy. This follows
+from our use of k-randomized response to generate noisy output for each source
+event. For a given output space O with cardinality k, true value v in the output
+space, and flip probability p, the k-randomized response algorithm:</p>
+<ul dir="auto">
+<li>Flips a biased coin with heads probability p</li>
+<li>If heads, return a random value in O</li>
+<li>Otherwise return v</li>
+</ul>
+<p dir="auto">k-randomized response is an algorithm that is epsilon differentially private if
+p = k / (k + exp(epsilon) - 1). For low enough values of epsilon, a given
+source’s true output should be well protected by the randomized response
+mechanism.</p>
+<p dir="auto">Note that the number of all possible output states k in the above design is:</p>
+<ul dir="auto">
+<li>2925 for click sources. This results from a particular “stars and bars”
+counting method which derives k = (num_reporting_windows * num_trigger_data +
+num_reports choose num_reports) = (3 * 8 + 3 choose 3). TODO: outline why this
+is the case.</li>
+<li>3 for event-sources (no attribution, attribution with trigger data 1,
+attribution with trigger data 0). This also follows from (1 * 2 + 1 choose 1).</li>
+</ul>
+<p dir="auto">Note that the scope of privacy in the current design is not user-level, but
+rather source-level. This follows from the fact that noise is added
+independently per source-event, and source events are not strictly rate-limited.
+Exact noise parameters are subject to change with feedback. The primary goal
+with this proposal as written is to ensure that the browser has the appropriate
+infrastructure foundation to develop locally differentially private methods in
+the future. Tightening the privacy scope will also be considered in future work.</p>
+<p dir="auto">Our plan is to adjust the level of noise added based on feedback during the
+origin trial period, and our goal with this initial version is to create a
+foundation for further exploration into formally private methods for
+measurement.</p>
+<h3 dir="auto">Speculative: Limits based on first party storage</h3>
+<p dir="auto">Another mitigation on joining identity across publisher and advertiser sites is
+to limit the number of reports for any given &lt;publisher, advertiser&gt; pair until
+the advertiser clears their site data. This could occur via the
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data" rel="nofollow">Clear-Site-Data</a>
+header or by explicit user action.</p>
+<p dir="auto">To prevent linking across deletions, we might need to introduce new options to
+the Clear-Site-Data header to only clear data after the page has unloaded.</p>
+<h2 dir="auto">Security considerations</h2>
+<h3 dir="auto">Reporting origin control</h3>
+<p dir="auto">Reports can only be generated if the same origin responds with headers that
+register source events and trigger events. There is no way for an origin to
+register events on behalf of another origin, which is an important restriction
+to prevent fraudulent reports.</p>
+<h3 dir="auto">Denial of service</h3>
+<p dir="auto">Rate limits and other restrictions to the API can cause reports to no longer be
+sent in some cases. It is important to consider all the cases where an origin
+could utilize the API in some way to lock out other origins, and minimize that
+risk if possible.</p>
+<p dir="auto">Currently, the only known limit in this proposal that could risk denial of
+service is the <a href="#reporting-origin-limits">reporting origin limits</a>. This is an
+explicit trade-off for privacy that should be monitored for abuse.</p>
+<h3 dir="auto">Top site permission model</h3>
+<p dir="auto">The Permissions Policy is used to globally enable or disable the API.
+Additionally, network requests need fine grained permission in the form of
+requiring an <code>attributionsrc</code> attribute.</p>
+</article>
+  </div></div>
+                
+                </main>
+                <footer>
+
+                </footer>
+            </div>
+            <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+        </body>
+    </html>
